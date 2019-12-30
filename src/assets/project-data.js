@@ -28,7 +28,8 @@ const ProjectData = [
     title: "Personal Website",
     description: "This! My personal website created with React and Bootstrap.",
     tags: ["JavaScript", "HTML", "CSS"],
-    source: "https://github.com/ryantran2165/ryantran2165.github.io",
+    source:
+      "https://github.com/ryantran2165/ryantran2165.github.io/tree/source",
     demo: ""
   },
   {

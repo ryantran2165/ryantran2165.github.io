@@ -1,0 +1,53 @@
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import resume from "../../assets/Ryan Tran Resume.pdf";
+import FooterIcon from "./footer-icon";
+
+const Footer = () => {
+  return (
+    <footer>
+      <Container fluid={true} className="text-center bg-white pt-3 pb-5">
+        <Row className="justify-content-center">
+          <Col
+            xs={0}
+            data-aos="flip-down"
+            data-aos-delay="200"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <FooterIcon
+              href="https://www.linkedin.com/in/ryantran2165"
+              icon={faLinkedinIn}
+            />
+          </Col>
+          <Col
+            xs={0}
+            className="ml-3 mr-3"
+            data-aos="flip-down"
+            data-aos-delay="400"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <FooterIcon
+              href="https://github.com/ryantran2165"
+              icon={faGithub}
+            />
+          </Col>
+          <Col
+            xs={0}
+            data-aos="flip-down"
+            data-aos-delay="600"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <FooterIcon href={resume} icon={faFilePdf} />
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;

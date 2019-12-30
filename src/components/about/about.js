@@ -1,0 +1,63 @@
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
+import ryanImage from "../../assets/ryan_tran.jpg";
+import resume from "../../assets/Ryan Tran Resume.pdf";
+import SectionTitle from "../section-title";
+
+const About = () => {
+  return (
+    <section id="about">
+      <Container fluid={true} className="text-center pt-5 pb-5">
+        <SectionTitle text="Ryan L. Tran" />
+        <Row className="mb-4 justify-content-center">
+          <Col xs={6} md={4} xl={2} data-aos="flip-down" data-aos-delay="200">
+            <Image
+              className="circle-border"
+              src={ryanImage}
+              alt="Ryan Tran"
+              roundedCircle
+              fluid
+            />
+          </Col>
+        </Row>
+        <Row className="mb-4 justify-content-center">
+          <Col
+            xs={12}
+            sm={10}
+            md={8}
+            lg={6}
+            xl={4}
+            data-aos="flip-down"
+            data-aos-delay="400"
+          >
+            <p className="text-justify">
+              Hi, I'm Ryan, thanks for visiting my website! I'm a junior
+              majoring in computer science at San Jose State University. I
+              started programming 5 years ago due to my interest in game
+              development. For the past 3 years, I've been developing my dream
+              mobile game (ongoing). Aside from game programming, I'm also
+              highly interested in machine learning and information security.
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col data-aos="flip-down" data-aos-delay="600">
+            <Button
+              href={resume}
+              target="_blank"
+              onClick={e => e.target.blur()}
+            >
+              View Resume
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default About;

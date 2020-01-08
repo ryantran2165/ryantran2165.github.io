@@ -10,7 +10,7 @@ import SectionTitle from "../section-title";
 
 const About = () => {
   return (
-    <Container id="about" fluid={true} className="text-center pt-5 pb-5">
+    <Container id="about" fluid={true} className="text-center pt-6 pb-5">
       <SectionTitle text="Ryan L. Tran" />
       <Row className="mb-4 justify-content-center">
         <Col xs={6} md={4} xl={2}>

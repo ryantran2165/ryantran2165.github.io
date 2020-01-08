@@ -2,4 +2,10 @@ $theme-colors: (
   "primary": aquamarine
 );
 
+$spacers: (
+  6: (
+    6rem
+  )
+);
+
 @import "node_modules/bootstrap/scss/bootstrap";

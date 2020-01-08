@@ -9,6 +9,11 @@
 
 $aquamarine-half-opacity: rgba(127, 255, 212, 0.5);
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f5f5;
@@ -85,7 +90,7 @@ body {
       0 0 2.5rem rgba(0, 0, 0, 0.1) inset !important;
   }
 
-  &:hover {
+  body.hasHover &:hover {
     background-color: $aquamarine-half-opacity;
   }
 }
@@ -117,7 +122,7 @@ body {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 
-  &:hover {
+  body.hasHover &:hover {
     background-color: $aquamarine-half-opacity;
     cursor: pointer;
   }
@@ -128,16 +133,8 @@ body {
   }
 }
 
-#about {
-  padding-top: 5em;
-}
-
 .circle-border {
   border: 0.25rem solid aquamarine;
-}
-
-.navbar-custom {
-  text-align: center;
 }
 
 .navbar {
@@ -152,7 +149,7 @@ body {
     text-align: left;
 
     a {
-      &:hover {
+      body.hasHover &:hover {
         cursor: pointer;
       }
 
@@ -168,7 +165,7 @@ body {
         transition: all 0.5s ease;
       }
 
-      &:hover:before,
+      body.hasHover &:hover:before,
       &.active-link:before {
         width: 2rem;
       }
@@ -194,7 +191,7 @@ body {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 
-  &:hover {
+  body.hasHover &:hover {
     cursor: pointer;
     color: #222;
     background-color: aquamarine;
@@ -213,7 +210,7 @@ body {
     background-color: aquamarine;
     border: 0.25rem solid #222;
 
-    &:hover {
+    body.hasHover &:hover {
       color: aquamarine;
       background-color: #222;
       border: 0.25rem solid aquamarine;
@@ -297,7 +294,7 @@ body {
     background-color: aquamarine;
   }
 
-  &:hover {
+  body.hasHover &:hover {
     cursor: pointer;
   }
 }
@@ -308,7 +305,7 @@ body {
   -o-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 
-  &:hover {
+  body.hasHover &:hover {
     color: aquamarine;
     text-decoration: none;
   }
@@ -368,7 +365,7 @@ ul {
   -o-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 
-  &:hover {
+  body.hasHover &:hover {
     background-color: $aquamarine-half-opacity;
   }
 
@@ -389,7 +386,7 @@ ul {
   -o-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 
-  &:hover {
+  body.hasHover &:hover {
     background-color: $aquamarine-half-opacity;
   }
 

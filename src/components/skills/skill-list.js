@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const SkillList = ({ subheading, skills }) => {
   return (
-    <Col xs={12} sm={6} md={5} xl={4} className="pb-4" data-aos="flip-down">
+    <Col xs={12} sm={6} md={5} xl={4} className="pb-4">
       <h3 className="skillsSubheading">{subheading}:</h3>
       <ul>
         {skills.map(skill => (

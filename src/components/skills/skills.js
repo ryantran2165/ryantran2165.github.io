@@ -58,49 +58,51 @@ class Skills extends Component {
   render() {
     return (
       <Waypoint onEnter={this.animateSkills}>
-        <section id="skills">
-          <Container fluid={true} className="text-center bg-white pt-5 pb-5">
-            <SectionTitle text="Skills" />
-            <Row>
-              <Col data-aos="flip-down">
-                <h3 className="skillsSubheading">Programming:</h3>
-              </Col>
-            </Row>
-            <Row className="justify-content-center mt-3 mb-4">
-              <SkillCircle id="java-skill" />
-              <SkillCircle id="javascript-skill" />
-              <SkillCircle id="cpp-skill" />
-              <SkillCircle id="python-skill" />
-              <SkillCircle id="html-skill" />
-              <SkillCircle id="css-skill" />
-              <SkillCircle id="php-skill" />
-              <SkillCircle id="csharp-skill" />
-              <SkillCircle id="sql-skill" />
-              <SkillCircle id="assembly-skill" />
-            </Row>
-            <Row className="justify-content-center">
-              <SkillList
-                subheading="Frameworks/Libraries"
-                skills={[
-                  "React (familiar)",
-                  "Bootstrap (familiar)",
-                  "jQuery (familiar)",
-                  "libGDX (familiar)"
-                ]}
-              />
-              <SkillList
-                subheading="Other"
-                skills={[
-                  "Git (familiar)",
-                  "Word/Excel/PowerPoint (advanced)",
-                  "PhotoShop/Illustrator (familiar)",
-                  "WordPress (familiar)",
-                  "Vietnamese (fluent)"
-                ]}
-              />
-            </Row>
-          </Container>
-        </section>
+        <Container
+          id="skills"
+          fluid={true}
+          className="text-center bg-white pt-5 pb-5"
+        >
+          <SectionTitle text="Skills" />
+          <Row>
+            <Col>
+              <h3 className="skillsSubheading">Programming:</h3>
+            </Col>
+          </Row>
+          <Row className="justify-content-center mt-3 mb-4">
+            <SkillCircle id="java-skill" />
+            <SkillCircle id="javascript-skill" />
+            <SkillCircle id="cpp-skill" />
+            <SkillCircle id="python-skill" />
+            <SkillCircle id="html-skill" />
+            <SkillCircle id="css-skill" />
+            <SkillCircle id="php-skill" />
+            <SkillCircle id="csharp-skill" />
+            <SkillCircle id="sql-skill" />
+            <SkillCircle id="assembly-skill" />
+          </Row>
+          <Row className="justify-content-center">
+            <SkillList
+              subheading="Frameworks/Libraries"
+              skills={[
+                "React (familiar)",
+                "Bootstrap (familiar)",
+                "jQuery (familiar)",
+                "libGDX (familiar)"
+              ]}
+            />
+            <SkillList
+              subheading="Other"
+              skills={[
+                "Git (familiar)",
+                "Word/Excel/PowerPoint (advanced)",
+                "PhotoShop/Illustrator (familiar)",
+                "WordPress (familiar)",
+                "Vietnamese (fluent)"
+              ]}
+            />
+          </Row>
+        </Container>
       </Waypoint>
     );
   }

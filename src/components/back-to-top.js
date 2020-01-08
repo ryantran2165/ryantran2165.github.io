@@ -28,7 +28,7 @@ class BackToTop extends Component {
 
   render() {
     return (
-      <Link to="about" smooth="easeInOutQuint" offset={-90} duration={1000}>
+      <Link to="about" smooth="easeInOutQuint" offset={-60} duration={1000}>
         <div
           className={`back-to-top ${
             this.state.showingBackToTop ? "show" : "hide"

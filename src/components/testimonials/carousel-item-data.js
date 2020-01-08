@@ -12,14 +12,8 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
         className="circle-border mb-3"
         roundedCircle
         fluid
-        data-aos="flip-down"
-        data-aos-delay="200"
       />
-      <h3
-        className="font-weight-bold"
-        data-aos="flip-down"
-        data-aos-delay="400"
-      >
+      <h3 className="font-weight-bold">
         <a
           href={linkedInSrc}
           target="_blank"
@@ -29,14 +23,8 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
           {name}
         </a>
       </h3>
-      <h5
-        className="font-weight-bold"
-        data-aos="flip-down"
-        data-aos-delay="600"
-      >
-        {title}
-      </h5>
-      <p className="text-justify" data-aos="flip-down" data-aos-delay="800">
+      <h5 className="font-weight-bold">{title}</h5>
+      <p className="text-justify">
         <FontAwesomeIcon icon={faQuoteLeft} /> {quote}
       </p>
     </React.Fragment>

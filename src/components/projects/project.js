@@ -43,7 +43,6 @@ const Project = ({ project }) => {
       md={6}
       lg={4}
       className="project-box ml-4 mr-4 mb-4 pl-0 pr-0"
-      data-aos="flip-down"
     >
       <Image fluid src={project.image} alt="project" />
       <h3 className="font-weight-bold mt-4 pl-4 pr-4">{project.title}</h3>

@@ -7,7 +7,7 @@ import Line from "./line";
 const SectionTitle = ({ text }) => {
   return (
     <Row className="mb-4">
-      <Col data-aos="flip-down">
+      <Col>
         <h1 className="font-weight-bold">{text}</h1>
         <Line />
       </Col>

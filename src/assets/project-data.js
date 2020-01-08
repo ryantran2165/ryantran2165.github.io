@@ -1,9 +1,19 @@
-import constructionImg from "../assets/under_construction.jpg";
-import infiniteMonkeyImg from "../assets/infinite_monkey_genetic_algorithm.jpg";
+import handwrittenDigitsImg from "../assets/handwritten_digits_neural_network.jpg";
 import linearRegressionImg from "../assets/linear_regression_gradient_descent.jpg";
+import infiniteMonkeyImg from "../assets/infinite_monkey_genetic_algorithm.jpg";
 import faviconImg from "../assets/favicon.jpg";
+import constructionImg from "../assets/under_construction.jpg";
 
 const ProjectData = [
+  {
+    image: handwrittenDigitsImg,
+    title: "Handwritten Digits Neural Network",
+    description:
+      "Demo of recognizing handwritten digits using a neural network made from scratch. The architecture is stochastic gradient descent on a feedforward neural network with 3 layers (784 input, 30 hidden, 10 output neurons), a mean squared error cost function, and a sigmoid activation function. Future improvements include using a cross-entropy cost function, a ReLU activation function, a softmax output layer, He/Xavier/Kaiming initialization, batch normalization, and regularization. Training data acquired from the MNIST database.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    source: "https://github.com/ryantran2165/handwritten-digits-neural-network",
+    demo: "https://www.ryanlongtran.com/handwritten-digits-neural-network/"
+  },
   {
     image: linearRegressionImg,
     title: "Linear Regression Gradient Descent",

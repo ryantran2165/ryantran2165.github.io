@@ -8,7 +8,8 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navbarReduced: false
+      navbarReduced: false,
+      navbarExpanded: false
     };
   }
 
@@ -21,9 +22,15 @@ class Navigation extends Component {
   }
 
   handleScroll = () => {
+    this.setState({
+      navbarReduced: this.state.navbarExpanded || this.shouldNavbarReduce()
+    });
+  };
+
+  shouldNavbarReduce = () => {
     const scrollTop = window.pageYOffset;
     const navbarThreshold = 50;
-    this.setState({ navbarReduced: scrollTop > navbarThreshold });
+    return scrollTop > navbarThreshold;
   };
 
   getNavbarToggle = () => {
@@ -36,6 +43,21 @@ class Navigation extends Component {
     );
   };
 
+  handleToggleNavbar = expanded => {
+    this.setState({
+      navbarReduced: !this.state.navbarReduced || this.shouldNavbarReduce(),
+      navbarExpanded: expanded
+    });
+  };
+
+  handleClickLink = e => {
+    e.target.blur();
+    this.setState({
+      navbarReduced: this.shouldNavbarReduce(),
+      navbarExpanded: false
+    });
+  };
+
   render() {
     return (
       <Navbar
@@ -43,9 +65,17 @@ class Navigation extends Component {
         expand="md"
         variant="custom"
         className={`${this.state.navbarReduced ? "navbar-reduce" : ""}`}
+        onToggle={this.handleToggleNavbar}
+        expanded={this.state.navbarExpanded}
       >
         <Navbar.Brand>
-          <Link to="about" smooth="easeInOutQuint" offset={-80} duration={1000}>
+          <Link
+            to="about"
+            smooth="easeInOutQuint"
+            offset={-60}
+            duration={1000}
+            onClick={this.handleClickLink}
+          >
             RT
           </Link>
         </Navbar.Brand>
@@ -56,19 +86,39 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Nav>
             <div data-aos="flip-down" data-aos-delay="200">
-              <NavigationLink to="about" text="About" />
+              <NavigationLink
+                to="about"
+                text="About"
+                onClick={this.handleClickLink}
+              />
             </div>
             <div data-aos="flip-down" data-aos-delay="400">
-              <NavigationLink to="testimonials" text="Testimonials" />
+              <NavigationLink
+                to="testimonials"
+                text="Testimonials"
+                onClick={this.handleClickLink}
+              />
             </div>
             <div data-aos="flip-down" data-aos-delay="600">
-              <NavigationLink to="projects" text="Projects" />
+              <NavigationLink
+                to="projects"
+                text="Projects"
+                onClick={this.handleClickLink}
+              />
             </div>
             <div data-aos="flip-down" data-aos-delay="800">
-              <NavigationLink to="skills" text="Skills" />
+              <NavigationLink
+                to="skills"
+                text="Skills"
+                onClick={this.handleClickLink}
+              />
             </div>
             <div data-aos="flip-down" data-aos-delay="1000">
-              <NavigationLink to="contact" text="Contact" />
+              <NavigationLink
+                to="contact"
+                text="Contact"
+                onClick={this.handleClickLink}
+              />
             </div>
           </Nav>
         </Navbar.Collapse>

@@ -85,77 +85,75 @@ class Projects extends Component {
 
   render() {
     return (
-      <section id="projects">
-        <Container fluid={true} className="text-center pt-5 pb-5">
-          <SectionTitle text="Projects" />
-          <Row>
-            <Col data-aos="flip-down">
-              <Form>
-                <Row className="justify-content-center">
-                  <ProjectFilter
-                    filter="Java"
-                    checked={this.getChecked("Java")}
-                    onChange={this.handleFilterChange}
+      <Container id="projects" fluid={true} className="text-center pt-5 pb-5">
+        <SectionTitle text="Projects" />
+        <Row>
+          <Col>
+            <Form>
+              <Row className="justify-content-center">
+                <ProjectFilter
+                  filter="Java"
+                  checked={this.getChecked("Java")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="JavaScript"
+                  checked={this.getChecked("JavaScript")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="C++"
+                  checked={this.getChecked("C++")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Python"
+                  checked={this.getChecked("Python")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="HTML"
+                  checked={this.getChecked("HTML")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="CSS"
+                  checked={this.getChecked("CSS")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="PHP"
+                  checked={this.getChecked("PHP")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="C#"
+                  checked={this.getChecked("C#")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="SQL"
+                  checked={this.getChecked("SQL")}
+                  onChange={this.handleFilterChange}
+                />
+              </Row>
+              <Row>
+                <Col>
+                  <Form.Check
+                    type="switch"
+                    id="andOrSwitch"
+                    label="AND mode"
+                    onChange={this.handleSwitchChange}
                   />
-                  <ProjectFilter
-                    filter="JavaScript"
-                    checked={this.getChecked("JavaScript")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="C++"
-                    checked={this.getChecked("C++")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Python"
-                    checked={this.getChecked("Python")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="HTML"
-                    checked={this.getChecked("HTML")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="CSS"
-                    checked={this.getChecked("CSS")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="PHP"
-                    checked={this.getChecked("PHP")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="C#"
-                    checked={this.getChecked("C#")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="SQL"
-                    checked={this.getChecked("SQL")}
-                    onChange={this.handleFilterChange}
-                  />
-                </Row>
-                <Row>
-                  <Col>
-                    <Form.Check
-                      type="switch"
-                      id="andOrSwitch"
-                      label="AND mode"
-                      onChange={this.handleSwitchChange}
-                    />
-                  </Col>
-                </Row>
-              </Form>
-            </Col>
-          </Row>
-          <Row className="justify-content-center mt-4">
-            <FilteredProjects filteredProjects={this.state.filteredProjects} />
-          </Row>
-        </Container>
-      </section>
+                </Col>
+              </Row>
+            </Form>
+          </Col>
+        </Row>
+        <Row className="justify-content-center mt-4">
+          <FilteredProjects filteredProjects={this.state.filteredProjects} />
+        </Row>
+      </Container>
     );
   }
 }

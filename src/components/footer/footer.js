@@ -13,35 +13,19 @@ const Footer = () => {
     <footer>
       <Container fluid={true} className="text-center bg-white pt-3 pb-5">
         <Row className="justify-content-center">
-          <Col
-            xs={0}
-            data-aos="flip-down"
-            data-aos-delay="200"
-            data-aos-anchor-placement="top-bottom"
-          >
+          <Col xs={0}>
             <FooterIcon
               href="https://www.linkedin.com/in/ryantran2165"
               icon={faLinkedinIn}
             />
           </Col>
-          <Col
-            xs={0}
-            className="ml-3 mr-3"
-            data-aos="flip-down"
-            data-aos-delay="400"
-            data-aos-anchor-placement="top-bottom"
-          >
+          <Col xs={0} className="ml-3 mr-3">
             <FooterIcon
               href="https://github.com/ryantran2165"
               icon={faGithub}
             />
           </Col>
-          <Col
-            xs={0}
-            data-aos="flip-down"
-            data-aos-delay="600"
-            data-aos-anchor-placement="top-bottom"
-          >
+          <Col xs={0}>
             <FooterIcon href={resume} icon={faFilePdf} />
           </Col>
         </Row>

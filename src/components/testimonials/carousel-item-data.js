@@ -24,7 +24,7 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
         </a>
       </h3>
       <h5 className="font-weight-bold">{title}</h5>
-      <p className="text-justify">
+      <p className="text-left">
         <FontAwesomeIcon icon={faQuoteLeft} /> {quote}
       </p>
     </React.Fragment>

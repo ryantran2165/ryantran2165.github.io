@@ -57,7 +57,7 @@ const Project = ({ project }) => {
           );
         })}
       </Row>
-      <p className="text-justify pl-4 pr-4 mt-4">{project.description}</p>
+      <p className="text-left pl-4 pr-4 mt-4">{project.description}</p>
       <Row className="pb-5">{getButtons()}</Row>
     </Col>
   );

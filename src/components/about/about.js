@@ -25,7 +25,7 @@ const About = () => {
       </Row>
       <Row className="mb-4 justify-content-center">
         <Col xs={12} sm={10} md={8} lg={6} xl={4}>
-          <p className="text-justify">
+          <p className="text-left">
             Hi, I'm Ryan, thanks for visiting my website! I'm a junior majoring
             in computer science at San Jose State University. I started
             programming 5 years ago due to my interest in game development. For

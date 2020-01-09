@@ -330,15 +330,9 @@ body {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-
-  li::before {
-    content: "•";
-    padding-right: 0.25em;
-    color: #222;
-  }
 }
 
 .skillsSubheading {

@@ -1,4 +1,5 @@
 import handwrittenDigitsImg from "../assets/handwritten_digits_neural_network.jpg";
+import cryptoOnlineImg from "../assets/crypto_online.jpg";
 import linearRegressionImg from "../assets/linear_regression_gradient_descent.jpg";
 import infiniteMonkeyImg from "../assets/infinite_monkey_genetic_algorithm.jpg";
 import faviconImg from "../assets/favicon.jpg";
@@ -13,6 +14,15 @@ const ProjectData = [
     tags: ["JavaScript", "HTML", "CSS"],
     source: "https://github.com/ryantran2165/handwritten-digits-neural-network",
     demo: "https://www.ryanlongtran.com/handwritten-digits-neural-network/"
+  },
+  {
+    image: cryptoOnlineImg,
+    title: "Crypto Online",
+    description:
+      "Web application for encrypting/decrypting from text input or text file. Available ciphers: simple substitution, double transposition, and RC4. Includes user login/registration and sessions.",
+    tags: ["PHP", "JavaScript", "SQL", "HTML", "CSS"],
+    source: "https://github.com/ryantran2165/crypto-online",
+    demo: "https://crypto-online.herokuapp.com/"
   },
   {
     image: linearRegressionImg,

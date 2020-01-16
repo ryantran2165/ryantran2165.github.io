@@ -31,10 +31,10 @@ const About = () => {
             started programming 5 years ago through my interest in game
             development, but I've now grown to love all forms of software
             development. However, I'm especially interested in artificial
-            intelligence, machine learning, and information security. Currently,
-            I'm looking for a summer software engineering internship while
-            honing my skills through personal projects such as developing a
-            mobile game and creating machine learning demos.
+            intelligence, machine learning, and cybersecurity. Currently, I'm
+            looking for a summer software engineering internship while honing my
+            skills through personal projects such as developing a mobile game
+            and creating machine learning demos.
           </p>
         </Col>
       </Row>

@@ -26,12 +26,15 @@ const About = () => {
       <Row className="mb-4 justify-content-center">
         <Col xs={12} sm={10} md={8} lg={6} xl={4}>
           <p className="text-left">
-            Hi, I'm Ryan, thanks for visiting my website! I'm a junior majoring
-            in computer science at San Jose State University. I started
-            programming 5 years ago due to my interest in game development. For
-            the past 3 years, I've been developing my dream mobile game
-            (ongoing). Aside from game programming, I'm also highly interested
-            in machine learning and information security.
+            Hi, I'm Ryan, thanks for visiting my website! I'm a third year
+            computer science undergraduate at San Jose State University. I
+            started programming 5 years ago through my interest in game
+            development, but I've now grown to love all forms of software
+            development. However, I'm especially interested in artificial
+            intelligence, machine learning, and information security. Currently,
+            I'm looking for a summer software engineering internship while
+            honing my skills through personal projects such as developing a
+            mobile game and creating machine learning demos.
           </p>
         </Col>
       </Row>

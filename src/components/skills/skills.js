@@ -66,7 +66,7 @@ class Skills extends Component {
           <SectionTitle text="Skills" />
           <Row>
             <Col>
-              <h3 className="skillsSubheading">Programming:</h3>
+              <h3 className="skillsSubheading">Programming Languages:</h3>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3 mb-4">
@@ -83,20 +83,24 @@ class Skills extends Component {
           </Row>
           <Row className="justify-content-center">
             <SkillList
-              subheading="Frameworks/Libraries"
+              subheading="Programming Technologies"
               skills={[
-                "React (familiar)",
-                "Bootstrap (familiar)",
-                "jQuery (familiar)",
-                "libGDX (familiar)"
+                "Git (proficient)",
+                "React (proficient)",
+                "Bootstrap (proficient)",
+                "jQuery (proficient)",
+                "libGDX (proficient)",
+                "Eclipse (proficient)",
+                "IntelliJ (proficient)",
+                "MySQL (familiar)",
+                "Linux (familiar)"
               ]}
             />
             <SkillList
               subheading="Other"
               skills={[
-                "Git (familiar)",
-                "Word/Excel/PowerPoint (advanced)",
-                "PhotoShop/Illustrator (familiar)",
+                "Adobe PhotoShop/Illustrator (proficient)",
+                "Microsoft Office (proficient)",
                 "WordPress (familiar)",
                 "Vietnamese (fluent)"
               ]}

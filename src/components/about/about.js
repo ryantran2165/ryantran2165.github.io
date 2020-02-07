@@ -29,7 +29,7 @@ const About = () => {
             Hi, I'm Ryan, thanks for visiting my website! I'm a third year
             computer science undergraduate at San Jose State University. I
             started programming 5 years ago through my interest in game
-            development, but I've now grown to love all forms of software
+            development, but I've grown to love all types of software
             development. However, I'm especially interested in artificial
             intelligence, machine learning, and cybersecurity. Currently, I'm
             looking for a summer software engineering internship while honing my

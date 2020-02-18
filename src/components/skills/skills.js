@@ -93,7 +93,9 @@ class Skills extends Component {
                 "Eclipse (proficient)",
                 "IntelliJ (proficient)",
                 "MySQL (familiar)",
-                "Linux (familiar)"
+                "Unity (familiar)",
+                "Linux (familiar)",
+                "Visual Studio (familiar)"
               ]}
             />
             <SkillList

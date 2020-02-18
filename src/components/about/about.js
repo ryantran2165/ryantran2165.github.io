@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import ryanImage from "../../assets/ryan_tran.jpg";
-import resume from "../../assets/Ryan Tran Resume.pdf";
+import resume from "../../assets/Ryan L Tran Resume.pdf";
 import SectionTitle from "../section-title";
 
 const About = () => {
@@ -31,10 +31,8 @@ const About = () => {
             started programming 5 years ago through my interest in game
             development, but I've grown to love all types of software
             development. However, I'm especially interested in artificial
-            intelligence, machine learning, and cybersecurity. Currently, I'm
-            looking for a summer software engineering internship while honing my
-            skills through personal projects such as developing a mobile game
-            and creating machine learning demos.
+            intelligence, machine learning, and cybersecurity. I'm currently
+            looking for a summer software engineering internship.
           </p>
         </Col>
       </Row>

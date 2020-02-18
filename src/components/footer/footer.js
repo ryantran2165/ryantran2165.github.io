@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import resume from "../../assets/Ryan Tran Resume.pdf";
+import resume from "../../assets/Ryan L Tran Resume.pdf";
 import FooterIcon from "./footer-icon";
 
 const Footer = () => {

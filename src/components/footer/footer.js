@@ -5,13 +5,12 @@ import Col from "react-bootstrap/Col";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import resume from "../../assets/Ryan L Tran Resume.pdf";
 import FooterIcon from "./footer-icon";
 
 const Footer = () => {
   return (
     <footer>
-      <Container fluid={true} className="text-center bg-white pt-3 pb-5">
+      <Container fluid={true} className="text-center pt-3 pb-5">
         <Row className="justify-content-center">
           <Col xs={0}>
             <FooterIcon
@@ -26,7 +25,12 @@ const Footer = () => {
             />
           </Col>
           <Col xs={0}>
-            <FooterIcon href={resume} icon={faFilePdf} />
+            <FooterIcon
+              href={
+                "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
+              }
+              icon={faFilePdf}
+            />
           </Col>
         </Row>
       </Container>

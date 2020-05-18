@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 const SkillList = ({ subheading, skills }) => {
   return (
     <Col xs={12} sm={6} md={5} xl={4} className="pb-4">
-      <h3 className="skillsSubheading">{subheading}:</h3>
+      <h4 className="font-weight-bold">{subheading}</h4>
       <ul>
-        {skills.map(skill => (
+        {skills.map((skill) => (
           <li key={skill}>
             <span>{skill}</span>
           </li>
@@ -19,7 +19,7 @@ const SkillList = ({ subheading, skills }) => {
 
 SkillList.propTypes = {
   subheading: PropTypes.string,
-  skills: PropTypes.array
+  skills: PropTypes.array,
 };
 
 export default SkillList;

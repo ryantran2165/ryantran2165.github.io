@@ -40,7 +40,7 @@ class Skills extends Component {
         from: { color: "#7fffd4" },
         to: { color: "#7fffd4" },
 
-        step: function(state, circle) {
+        step: function (state, circle) {
           circle.path.setAttribute("stroke", state.color);
 
           var value = Math.round(circle.value() * 5);
@@ -49,7 +49,7 @@ class Skills extends Component {
           } else {
             circle.setText(value + "/5<br>" + skill);
           }
-        }
+        },
       });
       circle.animate(percent);
     }
@@ -66,7 +66,7 @@ class Skills extends Component {
           <SectionTitle text="Skills" />
           <Row>
             <Col>
-              <h3 className="skillsSubheading">Programming Languages:</h3>
+              <h4 className="font-weight-bold">Programming Languages</h4>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3 mb-4">
@@ -95,7 +95,7 @@ class Skills extends Component {
                 "MySQL (familiar)",
                 "Unity (familiar)",
                 "Linux (familiar)",
-                "Visual Studio (familiar)"
+                "Visual Studio (familiar)",
               ]}
             />
             <SkillList
@@ -104,7 +104,7 @@ class Skills extends Component {
                 "Adobe PhotoShop/Illustrator (proficient)",
                 "Microsoft Office (proficient)",
                 "WordPress (familiar)",
-                "Vietnamese (fluent)"
+                "Vietnamese (fluent)",
               ]}
             />
           </Row>

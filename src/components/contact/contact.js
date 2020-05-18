@@ -18,11 +18,11 @@ class Contact extends Component {
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     };
   }
 
-  handleFormSubmit = e => {
+  handleFormSubmit = (e) => {
     // Show modal
     this.setState({ showingModal: true });
 
@@ -35,7 +35,7 @@ class Contact extends Component {
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     });
   };
 
@@ -49,7 +49,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact" fluid={true} className="text-center pt-5 pb-5">
+      <Container
+        id="contact"
+        fluid={true}
+        className="text-center bg-white pt-5 pb-5"
+      >
         <SectionTitle text="Contact" />
         <Row>
           <Col>
@@ -81,13 +85,13 @@ class Contact extends Component {
               encType="text/plain"
               action="https://docs.google.com/forms/d/e/1FAIpQLSeIBBJXMDcObspDCy4z-nJJps2AmhkP4JVNFEiSPT7qhG9Law/formResponse?"
               target="hidden_iframe"
-              onSubmit={e => this.handleFormSubmit(e)}
+              onSubmit={(e) => this.handleFormSubmit(e)}
             >
               <Form.Group>
                 <Form.Control
                   type="text"
                   value={this.state.name}
-                  onChange={e => this.handleFormChange(e, "name")}
+                  onChange={(e) => this.handleFormChange(e, "name")}
                   className="form-control"
                   name="entry.1568045103"
                   id="entry.1568045103"
@@ -99,7 +103,7 @@ class Contact extends Component {
                 <Form.Control
                   type="email"
                   value={this.state.email}
-                  onChange={e => this.handleFormChange(e, "email")}
+                  onChange={(e) => this.handleFormChange(e, "email")}
                   className="form-control"
                   name="entry.1246301993"
                   id="entry.1246301993"
@@ -111,7 +115,7 @@ class Contact extends Component {
                 <Form.Control
                   type="text"
                   value={this.state.subject}
-                  onChange={e => this.handleFormChange(e, "subject")}
+                  onChange={(e) => this.handleFormChange(e, "subject")}
                   className="form-control"
                   name="entry.1608794007"
                   id="entry.1608794007"
@@ -123,7 +127,7 @@ class Contact extends Component {
                 <Form.Control
                   as="textarea"
                   value={this.state.message}
-                  onChange={e => this.handleFormChange(e, "message")}
+                  onChange={(e) => this.handleFormChange(e, "message")}
                   className="form-control"
                   rows="5"
                   name="entry.485311975"
@@ -135,7 +139,7 @@ class Contact extends Component {
               <Button
                 type="submit"
                 value="Submit"
-                onClick={e => e.target.blur()}
+                onClick={(e) => e.target.blur()}
               >
                 Send Message
               </Button>

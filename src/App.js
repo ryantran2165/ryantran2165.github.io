@@ -6,6 +6,7 @@ import About from "./components/about/about";
 import Testimonials from "./components/testimonials/testimonials";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
+import Experience from "./components/experience/experience";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import BackToTop from "./components/back-to-top";
@@ -58,6 +59,7 @@ class App extends Component {
         <Testimonials />
         <Projects />
         <Skills />
+        <Experience />
         <Contact />
         <Footer />
         <BackToTop />

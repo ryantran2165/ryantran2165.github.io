@@ -9,7 +9,7 @@ class Navigation extends Component {
     super(props);
     this.state = {
       navbarReduced: false,
-      navbarExpanded: false
+      navbarExpanded: false,
     };
   }
 
@@ -23,7 +23,7 @@ class Navigation extends Component {
 
   handleScroll = () => {
     this.setState({
-      navbarReduced: this.state.navbarExpanded || this.shouldNavbarReduce()
+      navbarReduced: this.state.navbarExpanded || this.shouldNavbarReduce(),
     });
   };
 
@@ -43,18 +43,18 @@ class Navigation extends Component {
     );
   };
 
-  handleToggleNavbar = expanded => {
+  handleToggleNavbar = (expanded) => {
     this.setState({
       navbarReduced: !this.state.navbarReduced || this.shouldNavbarReduce(),
-      navbarExpanded: expanded
+      navbarExpanded: expanded,
     });
   };
 
-  handleClickLink = e => {
+  handleClickLink = (e) => {
     e.target.blur();
     this.setState({
       navbarReduced: this.shouldNavbarReduce(),
-      navbarExpanded: false
+      navbarExpanded: false,
     });
   };
 
@@ -114,6 +114,13 @@ class Navigation extends Component {
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="1000">
+              <NavigationLink
+                to="experience"
+                text="Experience"
+                onClick={this.handleClickLink}
+              />
+            </div>
+            <div data-aos="flip-down" data-aos-delay="1200">
               <NavigationLink
                 to="contact"
                 text="Contact"

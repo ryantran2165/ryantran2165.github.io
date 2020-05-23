@@ -14,22 +14,22 @@ class Projects extends Component {
     this.state = {
       filters: [],
       andMode: false,
-      filteredProjects: ProjectData
+      filteredProjects: ProjectData,
     };
   }
 
-  getChecked = name => {
+  getChecked = (name) => {
     return this.state.filters.includes(name);
   };
 
-  handleFilterChange = e => {
+  handleFilterChange = (e) => {
     const { filters } = this.state;
     const targetName = e.target.name;
     let newFilters = filters;
 
     // Already has label, remove it, otherwise add it
     if (filters.includes(targetName)) {
-      newFilters = filters.filter(label => label !== targetName);
+      newFilters = filters.filter((label) => label !== targetName);
     } else {
       newFilters.push(targetName);
     }
@@ -39,8 +39,8 @@ class Projects extends Component {
 
   handleSwitchChange = () => {
     this.setState(
-      prevState => ({
-        andMode: !prevState.andMode
+      (prevState) => ({
+        andMode: !prevState.andMode,
       }),
       this.filterProjects
     );
@@ -134,6 +134,21 @@ class Projects extends Component {
                 <ProjectFilter
                   filter="SQL"
                   checked={this.getChecked("SQL")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="React"
+                  checked={this.getChecked("React")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Unity"
+                  checked={this.getChecked("Unity")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Linux"
+                  checked={this.getChecked("Linux")}
                   onChange={this.handleFilterChange}
                 />
               </Row>

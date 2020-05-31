@@ -151,6 +151,16 @@ class Projects extends Component {
                   checked={this.getChecked("Linux")}
                   onChange={this.handleFilterChange}
                 />
+                <ProjectFilter
+                  filter="Machine Learning"
+                  checked={this.getChecked("Machine Learning")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Game"
+                  checked={this.getChecked("Game")}
+                  onChange={this.handleFilterChange}
+                />
               </Row>
               <Row>
                 <Col>

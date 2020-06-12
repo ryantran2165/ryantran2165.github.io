@@ -17,15 +17,15 @@ class Skills extends Component {
   animateSkills = () => {
     if (!this.state.skillsAnimated) {
       createSkill("#java-skill", "Java", 0.8);
-      createSkill("#javascript-skill", "JavaScript", 0.6);
-      createSkill("#cpp-skill", "C++", 0.6);
-      createSkill("#python-skill", "Python", 0.6);
-      createSkill("#html-skill", "HTML", 0.6);
       createSkill("#css-skill", "CSS", 0.6);
-      createSkill("#php-skill", "PHP", 0.4);
-      createSkill("#csharp-skill", "C#", 0.4);
-      createSkill("#sql-skill", "SQL", 0.4);
+      createSkill("#cpp-skill", "C++", 0.6);
+      createSkill("#csharp-skill", "C#", 0.6);
+      createSkill("#html-skill", "HTML", 0.6);
+      createSkill("#javascript-skill", "JavaScript", 0.6);
+      createSkill("#python-skill", "Python", 0.6);
+      createSkill("#sql-skill", "SQL/NoSQL", 0.6);
       createSkill("#assembly-skill", "Assembly", 0.4);
+      createSkill("#php-skill", "PHP", 0.4);
       this.setState({ skillsAnimated: true });
     }
 
@@ -71,31 +71,33 @@ class Skills extends Component {
           </Row>
           <Row className="justify-content-center mt-3 mb-4">
             <SkillCircle id="java-skill" />
-            <SkillCircle id="javascript-skill" />
-            <SkillCircle id="cpp-skill" />
-            <SkillCircle id="python-skill" />
-            <SkillCircle id="html-skill" />
             <SkillCircle id="css-skill" />
-            <SkillCircle id="php-skill" />
+            <SkillCircle id="cpp-skill" />
             <SkillCircle id="csharp-skill" />
+            <SkillCircle id="html-skill" />
+            <SkillCircle id="javascript-skill" />
+            <SkillCircle id="python-skill" />
             <SkillCircle id="sql-skill" />
             <SkillCircle id="assembly-skill" />
+            <SkillCircle id="php-skill" />
           </Row>
           <Row className="justify-content-center">
             <SkillList
               subheading="Programming Technologies"
               skills={[
-                "Git (proficient)",
-                "React (proficient)",
                 "Bootstrap (proficient)",
+                "Git (proficient)",
                 "jQuery (proficient)",
-                "libGDX (proficient)",
-                "Eclipse (proficient)",
-                "IntelliJ (proficient)",
-                "MySQL (familiar)",
-                "Unity (familiar)",
+                "React (proficient)",
+                "AWS (familiar)",
+                "Flask (familiar)",
+                "Jupyter Notebook (familiar)",
+                "Keras (familiar)",
                 "Linux (familiar)",
-                "Visual Studio (familiar)",
+                "MySQL (familiar)",
+                "Scrapy (familiar)",
+                "TensorFlow (familiar)",
+                "Unity (familiar)",
               ]}
             />
             <SkillList

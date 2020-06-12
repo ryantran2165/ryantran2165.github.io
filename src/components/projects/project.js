@@ -46,8 +46,8 @@ const Project = ({ project }) => {
     >
       <Image fluid src={project.image} alt="project" />
       <h3 className="font-weight-bold mt-4 pl-4 pr-4">{project.title}</h3>
-      <Row className="justify-content-center">
-        {project.tags.map(tag => {
+      <Row className="justify-content-center ml-2 mr-2">
+        {project.tags.map((tag) => {
           return (
             <Col key={tag} xs={0} className="ml-1 mr-1">
               <Badge pill variant="secondary">
@@ -64,7 +64,7 @@ const Project = ({ project }) => {
 };
 
 Project.propTypes = {
-  project: PropTypes.object
+  project: PropTypes.object,
 };
 
 export default Project;

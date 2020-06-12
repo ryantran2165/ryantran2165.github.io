@@ -92,6 +92,26 @@ class Projects extends Component {
             <Form>
               <Row className="justify-content-center">
                 <ProjectFilter
+                  filter="CSS"
+                  checked={this.getChecked("CSS")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="C++"
+                  checked={this.getChecked("C++")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="C#"
+                  checked={this.getChecked("C#")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="HTML"
+                  checked={this.getChecked("HTML")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
                   filter="Java"
                   checked={this.getChecked("Java")}
                   onChange={this.handleFilterChange}
@@ -102,23 +122,8 @@ class Projects extends Component {
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
-                  filter="C++"
-                  checked={this.getChecked("C++")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Python"
-                  checked={this.getChecked("Python")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="HTML"
-                  checked={this.getChecked("HTML")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="CSS"
-                  checked={this.getChecked("CSS")}
+                  filter="NoSQL"
+                  checked={this.getChecked("NoSQL")}
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
@@ -127,8 +132,8 @@ class Projects extends Component {
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
-                  filter="C#"
-                  checked={this.getChecked("C#")}
+                  filter="Python"
+                  checked={this.getChecked("Python")}
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
@@ -136,14 +141,26 @@ class Projects extends Component {
                   checked={this.getChecked("SQL")}
                   onChange={this.handleFilterChange}
                 />
+              </Row>
+              <Row className="justify-content-center">
                 <ProjectFilter
-                  filter="React"
-                  checked={this.getChecked("React")}
+                  filter="AWS"
+                  checked={this.getChecked("AWS")}
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
-                  filter="Unity"
-                  checked={this.getChecked("Unity")}
+                  filter="Flask"
+                  checked={this.getChecked("Flask")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Jupyter Notebook"
+                  checked={this.getChecked("Jupyter Notebook")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Keras"
+                  checked={this.getChecked("Keras")}
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
@@ -152,13 +169,50 @@ class Projects extends Component {
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
-                  filter="Machine Learning"
-                  checked={this.getChecked("Machine Learning")}
+                  filter="MySQL"
+                  checked={this.getChecked("MySQL")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="React"
+                  checked={this.getChecked("React")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Scrapy"
+                  checked={this.getChecked("Scrapy")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="TensorFlow"
+                  checked={this.getChecked("TensorFlow")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Unity"
+                  checked={this.getChecked("Unity")}
+                  onChange={this.handleFilterChange}
+                />
+              </Row>
+              <Row className="justify-content-center">
+                <ProjectFilter
+                  filter="Cryptography"
+                  checked={this.getChecked("Cryptography")}
                   onChange={this.handleFilterChange}
                 />
                 <ProjectFilter
                   filter="Game"
                   checked={this.getChecked("Game")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="Machine Learning"
+                  checked={this.getChecked("Machine Learning")}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  filter="REST API"
+                  checked={this.getChecked("REST API")}
                   onChange={this.handleFilterChange}
                 />
               </Row>

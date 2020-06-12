@@ -20,7 +20,7 @@ const ProjectFilter = ({ filter, checked, onChange }) => {
 ProjectFilter.propTypes = {
   filter: PropTypes.string,
   checked: PropTypes.bool,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 export default ProjectFilter;

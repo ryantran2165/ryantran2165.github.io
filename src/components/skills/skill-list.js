@@ -7,10 +7,10 @@ const SkillList = ({ subheading, skills }) => {
   const skillElements = skills.map((skillArr, i) => (
     <Col
       xs={5}
-      sm={skills.length == 1 ? 5 : 4}
-      md={skills.length == 1 ? 6 : 5}
-      lg={skills.length == 1 ? 6 : 4}
-      xl={skills.length == 1 ? 5 : 4}
+      sm={skills.length === 1 ? 5 : 4}
+      md={skills.length === 1 ? 6 : 5}
+      lg={skills.length === 1 ? 6 : 4}
+      xl={skills.length === 1 ? 5 : 4}
       key={i + skillArr[0]}
     >
       {skillArr.map((skill) => {

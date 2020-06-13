@@ -21,7 +21,7 @@ class About extends Component {
     this.setState({
       particlesHeightStyle: {
         height: `${Math.trunc(
-          1.4 * document.getElementById("about").clientHeight
+          1.25 * document.getElementById("about").clientHeight
         )}px`,
       },
     });

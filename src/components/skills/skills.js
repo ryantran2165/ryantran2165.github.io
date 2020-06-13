@@ -64,6 +64,23 @@ class Skills extends Component {
           className="text-center bg-white pt-5 pb-5"
         >
           <SectionTitle text="Skills" />
+          <Row className="justify-content-center mt-3 mb-4">
+            <Col xs="auto">
+              <h5>5 - Expert</h5>
+            </Col>
+            <Col xs="auto">
+              <h5>4 - Advanced</h5>
+            </Col>
+            <Col xs="auto">
+              <h5>3 - Proficient</h5>
+            </Col>
+            <Col xs="auto">
+              <h5>2 - Familiar</h5>
+            </Col>
+            <Col xs="auto">
+              <h5>1 - Unfamiliar</h5>
+            </Col>
+          </Row>
           <Row>
             <Col>
               <h4 className="font-weight-bold">Programming Languages</h4>
@@ -85,28 +102,35 @@ class Skills extends Component {
             <SkillList
               subheading="Programming Technologies"
               skills={[
-                "Bootstrap (proficient)",
-                "Git (proficient)",
-                "jQuery (proficient)",
-                "React (proficient)",
-                "AWS (familiar)",
-                "Flask (familiar)",
-                "Jupyter Notebook (familiar)",
-                "Keras (familiar)",
-                "Linux (familiar)",
-                "MySQL (familiar)",
-                "Scrapy (familiar)",
-                "TensorFlow (familiar)",
-                "Unity (familiar)",
+                [
+                  "Bootstrap (3)",
+                  "Git (3)",
+                  "jQuery (3)",
+                  "React (3)",
+                  "Unity (3)",
+                ],
+                [
+                  "AWS (2)",
+                  "Flask (2)",
+                  "Jupyter Notebook (2)",
+                  "Keras (2)",
+                  "Linux (2)",
+                  "MySQL (2)",
+                  "Scrapy (2)",
+                  "TensorFlow (2)",
+                ],
               ]}
             />
             <SkillList
               subheading="Other"
               skills={[
-                "Adobe PhotoShop/Illustrator (proficient)",
-                "Microsoft Office (proficient)",
-                "WordPress (familiar)",
-                "Vietnamese (fluent)",
+                [
+                  "Vietnamese (4)",
+                  "Adobe Illustrator (3)",
+                  "Adobe Photoshop (3)",
+                  "Microsoft Office (3)",
+                  "WordPress (2)",
+                ],
               ]}
             />
           </Row>

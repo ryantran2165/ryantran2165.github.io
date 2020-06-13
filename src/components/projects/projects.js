@@ -90,134 +90,136 @@ class Projects extends Component {
         <Row>
           <Col>
             <Form>
-              <Row className="justify-content-center">
-                <ProjectFilter
-                  filter="CSS"
-                  checked={this.getChecked("CSS")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="C++"
-                  checked={this.getChecked("C++")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="C#"
-                  checked={this.getChecked("C#")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="HTML"
-                  checked={this.getChecked("HTML")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Java"
-                  checked={this.getChecked("Java")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="JavaScript"
-                  checked={this.getChecked("JavaScript")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="NoSQL"
-                  checked={this.getChecked("NoSQL")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="PHP"
-                  checked={this.getChecked("PHP")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Python"
-                  checked={this.getChecked("Python")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="SQL"
-                  checked={this.getChecked("SQL")}
-                  onChange={this.handleFilterChange}
-                />
-              </Row>
-              <Row className="justify-content-center">
-                <ProjectFilter
-                  filter="AWS"
-                  checked={this.getChecked("AWS")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Flask"
-                  checked={this.getChecked("Flask")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Jupyter Notebook"
-                  checked={this.getChecked("Jupyter Notebook")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Keras"
-                  checked={this.getChecked("Keras")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Linux"
-                  checked={this.getChecked("Linux")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="MySQL"
-                  checked={this.getChecked("MySQL")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="React"
-                  checked={this.getChecked("React")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Scrapy"
-                  checked={this.getChecked("Scrapy")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="TensorFlow"
-                  checked={this.getChecked("TensorFlow")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Unity"
-                  checked={this.getChecked("Unity")}
-                  onChange={this.handleFilterChange}
-                />
-              </Row>
-              <Row className="justify-content-center">
-                <ProjectFilter
-                  filter="Cryptography"
-                  checked={this.getChecked("Cryptography")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Game"
-                  checked={this.getChecked("Game")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="Machine Learning"
-                  checked={this.getChecked("Machine Learning")}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  filter="REST API"
-                  checked={this.getChecked("REST API")}
-                  onChange={this.handleFilterChange}
-                />
+              <Row className="justify-content-center text-left">
+                <Col xs={6} sm={3} md={2}>
+                  <ProjectFilter
+                    filter="CSS"
+                    checked={this.getChecked("CSS")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="C++"
+                    checked={this.getChecked("C++")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="C#"
+                    checked={this.getChecked("C#")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="HTML"
+                    checked={this.getChecked("HTML")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Java"
+                    checked={this.getChecked("Java")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="JavaScript"
+                    checked={this.getChecked("JavaScript")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="NoSQL"
+                    checked={this.getChecked("NoSQL")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="PHP"
+                    checked={this.getChecked("PHP")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Python"
+                    checked={this.getChecked("Python")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="SQL"
+                    checked={this.getChecked("SQL")}
+                    onChange={this.handleFilterChange}
+                  />
+                </Col>
+                <Col xs={6} sm={3} md={2}>
+                  <ProjectFilter
+                    filter="AWS"
+                    checked={this.getChecked("AWS")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Flask"
+                    checked={this.getChecked("Flask")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Jupyter Notebook"
+                    checked={this.getChecked("Jupyter Notebook")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Keras"
+                    checked={this.getChecked("Keras")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Linux"
+                    checked={this.getChecked("Linux")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="MySQL"
+                    checked={this.getChecked("MySQL")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="React"
+                    checked={this.getChecked("React")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Scrapy"
+                    checked={this.getChecked("Scrapy")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="TensorFlow"
+                    checked={this.getChecked("TensorFlow")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Unity"
+                    checked={this.getChecked("Unity")}
+                    onChange={this.handleFilterChange}
+                  />
+                </Col>
+                <Col xs={6} sm={3} md={2}>
+                  <ProjectFilter
+                    filter="Cryptography"
+                    checked={this.getChecked("Cryptography")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Game"
+                    checked={this.getChecked("Game")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="Machine Learning"
+                    checked={this.getChecked("Machine Learning")}
+                    onChange={this.handleFilterChange}
+                  />
+                  <ProjectFilter
+                    filter="REST API"
+                    checked={this.getChecked("REST API")}
+                    onChange={this.handleFilterChange}
+                  />
+                </Col>
               </Row>
               <Row>
-                <Col>
+                <Col className="mt-2">
                   <Form.Check
                     type="switch"
                     id="andOrSwitch"

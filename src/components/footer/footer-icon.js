@@ -14,7 +14,7 @@ const FooterIcon = ({ href, icon }) => {
 
 FooterIcon.propTypes = {
   href: PropTypes.string,
-  icon: PropTypes.object
+  icon: PropTypes.object,
 };
 
 export default FooterIcon;

@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 const SkillList = ({ subheading, skills }) => {
   const skillElements = skills.map((skillArr, i) => (
     <Col
-      xs={5}
+      xs={skills.length === 1 ? "auto" : 5}
       sm={skills.length === 1 ? 5 : 4}
       md={skills.length === 1 ? 6 : 5}
       lg={skills.length === 1 ? 6 : 4}

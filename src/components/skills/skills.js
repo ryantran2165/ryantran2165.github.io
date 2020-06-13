@@ -115,6 +115,7 @@ class Skills extends Component {
                   "Jupyter Notebook (2)",
                   "Keras (2)",
                   "Linux (2)",
+                  "MATLAB (2)",
                   "MySQL (2)",
                   "Scrapy (2)",
                   "TensorFlow (2)",

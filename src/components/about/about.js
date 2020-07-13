@@ -53,12 +53,13 @@ class About extends Component {
         <Row className="mb-4 justify-content-center">
           <Col xs={12} sm={10} md={8} lg={6} xl={4}>
             <p className="text-left">
-              Hi, I'm Ryan, and thanks for visiting my site! I'm a computer
-              science senior undergrad at San Jose State University. I started
-              programming 5 years ago through my interest in game development,
-              but I've since grown to love all forms of software development.
-              However, I'm especially interested in artificial intelligence and
-              machine learning, which I plan to specialize in for my master's.
+              Hi, I'm Ryan, and thanks for visiting my site! I'm a senior
+              undergrad in computer science at San Jose State University. I
+              started programming 5 years ago through my interest in game
+              development, but I've since grown to love all forms of software
+              development. However, I'm especially interested in artificial
+              intelligence and machine learning, which I plan to specialize in
+              for my master's.
               <br />
               <br />
               P.S. My hobbies include indie game development, tennis, MMA

@@ -8,6 +8,42 @@ import SectionTitle from "../section-title";
 import ProjectData from "../../assets/project-data";
 import ProjectFilter from "./project-filter";
 
+const LANGUAGES = [
+  "Java",
+  "Python",
+  "C#",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "PHP",
+  "SQL",
+  "NoSQL",
+];
+const TECHNOLOGIES = [
+  "Linux",
+  "React",
+  "Flask",
+  "REST API",
+  "MySQL",
+  "AWS",
+  "Bootstrap",
+  "Unity",
+];
+const MACHINE_LEARNING = [
+  "TensorFlow",
+  "Keras",
+  "scikit-learn",
+  "PyTorch",
+  "pandas",
+  "NumPy",
+  "SciPy",
+  "Matplotlib",
+  "Seaborn",
+  "Jupyter Notebook",
+  "Scrapy",
+];
+const CONCEPTS = ["Machine Learning", "Cryptography", "Game"];
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -17,10 +53,6 @@ class Projects extends Component {
       filteredProjects: ProjectData,
     };
   }
-
-  getChecked = (name) => {
-    return this.state.filters.includes(name);
-  };
 
   handleFilterChange = (e) => {
     const { filters } = this.state;
@@ -59,7 +91,7 @@ class Projects extends Component {
 
           // And mode: need all filters matched
           for (const filter of filters) {
-            if (!project.tags.includes(filter)) {
+            if (!this.projectHasTag(project, filter)) {
               success = false;
               break;
             }
@@ -71,7 +103,7 @@ class Projects extends Component {
         } else {
           // Or mode: only need one tag/filter to match
           for (const filter of filters) {
-            if (project.tags.includes(filter)) {
+            if (this.projectHasTag(project, filter)) {
               filteredProjects.push(project);
               break;
             }
@@ -83,6 +115,15 @@ class Projects extends Component {
     this.setState({ filteredProjects });
   };
 
+  projectHasTag = (project, filter) => {
+    const tags = project.languages.concat(
+      project.technologies,
+      project.machineLearning,
+      project.concepts
+    );
+    return tags.includes(filter);
+  };
+
   render() {
     return (
       <Container id="projects" fluid={true} className="text-center pt-5 pb-5">
@@ -91,135 +132,29 @@ class Projects extends Component {
           <Col>
             <Form>
               <Row className="justify-content-center text-left">
-                <Col xs={6} sm={3} md={2}>
-                  <ProjectFilter
-                    filter="CSS"
-                    checked={this.getChecked("CSS")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="C++"
-                    checked={this.getChecked("C++")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="C#"
-                    checked={this.getChecked("C#")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="HTML"
-                    checked={this.getChecked("HTML")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Java"
-                    checked={this.getChecked("Java")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="JavaScript"
-                    checked={this.getChecked("JavaScript")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="NoSQL"
-                    checked={this.getChecked("NoSQL")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="PHP"
-                    checked={this.getChecked("PHP")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Python"
-                    checked={this.getChecked("Python")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="SQL"
-                    checked={this.getChecked("SQL")}
-                    onChange={this.handleFilterChange}
-                  />
-                </Col>
-                <Col xs={6} sm={3} md={2}>
-                  <ProjectFilter
-                    filter="AWS"
-                    checked={this.getChecked("AWS")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Flask"
-                    checked={this.getChecked("Flask")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Jupyter Notebook"
-                    checked={this.getChecked("Jupyter Notebook")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Keras"
-                    checked={this.getChecked("Keras")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Linux"
-                    checked={this.getChecked("Linux")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="MySQL"
-                    checked={this.getChecked("MySQL")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="React"
-                    checked={this.getChecked("React")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Scrapy"
-                    checked={this.getChecked("Scrapy")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="TensorFlow"
-                    checked={this.getChecked("TensorFlow")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Unity"
-                    checked={this.getChecked("Unity")}
-                    onChange={this.handleFilterChange}
-                  />
-                </Col>
-                <Col xs={6} sm={3} md={2}>
-                  <ProjectFilter
-                    filter="Cryptography"
-                    checked={this.getChecked("Cryptography")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Game"
-                    checked={this.getChecked("Game")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="Machine Learning"
-                    checked={this.getChecked("Machine Learning")}
-                    onChange={this.handleFilterChange}
-                  />
-                  <ProjectFilter
-                    filter="REST API"
-                    checked={this.getChecked("REST API")}
-                    onChange={this.handleFilterChange}
-                  />
-                </Col>
+                <ProjectFilter
+                  currentFilters={this.state.filters}
+                  filters={LANGUAGES}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  currentFilters={this.state.filters}
+                  filters={TECHNOLOGIES}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  currentFilters={this.state.filters}
+                  filters={MACHINE_LEARNING}
+                  onChange={this.handleFilterChange}
+                />
+                <ProjectFilter
+                  currentFilters={this.state.filters}
+                  filters={CONCEPTS}
+                  onChange={this.handleFilterChange}
+                />
               </Row>
               <Row>
-                <Col className="mt-2">
+                <Col>
                   <Form.Check
                     type="switch"
                     id="andOrSwitch"

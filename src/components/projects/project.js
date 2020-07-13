@@ -36,6 +36,24 @@ const Project = ({ project }) => {
     );
   };
 
+  project.languages.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
+  project.technologies.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
+  project.machineLearning.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
+  project.concepts.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
+  const tags = project.languages.concat(
+    project.technologies,
+    project.machineLearning,
+    project.concepts
+  );
+
   return (
     <Col
       xs={11}
@@ -47,7 +65,7 @@ const Project = ({ project }) => {
       <Image fluid src={project.image} alt="project" />
       <h3 className="font-weight-bold mt-4 pl-4 pr-4">{project.title}</h3>
       <Row className="justify-content-center ml-2 mr-2">
-        {project.tags.map((tag) => {
+        {tags.map((tag) => {
           return (
             <Col key={tag} xs={0} className="ml-1 mr-1">
               <Badge pill variant="secondary">

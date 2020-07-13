@@ -22,7 +22,7 @@ const Experience = () => {
         location="Mountain View, CA"
         startDate="Jun. 2017"
         endDate="Oct. 2017"
-        description="At Samsung, my biggest task was to learn Unity, Unity Virtual Reality, and C# independently and then update an outdated Samsung Unity Virtual Reality workshop tutorial to be used at various trade shows. I was able to quickly teach myself Unity within a few days, made my own small Unity Virtual Reality arcade game to test and apply my newly acquired knowledge, and ultimately finished my assigned task in half the expected time. Other tasks included managing inventory, marketing for SDC2017 at a UC Berkeley marketing event, and preparing various other necessities for SDC2017."
+        description="At Samsung, my biggest task was to learn Unity, Unity Virtual Reality, and C# independently and then update and fix bugs in an outdated Samsung Unity Virtual Reality workshop tutorial to be used at various trade shows. I was able to quickly teach myself Unity within a few days, made my own small Unity Virtual Reality arcade game to test and apply my newly acquired knowledge, and ultimately finished my assigned task in half the expected time. Other tasks included managing inventory, marketing for SDC2017 at a UC Berkeley marketing event, and preparing various other necessities for SDC2017."
       />
     </Container>
   );

@@ -72,7 +72,7 @@ const ProjectData = [
     image: polynomialRegressionImg,
     title: "Polynomial Regression",
     description:
-      "Performs polynomial regression using gradient descent on the user-inputted data points, graphs the polynomial, and displays the polynomial equation. This project is the ancestor to the Linear Regression Gradient Descent project.",
+      "Performs polynomial regression using gradient descent on the user-inputted data points, graphs the polynomial, and displays the polynomial equation. This project is the ancestor to the Linear Regression project.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],
@@ -84,7 +84,7 @@ const ProjectData = [
     image: linearRegressionImg,
     title: "Linear Regression",
     description:
-      "Performs linear regression using gradient descent on the user-inputted data points, graphs the line, and displays the line equation. This project is the predecessor to the Polynomial Regression Gradient Descent project.",
+      "Performs linear regression using gradient descent on the user-inputted data points, graphs the line, and displays the line equation. This project is the predecessor to the Polynomial Regression project.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],

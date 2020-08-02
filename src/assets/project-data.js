@@ -1,10 +1,10 @@
 import bjjPredictorImg from "../assets/bjj_predictor.jpg";
-import handwrittenDigitsImg from "../assets/handwritten_digits_neural_network.jpg";
+import digitRecognizerImg from "../assets/digit_recognizer.jpg";
 import donutDashImg from "../assets/donut_dash.jpg";
 import cryptoOnlineImg from "../assets/crypto_online.jpg";
-import polynomialRegressionImg from "../assets/polynomial_regression_gradient_descent.jpg";
-import linearRegressionImg from "../assets/linear_regression_gradient_descent.jpg";
-import infiniteMonkeyImg from "../assets/infinite_monkey_genetic_algorithm.jpg";
+import polynomialRegressionImg from "../assets/polynomial_regression.jpg";
+import linearRegressionImg from "../assets/linear_regression.jpg";
+import infiniteMonkeyImg from "../assets/infinite_monkey.jpg";
 import faviconImg from "../assets/favicon.jpg";
 import constructionImg from "../assets/under_construction.jpg";
 
@@ -33,16 +33,16 @@ const ProjectData = [
     demo: "https://www.ryanlongtran.com/bjj-predictor",
   },
   {
-    image: handwrittenDigitsImg,
-    title: "Handwritten Digits Neural Network",
+    image: digitRecognizerImg,
+    title: "Digit Recognizer",
     description:
-      "Recognizes user-inputted handwritten digits using a neural network implemented by hand. The architecture is a feedforward neural network with 1 hidden layer of 30 hidden neurons, mini batch stochastic gradient descent, L2 regularization, cross entropy loss function, ReLU activations for hidden units, softmax output layer, and standardized inputs. Future improvements include batch normalization, Adam optimization, automated hyperparameter optimization, data augmentation, and switching to a convolutional neural network.",
+      "Recognizes user-inputted handwritten digits using feed forward and convolutional neural networks implemented by hand. Shows a side-by-side comparison between the predictions made by the FFNN and CNN.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],
     concepts: ["Machine Learning"],
-    source: "https://github.com/ryantran2165/handwritten-digits-neural-network",
-    demo: "https://www.ryanlongtran.com/handwritten-digits-neural-network",
+    source: "https://github.com/ryantran2165/digit-recognizer",
+    demo: "https://www.ryanlongtran.com/digit-recognizer",
   },
   {
     image: donutDashImg,
@@ -70,41 +70,39 @@ const ProjectData = [
   },
   {
     image: polynomialRegressionImg,
-    title: "Polynomial Regression Gradient Descent",
+    title: "Polynomial Regression",
     description:
       "Performs polynomial regression using gradient descent on the user-inputted data points, graphs the polynomial, and displays the polynomial equation. This project is the ancestor to the Linear Regression Gradient Descent project.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],
     concepts: ["Machine Learning"],
-    source:
-      "https://github.com/ryantran2165/polynomial-regression-gradient-descent",
-    demo: "https://www.ryanlongtran.com/polynomial-regression-gradient-descent",
+    source: "https://github.com/ryantran2165/polynomial-regression",
+    demo: "https://www.ryanlongtran.com/polynomial-regression",
   },
   {
     image: linearRegressionImg,
-    title: "Linear Regression Gradient Descent",
+    title: "Linear Regression",
     description:
       "Performs linear regression using gradient descent on the user-inputted data points, graphs the line, and displays the line equation. This project is the predecessor to the Polynomial Regression Gradient Descent project.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],
     concepts: ["Machine Learning"],
-    source:
-      "https://github.com/ryantran2165/linear-regression-gradient-descent",
-    demo: "https://www.ryanlongtran.com/linear-regression-gradient-descent",
+    source: "https://github.com/ryantran2165/linear-regression",
+    demo: "https://www.ryanlongtran.com/linear-regression",
   },
   {
     image: infiniteMonkeyImg,
-    title: "Infinite Monkey Genetic Algorithm",
+    title: "Infinite Monkey",
     description:
       'Uses a genetic algorithm, modeled after Darwin\'s theory of evolution, to arrive at a target phrase through the operations of mutation, crossover, and selection. "The infinite monkey theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text" -Wikipedia.',
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],
     concepts: ["Machine Learning"],
-    source: "https://github.com/ryantran2165/infinite-monkey-genetic-algorithm",
-    demo: "https://www.ryanlongtran.com/infinite-monkey-genetic-algorithm",
+    source: "https://github.com/ryantran2165/infinite-monkey",
+    demo: "https://www.ryanlongtran.com/infinite-monkey",
   },
   {
     image: faviconImg,

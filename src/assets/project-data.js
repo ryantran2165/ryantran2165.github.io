@@ -36,7 +36,7 @@ const ProjectData = [
     image: digitRecognizerImg,
     title: "Digit Recognizer",
     description:
-      "Recognizes user-inputted handwritten digits using feed forward and convolutional neural networks implemented by hand. Shows a side-by-side comparison between the predictions made by the FFNN and CNN.",
+      "Recognizes user-inputted handwritten digits using feedforward and convolutional neural networks implemented by hand. Shows a side-by-side comparison between the predictions made by the FFNN and CNN. Implementing this from the ground up really helped solidify my understanding of FFNN's, CNN's, and backpropagation.",
     languages: ["JavaScript", "HTML", "CSS"],
     technologies: ["React", "Bootstrap"],
     machineLearning: [],

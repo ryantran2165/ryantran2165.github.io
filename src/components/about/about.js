@@ -40,7 +40,7 @@ class About extends Component {
         </Row>
         <SectionTitle text="Ryan L. Tran" />
         <Row className="mb-4 justify-content-center">
-          <Col xs={6} md={4} xl={2}>
+          <Col xs={12} sm={10} md={8} lg={6} xl={4}>
             <Image
               className="circle-border"
               src={ryanImage}

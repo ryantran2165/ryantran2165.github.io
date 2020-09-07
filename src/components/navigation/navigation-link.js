@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-scroll";
 
-const NavigationLink = ({ to, text, onClick }) => {
+const NavigationLink = ({ to, text, onClick, offset, duration }) => {
   return (
     <Nav.Link as="div">
       <Link
         activeClass="active-link"
         to={to}
         smooth="easeInOutQuint"
-        offset={-60}
-        duration={1000}
+        offset={offset}
+        duration={duration}
         spy={true}
         onClick={onClick}
       >
@@ -24,7 +24,7 @@ const NavigationLink = ({ to, text, onClick }) => {
 NavigationLink.propTypes = {
   to: PropTypes.string,
   text: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default NavigationLink;

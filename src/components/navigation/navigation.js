@@ -61,6 +61,7 @@ class Navigation extends Component {
   render() {
     return (
       <Navbar
+        id="navbar"
         fixed="top"
         expand="md"
         variant="custom"
@@ -72,8 +73,8 @@ class Navigation extends Component {
           <Link
             to="about"
             smooth="easeInOutQuint"
-            offset={-60}
-            duration={1000}
+            offset={this.props.offset}
+            duration={this.props.duration}
             onClick={this.handleClickLink}
           >
             RT
@@ -90,6 +91,8 @@ class Navigation extends Component {
                 to="about"
                 text="About"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="400">
@@ -97,6 +100,8 @@ class Navigation extends Component {
                 to="testimonials"
                 text="Testimonials"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="600">
@@ -104,6 +109,8 @@ class Navigation extends Component {
                 to="projects"
                 text="Projects"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="800">
@@ -111,6 +118,8 @@ class Navigation extends Component {
                 to="skills"
                 text="Skills"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="1000">
@@ -118,6 +127,8 @@ class Navigation extends Component {
                 to="experience"
                 text="Experience"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="1200">
@@ -125,6 +136,8 @@ class Navigation extends Component {
                 to="contact"
                 text="Contact"
                 onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
               />
             </div>
           </Nav>

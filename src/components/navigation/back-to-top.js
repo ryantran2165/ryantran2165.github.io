@@ -3,11 +3,13 @@ import { Link } from "react-scroll";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const VISIBLE_THRESHOLD = 100;
+
 class BackToTop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showingBackToTop: false
+      showingBackToTop: false,
     };
   }
 
@@ -22,13 +24,17 @@ class BackToTop extends Component {
   handleScroll = () => {
     // Show/hide back to top button
     const scrollTop = window.pageYOffset;
-    const visibleThreshold = 100;
-    this.setState({ showingBackToTop: scrollTop > visibleThreshold });
+    this.setState({ showingBackToTop: scrollTop > VISIBLE_THRESHOLD });
   };
 
   render() {
     return (
-      <Link to="about" smooth="easeInOutQuint" offset={-60} duration={1000}>
+      <Link
+        to="about"
+        smooth="easeInOutQuint"
+        offset={this.props.offset}
+        duration={this.props.duration}
+      >
         <div
           className={`back-to-top ${
             this.state.showingBackToTop ? "show" : "hide"

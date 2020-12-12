@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Waypoint } from "react-waypoint";
 import ProgressBar from "progressbar.js/dist/progressbar";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
 

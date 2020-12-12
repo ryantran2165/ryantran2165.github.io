@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import ryanImage from "../../assets/ryan_tran.jpg";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import Particles from "react-particles-js";
-import ParticlesConfig from "../particles-config.js";
+import ParticlesConfig from "../etc/particles-config.js";
 
 class About extends Component {
   constructor(props) {
@@ -65,26 +65,20 @@ class About extends Component {
         </Row>
         <Row className="mb-4 justify-content-center">
           <Col xs={12} sm={10} md={8} lg={6} xl={4}>
-            <h4>Aspiring Machine Learning/Software Engineer</h4>
+            <h4>Aspiring Software/Machine Learning Engineer</h4>
             <h6>San Jose State University, BS Computer Science C/O 2021</h6>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col xs={12} sm={10} md={8} lg={6} xl={4}>
             <p className="text-left">
-              Hi, I'm Ryan, and thanks for visiting my site! I'm a senior
-              undergrad in computer science at San Jose State University. I
-              started programming 5 years ago through my interest in game
-              development, but I've since grown to love all forms of software
-              development. However, I'm especially interested in artificial
-              intelligence and machine learning, which I plan to specialize in
-              for my master's.
-              <br />
-              <br />
-              P.S. My hobbies include indie game development, tennis, MMA
-              {"\u00A0"}(mainly
-              {"\u00A0"}Taekwondo{"\u00A0"}and{"\u00A0"}BJJ), piano, anime, and
-              learning Japanese!
+              Hi there! I'm Ryan, a senior undergradudate majoring in computer
+              science at San Jose State University. I first became interested in
+              programming about 6 years ago out of curiosity for game
+              development, but I've since become more fascinated with AI and
+              machine learning. Some of my hobbies include indie game
+              development, tennis, MMA, piano, and anime. Thanks for visiting my
+              site!
             </p>
           </Col>
         </Row>

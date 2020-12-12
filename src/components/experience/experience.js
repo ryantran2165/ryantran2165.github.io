@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import ExperienceItem from "./experience-item";
 
 const Experience = () => {

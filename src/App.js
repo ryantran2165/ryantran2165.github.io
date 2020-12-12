@@ -10,7 +10,7 @@ import Experience from "./components/experience/experience";
 import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import BackToTop from "./components/navigation/back-to-top";
-import Preloader from "./components/preloader";
+import Preloader from "./components/etc/preloader";
 
 const AOS_DURATION = 1000;
 const NAV_DURATION = 1000;

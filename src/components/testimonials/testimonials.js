@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import suzanneImage from "../../assets/suzanne_nguyen.jpg";
 import christinaImage from "../../assets/christina_hoang.jpg";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import CarouselItemData from "./carousel-item-data";
 
 const Testimonials = () => {

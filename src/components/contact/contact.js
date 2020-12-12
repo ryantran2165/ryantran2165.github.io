@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import ContactIcon from "./contact-icon";
 
 class Contact extends Component {
@@ -19,8 +20,13 @@ class Contact extends Component {
       email: "",
       subject: "",
       message: "",
+      recaptchaSuccess: false,
     };
   }
+
+  onChange = () => {
+    this.setState({ recaptchaSuccess: true });
+  };
 
   handleFormSubmit = (e) => {
     // Show modal
@@ -136,13 +142,20 @@ class Contact extends Component {
                   required
                 />
               </Form.Group>
-              <Button
-                type="submit"
-                value="Submit"
-                onClick={(e) => e.target.blur()}
-              >
-                Send Message
-              </Button>
+              <ReCAPTCHA
+                sitekey="6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd"
+                onChange={this.onChange}
+              />
+              {this.state.recaptchaSuccess && (
+                <Button
+                  className="mt-3"
+                  type="submit"
+                  value="Submit"
+                  onClick={(e) => e.target.blur()}
+                >
+                  Submit
+                </Button>
+              )}
             </Form>
             <iframe
               name="hidden_iframe"

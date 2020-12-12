@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import FooterIcon from "./footer-icon";
 import Particles from "react-particles-js";
-import ParticlesConfig from "../particles-config";
+import ParticlesConfig from "../etc/particles-config";
 
 class Footer extends Component {
   constructor(props) {

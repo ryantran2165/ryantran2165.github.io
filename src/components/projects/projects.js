@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import FilteredProjects from "./filtered-projects";
-import SectionTitle from "../section-title";
+import SectionTitle from "../etc/section-title";
 import ProjectData from "../../assets/project-data";
 import ProjectFilter from "./project-filter";
 

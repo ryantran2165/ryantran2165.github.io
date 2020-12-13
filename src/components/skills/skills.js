@@ -58,11 +58,7 @@ class Skills extends Component {
   render() {
     return (
       <Waypoint onEnter={this.animateSkills}>
-        <Container
-          id="skills"
-          fluid={true}
-          className="text-center bg-white pt-5 pb-5"
-        >
+        <Container id="skills" fluid className="text-center bg-white pt-5 pb-5">
           <SectionTitle text="Skills" />
           <Row className="justify-content-center mt-3 mb-4">
             <Col xs="auto">

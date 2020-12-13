@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,8 +7,11 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import ReCAPTCHA from "react-google-recaptcha";
 import SectionTitle from "../etc/section-title";
 import ContactIcon from "./contact-icon";
+
+const RECAPTCHA_KEY = "6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd";
 
 class Contact extends Component {
   constructor(props) {
@@ -55,17 +57,9 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container
-        id="contact"
-        fluid={true}
-        className="text-center bg-white pt-5 pb-5"
-      >
+      <Container id="contact" fluid className="text-center bg-white py-5">
         <SectionTitle text="Contact" />
-        <Row>
-          <Col>
-            <h4>Feel free to contact me at:</h4>
-          </Col>
-        </Row>
+        <h4>Feel free to contact me at:</h4>
         <Row className="justify-content-center mt-3">
           <ContactIcon
             href="mailto:ryantran2165@gmail.com"
@@ -78,11 +72,7 @@ class Contact extends Component {
             text="(669) 282-2213"
           />
         </Row>
-        <Row>
-          <Col>
-            <h4 className="mt-4 mb-3">Or send me a message directly:</h4>
-          </Col>
-        </Row>
+        <h4 className="mt-4 mb-3">Or send me a message directly:</h4>
         <Row className="justify-content-center">
           <Col xs={12} md={10} lg={8} xl={6}>
             <Form
@@ -98,7 +88,6 @@ class Contact extends Component {
                   type="text"
                   value={this.state.name}
                   onChange={(e) => this.handleFormChange(e, "name")}
-                  className="form-control"
                   name="entry.1568045103"
                   id="entry.1568045103"
                   placeholder="Name"
@@ -110,7 +99,6 @@ class Contact extends Component {
                   type="email"
                   value={this.state.email}
                   onChange={(e) => this.handleFormChange(e, "email")}
-                  className="form-control"
                   name="entry.1246301993"
                   id="entry.1246301993"
                   placeholder="Email"
@@ -122,7 +110,6 @@ class Contact extends Component {
                   type="text"
                   value={this.state.subject}
                   onChange={(e) => this.handleFormChange(e, "subject")}
-                  className="form-control"
                   name="entry.1608794007"
                   id="entry.1608794007"
                   placeholder="Subject"
@@ -134,7 +121,6 @@ class Contact extends Component {
                   as="textarea"
                   value={this.state.message}
                   onChange={(e) => this.handleFormChange(e, "message")}
-                  className="form-control"
                   rows="5"
                   name="entry.485311975"
                   id="entry.485311975"
@@ -142,19 +128,19 @@ class Contact extends Component {
                   required
                 />
               </Form.Group>
-              <ReCAPTCHA
-                sitekey="6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd"
-                onChange={this.onChange}
-              />
+              {!this.state.recaptchaSuccess && (
+                <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.onChange} />
+              )}
               {this.state.recaptchaSuccess && (
-                <Button
-                  className="mt-3"
-                  type="submit"
-                  value="Submit"
-                  onClick={(e) => e.target.blur()}
-                >
-                  Submit
-                </Button>
+                <Form.Group className="text-left">
+                  <Button
+                    type="submit"
+                    value="Submit"
+                    onClick={(e) => e.target.blur()}
+                  >
+                    Submit
+                  </Button>
+                </Form.Group>
               )}
             </Form>
             <iframe

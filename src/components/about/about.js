@@ -3,7 +3,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import SocialIcon from "../etc/social-icon";
 import ryanImage from "../../assets/ryan_tran.jpg";
 import SectionTitle from "../etc/section-title";
 import Particles from "react-particles-js";
@@ -40,7 +42,7 @@ class About extends Component {
 
   render() {
     return (
-      <Container id="about" fluid={true} className="text-center pt-6 pb-5">
+      <Container id="about" fluid className="text-center pt-6 pb-5">
         <div
           style={{
             position: "absolute",
@@ -49,26 +51,28 @@ class About extends Component {
             height: `${this.state.particlesHeight}px`,
           }}
         >
-          <Particles params={ParticlesConfig} className="particles" />
+          <Particles className="particles" params={ParticlesConfig} />
         </div>
-        <Row className="justify-content-center mt-3 mx-2">
+        <Row className="justify-content-center mx-2 mt-3">
           <Col
             id="about-content"
-            className="px-3 px-md-5 py-5"
             xs={12}
             md={10}
             lg={8}
             xl={6}
+            className="px-3 px-md-5 py-5"
           >
             <SectionTitle id="name" text="Ryan L. Tran" />
             <Image
-              className="circle-border mb-4"
+              fluid
+              roundedCircle
+              className="circle-img"
               src={ryanImage}
               alt="Ryan Tran"
-              roundedCircle
-              fluid
             />
-            <h4>Aspiring Software/Machine Learning Engineer</h4>
+            <h4 className="mt-4">
+              Aspiring Software/Machine Learning Engineer
+            </h4>
             <h6>San Jose State University, BS Computer Science C/O 2021</h6>
             <p className="text-left mt-4">
               Hi there! I'm Ryan, a senior undergradudate majoring in computer
@@ -80,34 +84,25 @@ class About extends Component {
               site!
             </p>
             <Row className="justify-content-center">
-              <Col className="pt-4" xs="auto">
-                <Button
+              <Col xs="auto" className="pt-4">
+                <SocialIcon
                   href={
                     "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
                   }
-                  target="_blank"
-                  onClick={(e) => e.target.blur()}
-                >
-                  Resume
-                </Button>
+                  icon={faFilePdf}
+                />
               </Col>
-              <Col className="pt-4" xs="auto">
-                <Button
-                  href={"https://www.linkedin.com/in/ryantran2165"}
-                  target="_blank"
-                  onClick={(e) => e.target.blur()}
-                >
-                  LinkedIn
-                </Button>
+              <Col xs="auto" className="pt-4">
+                <SocialIcon
+                  href="https://www.linkedin.com/in/ryantran2165"
+                  icon={faLinkedinIn}
+                />
               </Col>
-              <Col className="pt-4" xs="auto">
-                <Button
-                  href={"https://github.com/ryantran2165"}
-                  target="_blank"
-                  onClick={(e) => e.target.blur()}
-                >
-                  GitHub
-                </Button>
+              <Col xs="auto" className="pt-4">
+                <SocialIcon
+                  href="https://github.com/ryantran2165"
+                  icon={faGithub}
+                />
               </Col>
             </Row>
           </Col>

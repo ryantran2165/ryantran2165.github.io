@@ -4,38 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Badge from "react-bootstrap/Badge";
-import ProjectButton from "./project-button";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import SocialIcon from "../etc/social-icon";
 
 const Project = ({ project }) => {
-  const getButtons = () => {
-    if (project.source === "" && project.demo === "") {
-      return <React.Fragment></React.Fragment>;
-    } else if (project.source === "") {
-      return (
-        <Col>
-          <ProjectButton href={project.demo} text="Demo" />
-        </Col>
-      );
-    } else if (project.demo === "") {
-      return (
-        <Col>
-          <ProjectButton href={project.source} text="Source" />
-        </Col>
-      );
-    }
-
-    return (
-      <React.Fragment>
-        <Col className="text-right">
-          <ProjectButton href={project.source} text="Source" />
-        </Col>
-        <Col className="text-left">
-          <ProjectButton href={project.demo} text="Demo" />
-        </Col>
-      </React.Fragment>
-    );
-  };
-
   project.languages.sort((a, b) =>
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
@@ -45,38 +18,73 @@ const Project = ({ project }) => {
   project.machineLearning.sort((a, b) =>
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
-  project.concepts.sort((a, b) =>
+  project.categories.sort((a, b) =>
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
   const tags = project.languages.concat(
     project.technologies,
     project.machineLearning,
-    project.concepts
+    project.categories
   );
 
+  let buttons = <React.Fragment></React.Fragment>;
+
+  if (project.source !== "" && project.demo !== "") {
+    buttons = (
+      <React.Fragment>
+        <Col xs="auto">
+          <SocialIcon
+            className="project-icon"
+            href={project.source}
+            icon={faGithub}
+          />
+        </Col>
+        <Col xs="auto">
+          <SocialIcon
+            className="project-icon"
+            href={project.demo}
+            icon={faPlay}
+          />
+        </Col>
+      </React.Fragment>
+    );
+  } else if (project.source !== "") {
+    buttons = (
+      <Col xs="auto">
+        <SocialIcon
+          className="project-icon"
+          href={project.source}
+          icon={faGithub}
+        />
+      </Col>
+    );
+  } else if (project.demo !== "") {
+    buttons = (
+      <Col xs="auto">
+        <SocialIcon href={project.demo} icon={faPlay} />
+      </Col>
+    );
+  }
+
   return (
-    <Col
-      xs={11}
-      sm={8}
-      md={6}
-      lg={4}
-      className="project-box ml-4 mr-4 mb-4 pl-0 pr-0"
-    >
-      <Image fluid src={project.image} alt="project" />
-      <h3 className="font-weight-bold mt-4 pl-4 pr-4">{project.title}</h3>
-      <Row className="justify-content-center ml-2 mr-2">
-        {tags.map((tag) => {
-          return (
-            <Col key={tag} xs={0} className="ml-1 mr-1">
-              <Badge pill variant="secondary">
-                {tag}
-              </Badge>
-            </Col>
-          );
-        })}
-      </Row>
-      <p className="text-left pl-4 pr-4 mt-4">{project.description}</p>
-      <Row className="pb-5">{getButtons()}</Row>
+    <Col xs={12} lg={6} className="pt-4">
+      <div className="project-box h-100 pb-5">
+        <Image fluid src={project.image} alt={project.title} />
+        <h3 className="font-weight-bold px-4 mt-4">{project.title}</h3>
+        <Row className="justify-content-center mx-2">
+          {tags.map((tag) => {
+            return (
+              <Col key={tag} xs={0} className="pt-2 mx-1">
+                <Badge pill className="p-2">
+                  {tag}
+                </Badge>
+              </Col>
+            );
+          })}
+        </Row>
+        <p className="text-left px-4 mt-4">{project.description}</p>
+        <Row className="justify-content-center">{buttons}</Row>
+      </div>
     </Col>
   );
 };

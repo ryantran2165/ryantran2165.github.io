@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import FilteredProjects from "./filtered-projects";
 import SectionTitle from "../etc/section-title";
 import ProjectData from "../../assets/project-data";
 import ProjectFilter from "./project-filter";
+import Project from "./project";
 
 const LANGUAGES = [
   "Java",
@@ -42,7 +42,7 @@ const MACHINE_LEARNING = [
   "Jupyter Notebook",
   "Scrapy",
 ];
-const CONCEPTS = ["Machine Learning", "Cryptography", "Game"];
+const CATEGORIES = ["Machine Learning", "Full-Stack", "Game"];
 
 class Projects extends Component {
   constructor(props) {
@@ -119,55 +119,55 @@ class Projects extends Component {
     const tags = project.languages.concat(
       project.technologies,
       project.machineLearning,
-      project.concepts
+      project.categories
     );
     return tags.includes(filter);
   };
 
   render() {
+    let projects = <h3>No projects with those filters yet!</h3>;
+
+    if (this.state.filteredProjects.length > 0) {
+      projects = this.state.filteredProjects.map((project) => {
+        return <Project project={project} key={project.title} />;
+      });
+    }
+
     return (
-      <Container id="projects" fluid={true} className="text-center pt-5 pb-5">
+      <Container id="projects" fluid className="text-center py-5">
         <SectionTitle text="Projects" />
-        <Row>
-          <Col>
-            <Form>
-              <Row className="justify-content-center text-left">
-                <ProjectFilter
-                  currentFilters={this.state.filters}
-                  filters={LANGUAGES}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  currentFilters={this.state.filters}
-                  filters={TECHNOLOGIES}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  currentFilters={this.state.filters}
-                  filters={MACHINE_LEARNING}
-                  onChange={this.handleFilterChange}
-                />
-                <ProjectFilter
-                  currentFilters={this.state.filters}
-                  filters={CONCEPTS}
-                  onChange={this.handleFilterChange}
-                />
-              </Row>
-              <Row>
-                <Col>
-                  <Form.Check
-                    type="switch"
-                    id="andOrSwitch"
-                    label="AND mode"
-                    onChange={this.handleSwitchChange}
-                  />
-                </Col>
-              </Row>
-            </Form>
+        <Row className="justify-content-center mx-2">
+          <Col xs={12} md={10} lg={8}>
+            <Row className="text-left">
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={LANGUAGES}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={TECHNOLOGIES}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={MACHINE_LEARNING}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={CATEGORIES}
+                onChange={this.handleFilterChange}
+              />
+            </Row>
+            <Form.Check
+              type="switch"
+              id="andOrSwitch"
+              label="AND mode"
+              onChange={this.handleSwitchChange}
+            />
+            <Row className="justify-content-center">{projects}</Row>
           </Col>
-        </Row>
-        <Row className="justify-content-center mt-4">
-          <FilteredProjects filteredProjects={this.state.filteredProjects} />
         </Row>
       </Container>
     );

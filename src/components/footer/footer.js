@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import FooterIcon from "./footer-icon";
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import SocialIcon from "../etc/social-icon";
 import Particles from "react-particles-js";
 import ParticlesConfig from "../etc/particles-config";
 
@@ -25,7 +24,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <Container fluid={true} id="footer" className="text-center pt-3 pb-5">
+      <Container fluid id="footer" className="text-center pt-3 pb-5">
         <div
           style={{
             position: "absolute",
@@ -37,7 +36,7 @@ class Footer extends Component {
         </div>
         <Row className="justify-content-center">
           <Col xs={0} className="footer-col">
-            <FooterIcon
+            <SocialIcon
               href={
                 "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
               }
@@ -45,13 +44,13 @@ class Footer extends Component {
             />
           </Col>
           <Col xs={0} className="footer-col ml-3 mr-3">
-            <FooterIcon
+            <SocialIcon
               href="https://www.linkedin.com/in/ryantran2165"
               icon={faLinkedinIn}
             />
           </Col>
           <Col xs={0} className="footer-col">
-            <FooterIcon
+            <SocialIcon
               href="https://github.com/ryantran2165"
               icon={faGithub}
             />

@@ -10,13 +10,9 @@ import CarouselItemData from "./carousel-item-data";
 
 const Testimonials = () => {
   return (
-    <Container
-      id="testimonials"
-      fluid={true}
-      className="text-center bg-white pt-5 pb-5"
-    >
+    <Container id="testimonials" fluid className="text-center bg-white py-5">
       <SectionTitle text="Testimonials" />
-      <Row className="justify-content-center">
+      <Row className="justify-content-center mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
           <Carousel>
             <Carousel.Item>

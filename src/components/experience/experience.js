@@ -5,7 +5,7 @@ import ExperienceItem from "./experience-item";
 
 const Experience = () => {
   return (
-    <Container id="experience" fluid={true} className="text-center pt-5 pb-5">
+    <Container id="experience" fluid className="text-center pt-5 pb-5">
       <SectionTitle text="Experience" />
       <ExperienceItem
         title="Front-End Developer"

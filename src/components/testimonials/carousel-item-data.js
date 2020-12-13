@@ -8,17 +8,18 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
   return (
     <React.Fragment>
       <Image
-        src={imageSrc}
-        className="circle-border mb-3"
-        roundedCircle
         fluid
+        roundedCircle
+        className="circle-img"
+        src={imageSrc}
+        alt={name}
       />
-      <h3 className="font-weight-bold">
+      <h3 className="font-weight-bold mt-3">
         <a
+          className="testimonial-link"
           href={linkedInSrc}
           target="_blank"
           rel="noopener noreferrer"
-          className="testimonial-link"
         >
           {name}
         </a>
@@ -36,7 +37,7 @@ CarouselItemData.propTypes = {
   linkedInSrc: PropTypes.string,
   name: PropTypes.string,
   title: PropTypes.string,
-  quote: PropTypes.string
+  quote: PropTypes.string,
 };
 
 export default CarouselItemData;

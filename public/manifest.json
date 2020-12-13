@@ -1,13 +1,6 @@
 {
-  "short_name": "Ryan Tran Website",
-  "name": "Ryan Tran Personal Website",
-  "icons": [
-    {
-      "src": "favicon.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    }
-  ],
+  "short_name": "Ryan L. Tran's Website",
+  "name": "Ryan L. Tran's Website",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

@@ -84,7 +84,7 @@ class Contact extends Component {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs={12} sm={10} md={8} lg={6} xl={4}>
+          <Col xs={12} md={10} lg={8} xl={6}>
             <Form
               name="gform"
               id="gform"

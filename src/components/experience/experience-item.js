@@ -13,7 +13,7 @@ const ExperienceItem = ({
 }) => {
   return (
     <Row className="justify-content-center">
-      <Col className="text-left" xs={12} sm={10} md={8} lg={6} xl={4}>
+      <Col className="text-left" xs={12} md={10} lg={8} xl={6}>
         <h4 className="font-weight-bold">{title}</h4>
         <h5>
           {company} | {location}

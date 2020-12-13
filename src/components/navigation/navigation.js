@@ -36,9 +36,15 @@ class Navigation extends Component {
   getNavbarToggle = () => {
     return (
       <div>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span
+          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
+        ></span>
+        <span
+          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
+        ></span>
+        <span
+          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
+        ></span>
       </div>
     );
   };

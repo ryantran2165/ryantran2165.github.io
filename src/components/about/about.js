@@ -51,27 +51,26 @@ class About extends Component {
         >
           <Particles params={ParticlesConfig} className="particles" />
         </div>
-        <SectionTitle id="name" text="Ryan L. Tran" />
-        <Row className="mb-4 justify-content-center">
-          <Col xs={12} sm={10} md={8} lg={6} xl={4}>
+        <Row className="justify-content-center mt-3 mx-2">
+          <Col
+            id="about-content"
+            className="px-3 px-md-5 py-5"
+            xs={12}
+            md={10}
+            lg={8}
+            xl={6}
+          >
+            <SectionTitle id="name" text="Ryan L. Tran" />
             <Image
-              className="circle-border"
+              className="circle-border mb-4"
               src={ryanImage}
               alt="Ryan Tran"
               roundedCircle
               fluid
             />
-          </Col>
-        </Row>
-        <Row className="mb-4 justify-content-center">
-          <Col xs={12} sm={10} md={8} lg={6} xl={4}>
             <h4>Aspiring Software/Machine Learning Engineer</h4>
             <h6>San Jose State University, BS Computer Science C/O 2021</h6>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs={12} sm={10} md={8} lg={6} xl={4}>
-            <p className="text-left">
+            <p className="text-left mt-4">
               Hi there! I'm Ryan, a senior undergradudate majoring in computer
               science at San Jose State University. I first became interested in
               programming about 6 years ago out of curiosity for game
@@ -80,37 +79,37 @@ class About extends Component {
               development, tennis, MMA, piano, and anime. Thanks for visiting my
               site!
             </p>
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col className="col-auto pt-4">
-            <Button
-              href={
-                "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
-              }
-              target="_blank"
-              onClick={(e) => e.target.blur()}
-            >
-              Resume
-            </Button>
-          </Col>
-          <Col className="col-auto pt-4">
-            <Button
-              href={"https://www.linkedin.com/in/ryantran2165"}
-              target="_blank"
-              onClick={(e) => e.target.blur()}
-            >
-              LinkedIn
-            </Button>
-          </Col>
-          <Col className="col-auto pt-4">
-            <Button
-              href={"https://github.com/ryantran2165"}
-              target="_blank"
-              onClick={(e) => e.target.blur()}
-            >
-              GitHub
-            </Button>
+            <Row className="justify-content-center">
+              <Col className="pt-4" xs="auto">
+                <Button
+                  href={
+                    "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
+                  }
+                  target="_blank"
+                  onClick={(e) => e.target.blur()}
+                >
+                  Resume
+                </Button>
+              </Col>
+              <Col className="pt-4" xs="auto">
+                <Button
+                  href={"https://www.linkedin.com/in/ryantran2165"}
+                  target="_blank"
+                  onClick={(e) => e.target.blur()}
+                >
+                  LinkedIn
+                </Button>
+              </Col>
+              <Col className="pt-4" xs="auto">
+                <Button
+                  href={"https://github.com/ryantran2165"}
+                  target="_blank"
+                  onClick={(e) => e.target.blur()}
+                >
+                  GitHub
+                </Button>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

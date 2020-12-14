@@ -1,6 +1,6 @@
 {
-  "short_name": "Ryan L. Tran's Website",
-  "name": "Ryan L. Tran's Website",
+  "short_name": "Ryan L. Tran",
+  "name": "Ryan L. Tran",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",

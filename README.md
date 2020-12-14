@@ -1,7 +1,7 @@
-# Ryan Tran's Personal Website
+# Personal Website
 
-• Regularly updating my website to reflect my career progression  
-• Skills used: JavaScript, JSX, HTML, CSS, SCSS, Git, React, Bootstrap, Visual Studio Code  
+• My personal website serving as a portfolio of my projects and career  
+• Skills used: JavaScript/JSX, HTML, CSS/SASS, React, Bootstrap, Git  
 • Check it out: https://www.ryanlongtran.com
 
-![Image of logo](https://github.com/ryantran2165/ryantran2165.github.io/blob/source/src/assets/favicon.jpg)
+![Image of logo](https://raw.githubusercontent.com/ryantran2165/ryantran2165.github.io/source/src/assets/images/favicon.jpg)

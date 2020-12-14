@@ -6,12 +6,12 @@ import Form from "react-bootstrap/Form";
 
 const ProjectFilter = ({ currentFilters, filters, onChange }) => {
   return (
-    <Col xs={6} md={3} className="mb-3">
+    <Col xs={6} sm={4} className="mb-3 col-lg">
       {filters
         .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
         .map((filter) => {
           return (
-            <Row key={filter}>
+            <Row key={`${filter}-filter`}>
               <Col>
                 <Form.Check
                   custom

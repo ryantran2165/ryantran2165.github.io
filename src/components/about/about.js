@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import SocialIcon from "../etc/social-icon";
-import ryanImage from "../../assets/ryan_tran.jpg";
+import ryanImage from "../../assets/images/ryan_tran.jpg";
 import SectionTitle from "../etc/section-title";
 import Particles from "react-particles-js";
 import ParticlesConfig from "../etc/particles-config.js";

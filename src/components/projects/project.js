@@ -12,7 +12,10 @@ const Project = ({ project }) => {
   project.languages.sort((a, b) =>
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
-  project.technologies.sort((a, b) =>
+  project.frameworksLibraries.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
+  project.toolsTechnologies.sort((a, b) =>
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
   project.machineLearning.sort((a, b) =>
@@ -22,7 +25,8 @@ const Project = ({ project }) => {
     a.toLowerCase().localeCompare(b.toLowerCase())
   );
   const tags = project.languages.concat(
-    project.technologies,
+    project.frameworksLibraries,
+    project.toolsTechnologies,
     project.machineLearning,
     project.categories
   );
@@ -74,7 +78,7 @@ const Project = ({ project }) => {
         <Row className="justify-content-center mx-2">
           {tags.map((tag) => {
             return (
-              <Col key={tag} xs={0} className="pt-2 mx-1">
+              <Col key={`${tag}-${project.title}`} xs={0} className="pt-2 mx-1">
                 <Badge pill className="p-2">
                   {tag}
                 </Badge>

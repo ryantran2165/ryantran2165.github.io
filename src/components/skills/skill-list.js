@@ -4,20 +4,27 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const SkillList = ({ subheading, skills }) => {
+  // Sort by rating then alphabetical
+  const sortedSkills = Object.entries(skills).sort((a, b) => {
+    const aRating = a[1].rating;
+    const bRating = b[1].rating;
+
+    if (aRating === bRating) {
+      return a[0].toLowerCase().localeCompare(b[0].toLowerCase());
+    }
+
+    return bRating - aRating;
+  });
+
   return (
-    <Col xs={12} sm={6} md={4} xl={3} className="pb-4">
-      <Row>
-        <Col>
-          <h4 className="font-weight-bold">{subheading}</h4>
-        </Col>
-      </Row>
+    <Col xs={12} sm={6} md={4} xl={3} className="pt-3">
+      <h4 className="font-weight-bold">{subheading}</h4>
       <Row className="justify-content-center">
         <Col>
-          {skills
-            .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
-            .map((skill) => {
-              return <h6 key={skill}>{skill}</h6>;
-            })}
+          {sortedSkills.map((pair) => (
+            // [0] is key, [1] is value
+            <h6 key={`${pair[0]}-list`}>{`${pair[0]} (${pair[1].rating})`}</h6>
+          ))}
         </Col>
       </Row>
     </Col>
@@ -26,7 +33,7 @@ const SkillList = ({ subheading, skills }) => {
 
 SkillList.propTypes = {
   subheading: PropTypes.string,
-  skills: PropTypes.array,
+  skills: PropTypes.object,
 };
 
 export default SkillList;

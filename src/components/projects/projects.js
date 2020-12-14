@@ -4,44 +4,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import SectionTitle from "../etc/section-title";
-import ProjectData from "../../assets/project-data";
+import ProjectData from "../../assets/data/projects-data";
 import ProjectFilter from "./project-filter";
 import Project from "./project";
+import {
+  LANGUAGES,
+  FRAMEWORKS_LIBRARIES,
+  TOOLS_TECHNOLOGIES,
+  MACHINE_LEARNING,
+} from "../../assets/data/skills-data";
 
-const LANGUAGES = [
-  "Java",
-  "Python",
-  "C#",
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "PHP",
-  "SQL",
-  "NoSQL",
-];
-const TECHNOLOGIES = [
-  "Linux",
-  "React",
-  "Flask",
-  "REST API",
-  "MySQL",
-  "AWS",
-  "Bootstrap",
-  "Unity",
-];
-const MACHINE_LEARNING = [
-  "TensorFlow",
-  "Keras",
-  "scikit-learn",
-  "PyTorch",
-  "pandas",
-  "NumPy",
-  "SciPy",
-  "Matplotlib",
-  "Seaborn",
-  "Jupyter Notebook",
-  "Scrapy",
-];
 const CATEGORIES = ["Machine Learning", "Full-Stack", "Game"];
 
 class Projects extends Component {
@@ -55,18 +27,17 @@ class Projects extends Component {
   }
 
   handleFilterChange = (e) => {
-    const { filters } = this.state;
+    let { filters } = this.state;
     const targetName = e.target.name;
-    let newFilters = filters;
 
     // Already has label, remove it, otherwise add it
     if (filters.includes(targetName)) {
-      newFilters = filters.filter((label) => label !== targetName);
+      filters = filters.filter((label) => label !== targetName);
     } else {
-      newFilters.push(targetName);
+      filters.push(targetName);
     }
 
-    this.setState({ filters: newFilters }, this.filterProjects);
+    this.setState({ filters }, this.filterProjects);
   };
 
   handleSwitchChange = () => {
@@ -117,7 +88,8 @@ class Projects extends Component {
 
   projectHasTag = (project, filter) => {
     const tags = project.languages.concat(
-      project.technologies,
+      project.frameworksLibraries,
+      project.toolsTechnologies,
       project.machineLearning,
       project.categories
     );
@@ -125,11 +97,13 @@ class Projects extends Component {
   };
 
   render() {
-    let projects = <h3>No projects with those filters yet!</h3>;
+    let projects = (
+      <h3 className="pt-4">No projects with those filters yet!</h3>
+    );
 
     if (this.state.filteredProjects.length > 0) {
       projects = this.state.filteredProjects.map((project) => {
-        return <Project project={project} key={project.title} />;
+        return <Project project={project} key={`${project.title}-project`} />;
       });
     }
 
@@ -137,21 +111,26 @@ class Projects extends Component {
       <Container id="projects" fluid className="text-center py-5">
         <SectionTitle text="Projects" />
         <Row className="justify-content-center mx-2">
-          <Col xs={12} md={10} lg={8}>
+          <Col xs={12} md={10} xl={8}>
             <Row className="text-left">
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={LANGUAGES}
+                filters={Object.keys(LANGUAGES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={TECHNOLOGIES}
+                filters={Object.keys(FRAMEWORKS_LIBRARIES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={MACHINE_LEARNING}
+                filters={Object.keys(TOOLS_TECHNOLOGIES)}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(MACHINE_LEARNING)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter

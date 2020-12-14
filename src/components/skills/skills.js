@@ -7,6 +7,12 @@ import ProgressBar from "progressbar.js/dist/progressbar";
 import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
+import {
+  LANGUAGES,
+  FRAMEWORKS_LIBRARIES,
+  TOOLS_TECHNOLOGIES,
+  MACHINE_LEARNING,
+} from "../../assets/data/skills-data";
 
 class Skills extends Component {
   constructor(props) {
@@ -16,16 +22,10 @@ class Skills extends Component {
 
   animateSkills = () => {
     if (!this.state.skillsAnimated) {
-      createSkill("#java-skill", "Java", 0.8);
-      createSkill("#python-skill", "Python", 0.6);
-      createSkill("#csharp-skill", "C#", 0.6);
-      createSkill("#cpp-skill", "C++", 0.6);
-      createSkill("#javascript-skill", "JavaScript", 0.6);
-      createSkill("#html-skill", "HTML", 0.6);
-      createSkill("#css-skill", "CSS", 0.6);
-      createSkill("#php-skill", "PHP", 0.6);
-      createSkill("#sql-nosql-skill", "SQL/NoSQL", 0.6);
-      createSkill("#assembly-skill", "Assembly", 0.4);
+      for (const language in LANGUAGES) {
+        const lang = LANGUAGES[language];
+        createSkill(`#${lang.id}`, lang.display, lang.rating / 5);
+      }
       this.setState({ skillsAnimated: true });
     }
 
@@ -79,67 +79,26 @@ class Skills extends Component {
           </Row>
           <Row>
             <Col>
-              <h4 className="font-weight-bold">Programming Languages</h4>
+              <h4 className="font-weight-bold">Languages</h4>
             </Col>
           </Row>
-          <Row className="justify-content-center mt-3 mb-4">
-            <SkillCircle id="java-skill" />
-            <SkillCircle id="python-skill" />
-            <SkillCircle id="csharp-skill" />
-            <SkillCircle id="cpp-skill" />
-            <SkillCircle id="javascript-skill" />
-            <SkillCircle id="html-skill" />
-            <SkillCircle id="css-skill" />
-            <SkillCircle id="php-skill" />
-            <SkillCircle id="sql-nosql-skill" />
-            <SkillCircle id="assembly-skill" />
+          <Row className="justify-content-center mt-3">
+            {Object.entries(LANGUAGES).map((pair) => (
+              <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
+            ))}
           </Row>
           <Row className="justify-content-center">
             <SkillList
-              subheading="Programming Technologies"
-              skills={[
-                "Git (3)",
-                "Linux (3)",
-                "React (3)",
-                "Flask (3)",
-                "REST API (3)",
-                "MySQL (3)",
-                "AWS (3)",
-                "JSON (3)",
-                "Bootstrap (3)",
-                "jQuery (2)",
-                "Unity (3)",
-                "IntelliJ (3)",
-                "Eclipse (3)",
-                "Visual Studio (3)",
-              ]}
+              subheading="Frameworks/Libraries"
+              skills={FRAMEWORKS_LIBRARIES}
+            />
+            <SkillList
+              subheading="Tools/Technologies"
+              skills={TOOLS_TECHNOLOGIES}
             />
             <SkillList
               subheading="Machine Learning"
-              skills={[
-                "TensorFlow (3)",
-                "Keras (3)",
-                "scikit-learn (3)",
-                "PyTorch (2)",
-                "pandas (3)",
-                "NumPy (3)",
-                "SciPy (2)",
-                "Matplotlib (3)",
-                "Seaborn (3)",
-                "Jupyter Notebook (3)",
-                "MATLAB (2)",
-                "Scrapy (3)",
-              ]}
-            />
-            <SkillList
-              subheading="Other"
-              skills={[
-                "Vietnamese (4)",
-                "Adobe Illustrator (3)",
-                "Adobe Photoshop (3)",
-                "Microsoft Office (3)",
-                "WordPress (2)",
-              ]}
+              skills={MACHINE_LEARNING}
             />
           </Row>
         </Container>

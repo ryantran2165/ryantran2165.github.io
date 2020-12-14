@@ -59,23 +59,23 @@ class Contact extends Component {
     return (
       <Container id="contact" fluid className="text-center bg-white py-5">
         <SectionTitle text="Contact" />
-        <h4>Feel free to contact me at:</h4>
-        <Row className="justify-content-center mt-3">
-          <ContactIcon
-            href="mailto:ryantran2165@gmail.com"
-            icon={faEnvelope}
-            text="ryantran2165@gmail.com"
-          />
-          <ContactIcon
-            href="tel:1-669-282-2213"
-            icon={faPhoneAlt}
-            text="(669) 282-2213"
-          />
-        </Row>
-        <h4 className="mt-4 mb-3">Or send me a message directly:</h4>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
+            <Row className="justify-content-center text-nowrap">
+              <Col>
+                <ContactIcon
+                  href="mailto:ryantran2165@gmail.com"
+                  icon={faEnvelope}
+                />
+                <h6 className="mt-2">ryantran2165@gmail.com</h6>
+              </Col>
+              <Col>
+                <ContactIcon href="tel:1-669-282-2213" icon={faPhoneAlt} />
+                <h6 className="mt-2">(669) 282-2213</h6>
+              </Col>
+            </Row>
             <Form
+              className="mt-3"
               name="gform"
               id="gform"
               encType="text/plain"

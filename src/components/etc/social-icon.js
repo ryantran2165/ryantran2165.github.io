@@ -6,7 +6,7 @@ const SocialIcon = ({ href, icon }) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
       <div className="social-icon-container">
-        <FontAwesomeIcon icon={icon} className="social-icon" />
+        <FontAwesomeIcon className="social-icon" icon={icon} />
       </div>
     </a>
   );

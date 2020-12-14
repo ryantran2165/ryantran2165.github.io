@@ -1,25 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ContactIcon = ({ href, icon, text }) => {
+const ContactIcon = ({ href, icon }) => {
   return (
-    <Col xs={12} sm={6} md={4} lg={3} xl={2}>
-      <div className="contact-icon-container">
-        <a className="contact-icon" href={href}>
-          <FontAwesomeIcon icon={icon} />
+    <Row className="justify-content-center pt-2">
+      <Col xs="auto">
+        <a href={href}>
+          <div className="contact-icon-container">
+            <FontAwesomeIcon className="contact-icon" icon={icon} />
+          </div>
         </a>
-      </div>
-      <p>{text}</p>
-    </Col>
+      </Col>
+    </Row>
   );
 };
 
 ContactIcon.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.object,
-  text: PropTypes.string
 };
 
 export default ContactIcon;

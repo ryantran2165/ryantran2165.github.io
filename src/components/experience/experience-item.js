@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const ExperienceItem = ({
   title,
@@ -12,18 +10,16 @@ const ExperienceItem = ({
   description,
 }) => {
   return (
-    <Row className="justify-content-center">
-      <Col className="text-left" xs={12} md={10} lg={8} xl={6}>
-        <h4 className="font-weight-bold">{title}</h4>
-        <h5>
-          {company} | {location}
-        </h5>
-        <h5>
-          {startDate} – {endDate}
-        </h5>
-        <p>{description}</p>
-      </Col>
-    </Row>
+    <React.Fragment>
+      <h4 className="font-weight-bold">{title}</h4>
+      <h5>
+        {company} | {location}
+      </h5>
+      <h5>
+        {startDate} – {endDate}
+      </h5>
+      <p>{description}</p>
+    </React.Fragment>
   );
 };
 

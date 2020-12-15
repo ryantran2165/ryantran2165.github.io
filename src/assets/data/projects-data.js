@@ -59,7 +59,7 @@ const ProjectData = [
     title: "Connect 4 AI",
     date: "Aug. 2020 – Present",
     description: [
-      "Implemented Connect 4 AI with varying difficulties using Q-learning, NeuroEvolution of Augmenting Topologies (NEAT), and minimax",
+      "Implemented Connect 4 AI web app with varying difficulties using Q-learning, NeuroEvolution of Augmenting Topologies (NEAT), and minimax",
     ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],

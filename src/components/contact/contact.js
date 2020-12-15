@@ -91,7 +91,7 @@ class Contact extends Component {
               </Col>
             </Row>
             <Form
-              className="mt-3"
+              className="mt-3 text-left"
               name="gform"
               id="gform"
               encType="text/plain"
@@ -100,38 +100,42 @@ class Contact extends Component {
               onSubmit={(e) => this.handleFormSubmit(e)}
             >
               <Form.Group>
+                <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
                   value={this.state.name}
                   onChange={(e) => this.handleFormChange(e, "name")}
                   name="entry.1568045103"
                   id="entry.1568045103"
-                  placeholder="Name"
+                  placeholder="John Doe"
                   required
                 />
               </Form.Group>
               <Form.Group>
+                <Form.Label>Email</Form.Label>
                 <Form.Control
                   type="email"
                   value={this.state.email}
                   onChange={(e) => this.handleFormChange(e, "email")}
                   name="entry.1246301993"
                   id="entry.1246301993"
-                  placeholder="Email"
+                  placeholder="john.doe@gmail.com"
                   required
                 />
               </Form.Group>
               <Form.Group>
+                <Form.Label>Subject</Form.Label>
                 <Form.Control
                   type="text"
                   value={this.state.subject}
                   onChange={(e) => this.handleFormChange(e, "subject")}
                   name="entry.1608794007"
                   id="entry.1608794007"
-                  placeholder="Subject"
+                  placeholder="!false"
                   required
                 />
               </Form.Group>
+              <Form.Label>Message</Form.Label>
               <Form.Group>
                 <Form.Control
                   as="textarea"
@@ -140,7 +144,7 @@ class Contact extends Component {
                   rows="5"
                   name="entry.485311975"
                   id="entry.485311975"
-                  placeholder="Message"
+                  placeholder="It's funny because it's true"
                   required
                 />
               </Form.Group>

@@ -7,30 +7,9 @@ import Badge from "react-bootstrap/Badge";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import SocialIcon from "../etc/social-icon";
+import { getTags } from "../etc/utils";
 
 const Project = ({ project }) => {
-  project.languages.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
-  project.frameworksLibraries.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
-  project.toolsTechnologies.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
-  project.machineLearning.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
-  project.categories.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
-  const tags = project.languages.concat(
-    project.frameworksLibraries,
-    project.toolsTechnologies,
-    project.machineLearning,
-    project.categories
-  );
-
   let buttons = <React.Fragment></React.Fragment>;
 
   if (project.source !== "" && project.demo !== "") {
@@ -74,19 +53,26 @@ const Project = ({ project }) => {
     <Col xs={12} lg={6} className="pt-4">
       <div className="project-box h-100 pb-5">
         <Image fluid src={project.image} alt={project.title} />
-        <h3 className="font-weight-bold px-4 mt-4">{project.title}</h3>
-        <Row className="justify-content-center mx-2">
-          {tags.map((tag) => {
+        <div className="px-4">
+          <h3 className="font-weight-bold mt-4">{project.title}</h3>
+          <h5>{project.date}</h5>
+          {getTags(project).map((tag, i) => {
             return (
-              <Col key={`${tag}-${project.title}`} xs={0} className="pt-2 mx-1">
-                <Badge pill className="p-2">
-                  {tag}
-                </Badge>
-              </Col>
+              <Badge
+                pill
+                className="p-2 mx-1 mt-2"
+                key={`${i}-${project.title}-tag`}
+              >
+                {tag}
+              </Badge>
             );
           })}
-        </Row>
-        <p className="text-left px-4 mt-4">{project.description}</p>
+          <ul className="text-left mt-4">
+            {project.description.map((bullet, i) => (
+              <li key={`${i}-${project.title}-description`}>{bullet}</li>
+            ))}
+          </ul>
+        </div>
         <Row className="justify-content-center">{buttons}</Row>
       </div>
     </Col>

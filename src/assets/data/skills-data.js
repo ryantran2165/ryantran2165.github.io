@@ -117,7 +117,7 @@ export const MACHINE_LEARNING = {
     rating: 3,
   },
   PyTorch: {
-    rating: 3,
+    rating: 2,
   },
   pandas: {
     rating: 3,
@@ -138,6 +138,6 @@ export const MACHINE_LEARNING = {
     rating: 3,
   },
   Scrapy: {
-    rating: 3,
+    rating: 2,
   },
 };

@@ -14,8 +14,11 @@ const ProjectData = [
   {
     image: officeSupplyDepotImg,
     title: "Office Supply Depot",
-    description:
-      "Full-stack e-commerce website with a React frontend and Django REST API backend that includes product search/filter/sort, user signup/signin with JWT authentication, cart/checkout, driver/delivery route optimization, and admin operations functionality.",
+    date: "Oct. 2020 – Dec. 2020",
+    description: [
+      "Headed group project in developing full-stack e-commerce website with React frontend and Django REST API backend",
+      "Includes product search/filter/sort, user signup/signin using JWT authentication, cart/checkout, driver/delivery route optimization, and admin operations functionality",
+    ],
     languages: ["JavaScript/JSX", "Python", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Redux", "Bootstrap", "Django"],
     toolsTechnologies: ["GCP", "Git", "Heroku", "PostgreSQL", "REST API"],
@@ -27,8 +30,11 @@ const ProjectData = [
   {
     image: bjjPredictorImg,
     title: "BJJ Predictor",
-    description:
-      "Full-stack web app with a React frontend and Flask REST API backend that predicts the winner of Brazilian Jiu-Jitsu matches. Uses two separate DNN models depending on whether two fighters have previously fought because certain fighters tend to do significantly better/worse against certain others. If a head-to-head record exists, a model that uses that head-to-head record as the primary predictor variable is used; this model has an accuracy of about 90%. If no head-to-head record exists, a model that uses win/loss records as the primary predictor variables is used; this model has an accuracy of about 70%.",
+    date: "Jun. 2020 – Aug. 2020",
+    description: [
+      "Built full-stack web app with React frontend and Flask REST API backend that predicts the winner of Brazilian Jiu-Jitsu matches",
+      "Experienced full machine learning workflow: web scraping with Scrapy, data exploration with Seaborn, data cleaning with pandas, model training with TensorFlow, and deployment with AWS (Elastic Beanstalk, DynamoDB, EC2, S3)",
+    ],
     languages: ["JavaScript/JSX", "Python", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap", "Flask"],
     toolsTechnologies: ["AWS", "Git", "Linux", "NoSQL", "REST API"],
@@ -51,8 +57,10 @@ const ProjectData = [
   {
     image: connect4aiImg,
     title: "Connect 4 AI",
-    description:
-      "Web app implementation of Connect 4 with varying AI difficulties using Q-learning, NeuroEvolution of Augmenting Topologies (NEAT), and minimax.",
+    date: "Aug. 2020 – Present",
+    description: [
+      "Implemented Connect 4 AI with varying difficulties using Q-learning, NeuroEvolution of Augmenting Topologies (NEAT), and minimax",
+    ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -64,8 +72,10 @@ const ProjectData = [
   {
     image: digitRecognizerImg,
     title: "Digit Recognizer",
-    description:
-      "Web app that recognizes user-drawn digits using self-implemented feedforward and convolutional neural networks. Shows a side-by-side comparison between the predictions made by the FFNN and CNN.",
+    date: "Jan. 2020 – Aug. 2020",
+    description: [
+      "Created web app that recognizes user-drawn digits using self-implemented feedforward and convolutional neural networks",
+    ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -77,8 +87,10 @@ const ProjectData = [
   {
     image: donutDashImg,
     title: "Donut Dash",
-    description:
-      "Collaborated with an artist to develop and publish a 2D Unity platformer game. Chase the donut thief in this randomly generated, infinite 2D platformer! Eat coffee and donuts to increase or decrease your weight/speed, but watch out for obstacles!",
+    date: "Mar. 2020 – May 2020",
+    description: [
+      "Collaborated with an artist to publish a 2D Unity platformer game",
+    ],
     languages: ["C#"],
     frameworksLibraries: [],
     toolsTechnologies: ["Git", "Unity"],
@@ -90,8 +102,10 @@ const ProjectData = [
   {
     image: cryptoOnlineImg,
     title: "Crypto Online",
-    description:
-      "Full-stack cryptography web app supporting 3 ciphers and secure user login/registration using sessions.",
+    date: "Jan. 2020",
+    description: [
+      "Constructed full-stack cryptography web app supporting 3 ciphers and secure user login/registration using sessions",
+    ],
     languages: ["JavaScript/JSX", "SQL", "HTML", "CSS/SASS", "PHP"],
     frameworksLibraries: ["Bootstrap"],
     toolsTechnologies: ["Git", "Linux", "MySQL", "Heroku"],
@@ -103,8 +117,11 @@ const ProjectData = [
   {
     image: polynomialRegressionImg,
     title: "Polynomial Regression",
-    description:
-      "Web app that performs and graphs polynomial regression using gradient descent on user-inputted data points. This project is the ancestor to Linear Regression.",
+    date: "May 2020",
+    description: [
+      "Created web app that performs and graphs polynomial regression using gradient descent on user-inputted data points",
+      "Ancestor project of Linear Regression",
+    ],
     languages: ["JavaScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -116,8 +133,11 @@ const ProjectData = [
   {
     image: linearRegressionImg,
     title: "Linear Regression",
-    description:
-      "Web app that performs and graphs linear regression using gradient descent on user-inputted data points. This project is the predecessor to Polynomial Regression.",
+    date: "Dec. 2019",
+    description: [
+      "Created web app that performs and graphs linear regression using gradient descent on user-inputted data points",
+      "Predecessor project of Polynomial Regression",
+    ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -129,8 +149,10 @@ const ProjectData = [
   {
     image: infiniteMonkeyImg,
     title: "Infinite Monkey",
-    description:
-      "Web app that uses a genetic algorithm to evolve a target phrase, somewhat emulating the infinite monkey theorem.",
+    date: "Dec. 2019",
+    description: [
+      "Created web app that uses a genetic algorithm to evolve a target phrase, simulating the infinite monkey theorem",
+    ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -142,8 +164,10 @@ const ProjectData = [
   {
     image: faviconImg,
     title: "Personal Website",
-    description:
-      "This! My personal website serving as a portfolio of my projects and career.",
+    date: "Oct. 2019 – Present",
+    description: [
+      "Created website with React to serve as a portfolio of my projects and career",
+    ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     toolsTechnologies: ["Git"],
@@ -156,8 +180,12 @@ const ProjectData = [
   {
     image: constructionImg,
     title: "Mobile Game",
-    description:
-      "A mobile, action, role-playing, strategy game I've been developing on my own using libGDX since 2016. It's a rather ambitious project, so it's not going to be released any time soon. It's also currently put on hold so I can focus on AI and machine learning.",
+    date: "Jun. 2016 – Present",
+    description: [
+      "Developing 2D mobile action, role-playing, strategy game",
+      "It's a rather ambitious project, so it's not going to be finished any time soon",
+      "Currently put on hold to focus on AI and machine learning",
+    ],
     languages: ["Java"],
     frameworksLibraries: [],
     toolsTechnologies: ["Git"],

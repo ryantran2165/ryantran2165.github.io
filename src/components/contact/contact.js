@@ -23,8 +23,22 @@ class Contact extends Component {
       subject: "",
       message: "",
       recaptchaSuccess: false,
+      isMobile: false,
     };
   }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize = () => {
+    // For email line break on mobile
+    this.setState({ isMobile: window.innerWidth < 576 });
+  };
 
   onChange = () => {
     this.setState({ recaptchaSuccess: true });
@@ -61,15 +75,17 @@ class Contact extends Component {
         <SectionTitle text="Contact" />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
-            <Row className="justify-content-center text-nowrap">
-              <Col>
+            <Row className="justify-content-center">
+              <Col xs={6}>
                 <ContactIcon
                   href="mailto:ryantran2165@gmail.com"
                   icon={faEnvelope}
                 />
-                <h6 className="mt-2">ryantran2165@gmail.com</h6>
+                <h6 className="mt-2">
+                  ryantran2165{this.state.isMobile && <br />}@gmail.com
+                </h6>
               </Col>
-              <Col>
+              <Col xs={6}>
                 <ContactIcon href="tel:1-669-282-2213" icon={faPhoneAlt} />
                 <h6 className="mt-2">(669) 282-2213</h6>
               </Col>

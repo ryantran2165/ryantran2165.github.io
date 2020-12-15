@@ -61,20 +61,17 @@ class Skills extends Component {
         <Container id="skills" fluid className="text-center bg-white pt-5 pb-5">
           <SectionTitle text="Skills" />
           <Row className="justify-content-center mt-3 mb-4">
-            <Col xs="auto">
+            <Col xs={6} sm="auto">
               <h5>5 - Expert</h5>
             </Col>
-            <Col xs="auto">
+            <Col xs={6} sm="auto">
               <h5>4 - Advanced</h5>
             </Col>
-            <Col xs="auto">
+            <Col xs={6} sm="auto">
               <h5>3 - Proficient</h5>
             </Col>
-            <Col xs="auto">
+            <Col xs={6} sm="auto">
               <h5>2 - Familiar</h5>
-            </Col>
-            <Col xs="auto">
-              <h5>1 - Unfamiliar</h5>
             </Col>
           </Row>
           <Row>

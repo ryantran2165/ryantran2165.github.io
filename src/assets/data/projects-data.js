@@ -5,7 +5,6 @@ import digitRecognizerImg from "../images/digit_recognizer.jpg";
 import donutDashImg from "../images/donut_dash.jpg";
 import cryptoOnlineImg from "../images/crypto_online.jpg";
 import polynomialRegressionImg from "../images/polynomial_regression.jpg";
-import linearRegressionImg from "../images/linear_regression.jpg";
 import infiniteMonkeyImg from "../images/infinite_monkey.jpg";
 import faviconImg from "../images/favicon.jpg";
 import constructionImg from "../images/under_construction.jpg";
@@ -120,7 +119,6 @@ const ProjectData = [
     date: "May 2020",
     description: [
       "Created web app that performs and graphs polynomial regression using gradient descent on user-inputted data points",
-      "Ancestor project of Linear Regression",
     ],
     languages: ["JavaScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
@@ -129,22 +127,6 @@ const ProjectData = [
     categories: ["Machine Learning"],
     source: "https://github.com/ryantran2165/polynomial-regression",
     demo: "https://www.ryanlongtran.com/polynomial-regression",
-  },
-  {
-    image: linearRegressionImg,
-    title: "Linear Regression",
-    date: "Dec. 2019",
-    description: [
-      "Created web app that performs and graphs linear regression using gradient descent on user-inputted data points",
-      "Predecessor project of Polynomial Regression",
-    ],
-    languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
-    frameworksLibraries: ["React", "Bootstrap"],
-    toolsTechnologies: ["Git"],
-    machineLearning: [],
-    categories: ["Machine Learning"],
-    source: "https://github.com/ryantran2165/linear-regression",
-    demo: "https://www.ryanlongtran.com/linear-regression",
   },
   {
     image: infiniteMonkeyImg,

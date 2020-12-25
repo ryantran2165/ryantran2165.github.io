@@ -62,7 +62,7 @@ const ProjectData = [
     ],
     languages: ["JavaScript/JSX", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
-    toolsTechnologies: ["Git"],
+    toolsTechnologies: ["Git", "GCP"],
     machineLearning: ["TensorFlowJS"],
     categories: ["Machine Learning"],
     source: "https://github.com/ryantran2165/connect4-ai",

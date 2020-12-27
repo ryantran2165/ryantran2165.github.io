@@ -56,7 +56,7 @@ const ProjectData = [
   {
     image: connect4aiImg,
     title: "Connect 4 AI",
-    date: "Aug. 2020 – Present",
+    date: "Aug. 2020 – Dec. 2020",
     description: [
       "Implemented Connect 4 AI web app with varying difficulties using Q-learning, NeuroEvolution of Augmenting Topologies (NEAT), and minimax",
     ],

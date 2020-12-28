@@ -1,18 +1,18 @@
-function sortAlphabetical(a, b) {
-  return a.toLowerCase().localeCompare(b.toLowerCase());
-}
+// function sortAlphabetical(a, b) {
+//   return a.toLowerCase().localeCompare(b.toLowerCase());
+// }
 
 export function getTags(obj) {
-  obj.languages.sort(sortAlphabetical);
-  obj.frameworksLibraries.sort(sortAlphabetical);
-  obj.toolsTechnologies.sort(sortAlphabetical);
-  obj.machineLearning.sort(sortAlphabetical);
-  obj.categories.sort(sortAlphabetical);
+  // obj.categories.sort(sortAlphabetical);
+  // obj.programmingLanguages.sort(sortAlphabetical);
+  // obj.frameworksLibraries.sort(sortAlphabetical);
+  // obj.toolsTechnologies.sort(sortAlphabetical);
+  // obj.machineLearning.sort(sortAlphabetical);
 
-  return obj.languages.concat(
+  return obj.categories.concat(
+    obj.programmingLanguages,
     obj.frameworksLibraries,
     obj.toolsTechnologies,
-    obj.machineLearning,
-    obj.categories
+    obj.machineLearning
   );
 }

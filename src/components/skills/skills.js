@@ -8,7 +8,7 @@ import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
 import {
-  LANGUAGES,
+  PROGRAMMING_LANGUAGES,
   FRAMEWORKS_LIBRARIES,
   TOOLS_TECHNOLOGIES,
   MACHINE_LEARNING,
@@ -22,8 +22,8 @@ class Skills extends Component {
 
   animateSkills = () => {
     if (!this.state.skillsAnimated) {
-      for (const language in LANGUAGES) {
-        const lang = LANGUAGES[language];
+      for (const language in PROGRAMMING_LANGUAGES) {
+        const lang = PROGRAMMING_LANGUAGES[language];
         createSkill(`#${lang.id}`, lang.display, lang.rating / 5);
       }
       this.setState({ skillsAnimated: true });
@@ -76,11 +76,11 @@ class Skills extends Component {
           </Row>
           <Row>
             <Col>
-              <h4 className="font-weight-bold">Languages</h4>
+              <h4 className="font-weight-bold">Programming Languages</h4>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">
-            {Object.entries(LANGUAGES).map((pair) => (
+            {Object.entries(PROGRAMMING_LANGUAGES).map((pair) => (
               <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
             ))}
           </Row>

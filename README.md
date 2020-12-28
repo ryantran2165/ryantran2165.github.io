@@ -1,6 +1,6 @@
 # Personal Website
 
-• Created website with React to serve as a portfolio of my projects and career  
+• Created website with React as a portfolio for my projects and career  
 • JavaScript/JSX, HTML, CSS/SASS | React, Bootstrap | Git  
 • https://www.ryanlongtran.com
 

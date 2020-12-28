@@ -8,13 +8,14 @@ import ProjectData from "../../assets/data/projects-data";
 import ProjectFilter from "./project-filter";
 import Project from "./project";
 import {
-  LANGUAGES,
+  PROGRAMMING_LANGUAGES,
   FRAMEWORKS_LIBRARIES,
   TOOLS_TECHNOLOGIES,
   MACHINE_LEARNING,
 } from "../../assets/data/skills-data";
+import { getTags } from "../etc/utils";
 
-const CATEGORIES = ["Machine Learning", "Full-Stack", "Game"];
+const CATEGORIES = ["Full-Stack", "Machine Learning", "Game"];
 
 class Projects extends Component {
   constructor(props) {
@@ -87,13 +88,7 @@ class Projects extends Component {
   };
 
   projectHasTag = (project, filter) => {
-    const tags = project.languages.concat(
-      project.frameworksLibraries,
-      project.toolsTechnologies,
-      project.machineLearning,
-      project.categories
-    );
-    return tags.includes(filter);
+    return getTags(project).includes(filter);
   };
 
   render() {
@@ -115,7 +110,12 @@ class Projects extends Component {
             <Row className="text-left">
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={Object.keys(LANGUAGES)}
+                filters={CATEGORIES}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(PROGRAMMING_LANGUAGES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
@@ -131,11 +131,6 @@ class Projects extends Component {
               <ProjectFilter
                 currentFilters={this.state.filters}
                 filters={Object.keys(MACHINE_LEARNING)}
-                onChange={this.handleFilterChange}
-              />
-              <ProjectFilter
-                currentFilters={this.state.filters}
-                filters={CATEGORIES}
                 onChange={this.handleFilterChange}
               />
             </Row>

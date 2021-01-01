@@ -78,10 +78,10 @@ class About extends Component {
               Hi there! I'm Ryan, a senior undergradudate majoring in computer
               science at San Jose State University. I first became interested in
               programming about 6 years ago out of curiosity for game
-              development, but I've since become more fascinated with AI and
-              machine learning. Some of my hobbies include indie game
-              development, tennis, MMA, piano, and anime. Thanks for visiting my
-              site!
+              development, but I've since become fascinated with AI and machine
+              learning. Some of my hobbies include indie game development,
+              tennis, ping pong, basketball, MMA, piano, and anime. Thanks for
+              visiting my site!
             </p>
             <Row className="justify-content-center">
               <Col xs="auto" className="pt-4">

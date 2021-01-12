@@ -73,15 +73,21 @@ class About extends Component {
             <h4 className="mt-4">
               Aspiring Software/Machine Learning Engineer
             </h4>
-            <h6>San Jose State University, BS Computer Science C/O 2021</h6>
+            <h6>San Jose State University</h6>
+            <h6>
+              M.S. Software Engineering, Data Science Specialization C/O 2023
+            </h6>
             <p className="text-left mt-4">
-              Hi there! I'm Ryan, a senior undergradudate majoring in computer
-              science at San Jose State University. I first became interested in
-              programming about 6 years ago out of curiosity for game
-              development, but I've since become fascinated with AI and machine
-              learning. Some of my hobbies include indie game development,
-              tennis, ping pong, basketball, MMA, piano, and anime. Thanks for
-              visiting my site!
+              Hi there, thanks for visiting my site! I'm Ryan, a senior
+              undergrad majoring in computer science at San Jose State
+              University, graduating May 2021. I'll be continuing my education
+              at SJSU in the Masters of Science in Software Engineering, Data
+              Science Specialization program, starting Fall 2021 and graduating
+              Spring 2023. I started programming six years ago to develop my own
+              games, but I'm now focusing on machine learning and AI. I also
+              really enjoy and have experience in full-stack web development.
+              Some of my hobbies include indie game development, tennis, ping
+              pong, basketball, MMA, piano, and anime.
             </p>
             <Row className="justify-content-center">
               <Col xs="auto" className="pt-4">

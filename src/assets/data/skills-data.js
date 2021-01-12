@@ -104,34 +104,16 @@ export const MACHINE_LEARNING = {
   TensorFlow: {
     rating: 3,
   },
-  TensorFlowJS: {
-    rating: 3,
-  },
   Keras: {
     rating: 3,
   },
   "scikit-learn": {
     rating: 3,
   },
-  PyTorch: {
-    rating: 2,
-  },
   NumPy: {
     rating: 2,
   },
   pandas: {
-    rating: 2,
-  },
-  "Jupyter Notebook": {
-    rating: 2,
-  },
-  Matplotlib: {
-    rating: 2,
-  },
-  Seaborn: {
-    rating: 2,
-  },
-  Scrapy: {
     rating: 2,
   },
 };

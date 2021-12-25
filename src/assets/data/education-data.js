@@ -12,7 +12,7 @@ export const EDUCATION = [
     date: "Aug. 2019 – May 2021",
     description: [
       "CS Department Outstanding Graduating Senior - $1,000 academic scholarship",
-      "4.000/4.000 SJSU GPA - President's Scholar",
+      "4.000/4.000 SJSU GPA - Summa Cum Laude, President's Scholar",
       "3.914/4.000 Overall GPA",
     ],
   },

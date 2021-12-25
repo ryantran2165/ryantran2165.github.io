@@ -16,7 +16,7 @@ const ProjectData = [
     title: "Skin Detector",
     date: "Sep. 2021 – Dec. 2021",
     description: [
-      "Developed mobile application (Android) with React Native that detects a variety of skin conditions such as Melanoma, Basal Cell Carcinoma, and others",
+      "Developed mobile application (Android) with React Native that detects a variety of skin conditions including melanoma, basal cell carcinoma, and others",
       "Trained convolutional neural networks with TensorFlow and deployed on-device models with TensorFlow.js",
     ],
     categories: ["Mobile", "Machine Learning"],

@@ -48,9 +48,8 @@ export const EXPERIENCES = [
     location: "Mountain View, CA",
     date: "Jul. 2017 – Oct. 2017",
     description: [
-      "Independently learned C#, Unity, and Unity Virtual Reality (VR) in less than a week",
-      "Developed Unity VR arcade game as a demo",
-      "Fixed bugs in a Samsung Unity VR workshop/tutorial in half the expected time",
+      "Independently learned C#, Unity, and Unity Virtual Reality to develop a Unity VR arcade game as a demo",
+      "Fixed bugs in a Samsung Unity VR workshop/tutorial",
     ],
     categories: [],
     languages: ["C#"],

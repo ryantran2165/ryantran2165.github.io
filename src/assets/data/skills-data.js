@@ -1,23 +1,23 @@
-export const PROGRAMMING_LANGUAGES = {
+export const LANGUAGES = {
   Java: {
     id: "java-skill",
     rating: 4,
     display: "Java",
   },
-  "JavaScript/JSX": {
-    id: "javascript-skill",
+  "C#": {
+    id: "csharp-skill",
     rating: 4,
-    display: "JavaScript\nJSX",
+    display: "C#",
   },
   Python: {
     id: "python-skill",
     rating: 4,
     display: "Python",
   },
-  SQL: {
-    id: "sql-skill",
+  "JavaScript/TypeScript": {
+    id: "javascript-skill",
     rating: 4,
-    display: "SQL",
+    display: "JavaScript\nTypeScript",
   },
   HTML: {
     id: "html-skill",
@@ -29,15 +29,15 @@ export const PROGRAMMING_LANGUAGES = {
     rating: 3,
     display: "CSS\nSASS",
   },
-  "C#": {
-    id: "csharp-skill",
-    rating: 2,
-    display: "C#",
-  },
   "C++": {
     id: "cpp-skill",
-    rating: 2,
+    rating: 3,
     display: "C++",
+  },
+  SQL: {
+    id: "sql-skill",
+    rating: 3,
+    display: "SQL",
   },
   PHP: {
     id: "php-skill",
@@ -50,31 +50,52 @@ export const FRAMEWORKS_LIBRARIES = {
   React: {
     rating: 4,
   },
+  "React Native": {
+    rating: 3,
+  },
   Redux: {
+    rating: 3,
+  },
+  Angular: {
+    rating: 3,
+  },
+  "ASP.NET": {
+    rating: 3,
+  },
+  Blazor: {
     rating: 3,
   },
   Bootstrap: {
     rating: 3,
   },
   Django: {
-    rating: 3,
+    rating: 2,
   },
   Flask: {
     rating: 2,
   },
+  WPF: {
+    rating: 2,
+  },
 };
 
-export const TOOLS_TECHNOLOGIES = {
+export const TECHNOLOGIES = {
   Git: {
     rating: 3,
   },
   Linux: {
     rating: 3,
   },
+  Docker: {
+    rating: 3,
+  },
   MySQL: {
     rating: 3,
   },
   PostgreSQL: {
+    rating: 3,
+  },
+  "SQL Server": {
     rating: 3,
   },
   SQLite: {
@@ -110,10 +131,13 @@ export const MACHINE_LEARNING = {
   "scikit-learn": {
     rating: 3,
   },
+  PyTorch: {
+    rating: 3,
+  },
   NumPy: {
-    rating: 2,
+    rating: 3,
   },
   pandas: {
-    rating: 2,
+    rating: 3,
   },
 };

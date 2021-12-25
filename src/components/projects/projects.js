@@ -8,14 +8,14 @@ import ProjectData from "../../assets/data/projects-data";
 import ProjectFilter from "./project-filter";
 import Project from "./project";
 import {
-  PROGRAMMING_LANGUAGES,
+  LANGUAGES,
   FRAMEWORKS_LIBRARIES,
-  TOOLS_TECHNOLOGIES,
+  TECHNOLOGIES,
   MACHINE_LEARNING,
 } from "../../assets/data/skills-data";
 import { getTags } from "../etc/utils";
 
-const CATEGORIES = ["Full-Stack", "Machine Learning", "Game"];
+const CATEGORIES = ["Full-Stack", "Mobile", "Machine Learning", "Game"];
 
 class Projects extends Component {
   constructor(props) {
@@ -115,7 +115,7 @@ class Projects extends Component {
               />
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={Object.keys(PROGRAMMING_LANGUAGES)}
+                filters={Object.keys(LANGUAGES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
@@ -125,7 +125,7 @@ class Projects extends Component {
               />
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={Object.keys(TOOLS_TECHNOLOGIES)}
+                filters={Object.keys(TECHNOLOGIES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter

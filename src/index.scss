@@ -392,8 +392,8 @@ ul {
   @include shadow;
   background-color: aquamarine;
   border-radius: 0.5rem;
-  -webkit-transition: box-shadow 0.25s ease-in-out;
-  transition: box-shadow 0.25s ease-in-out;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
 
   &:hover {
     -webkit-box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3),
@@ -469,9 +469,3 @@ ul {
   }
 }
 /* END CONTACT */
-
-/* FOOTER */
-.footer-col {
-  z-index: 999; // So particles don't go over button
-}
-/* END FOOTER */

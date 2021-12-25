@@ -7,7 +7,6 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import SocialIcon from "../etc/social-icon";
 import ryanImage from "../../assets/images/ryan_tran.jpg";
-import SectionTitle from "../etc/section-title";
 import Particles from "react-particles-js";
 import ParticlesConfig from "../etc/particles-config.js";
 
@@ -62,7 +61,7 @@ class About extends Component {
             xl={6}
             className="px-3 px-md-5 py-5"
           >
-            <SectionTitle id="name" text="Ryan L. Tran" />
+            <h1 className="font-weight-bold mb-4">Ryan L. Tran</h1>
             <Image
               fluid
               roundedCircle
@@ -73,21 +72,17 @@ class About extends Component {
             <h4 className="mt-4">
               Aspiring Software/Machine Learning Engineer
             </h4>
-            <h6>San Jose State University</h6>
+            <h6>San José State University</h6>
             <h6>
               M.S. Software Engineering, Data Science Specialization C/O 2023
             </h6>
             <p className="text-left mt-4">
-              Hi there, thanks for visiting my site! I'm Ryan, a senior
-              undergrad majoring in computer science at San Jose State
-              University, graduating May 2021. I'll be continuing my education
-              at SJSU in the Masters of Science in Software Engineering, Data
-              Science Specialization program, starting Fall 2021 and graduating
-              Spring 2023. I started programming six years ago to develop my own
-              games, but I'm now focusing on machine learning and AI. I also
-              really enjoy and have experience in full-stack web development.
-              Some of my hobbies include indie game development, tennis, ping
-              pong, basketball, MMA, piano, and anime.
+              Hi there, thanks for visiting my site! I'm Ryan, a first year
+              Software Engineering master's student at San José State University
+              graduating Spring 2023. I've been programming for about 7 years
+              and am interested in all forms of software development, especially
+              machine learning and AI applications. Some of my hobbies include
+              indie game development, tennis, ping pong, basketball, and MMA.
             </p>
             <Row className="justify-content-center">
               <Col xs="auto" className="pt-4">

@@ -4,15 +4,15 @@
 
 export function getTags(obj) {
   // obj.categories.sort(sortAlphabetical);
-  // obj.programmingLanguages.sort(sortAlphabetical);
+  // obj.languages.sort(sortAlphabetical);
   // obj.frameworksLibraries.sort(sortAlphabetical);
-  // obj.toolsTechnologies.sort(sortAlphabetical);
+  // obj.technologies.sort(sortAlphabetical);
   // obj.machineLearning.sort(sortAlphabetical);
 
   return obj.categories.concat(
-    obj.programmingLanguages,
+    obj.languages,
     obj.frameworksLibraries,
-    obj.toolsTechnologies,
+    obj.technologies,
     obj.machineLearning
   );
 }

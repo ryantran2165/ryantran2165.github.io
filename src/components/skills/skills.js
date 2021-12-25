@@ -8,9 +8,9 @@ import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
 import {
-  PROGRAMMING_LANGUAGES,
+  LANGUAGES,
   FRAMEWORKS_LIBRARIES,
-  TOOLS_TECHNOLOGIES,
+  TECHNOLOGIES,
   MACHINE_LEARNING,
 } from "../../assets/data/skills-data";
 
@@ -22,8 +22,8 @@ class Skills extends Component {
 
   animateSkills = () => {
     if (!this.state.skillsAnimated) {
-      for (const language in PROGRAMMING_LANGUAGES) {
-        const lang = PROGRAMMING_LANGUAGES[language];
+      for (const language in LANGUAGES) {
+        const lang = LANGUAGES[language];
         createSkill(`#${lang.id}`, lang.display, lang.rating / 5);
       }
       this.setState({ skillsAnimated: true });
@@ -58,7 +58,7 @@ class Skills extends Component {
   render() {
     return (
       <Waypoint onEnter={this.animateSkills}>
-        <Container id="skills" fluid className="text-center bg-white pt-5 pb-5">
+        <Container id="skills" fluid className="text-center bg-white py-5">
           <SectionTitle text="Skills" />
           <Row className="justify-content-center mt-3 mb-4">
             <Col xs={6} sm="auto">
@@ -76,11 +76,11 @@ class Skills extends Component {
           </Row>
           <Row>
             <Col>
-              <h4 className="font-weight-bold">Programming Languages</h4>
+              <h4 className="font-weight-bold">Languages</h4>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">
-            {Object.entries(PROGRAMMING_LANGUAGES).map((pair) => (
+            {Object.entries(LANGUAGES).map((pair) => (
               <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
             ))}
           </Row>
@@ -89,10 +89,7 @@ class Skills extends Component {
               subheading="Frameworks/Libraries"
               skills={FRAMEWORKS_LIBRARIES}
             />
-            <SkillList
-              subheading="Tools/Technologies"
-              skills={TOOLS_TECHNOLOGIES}
-            />
+            <SkillList subheading="Technologies" skills={TECHNOLOGIES} />
             <SkillList
               subheading="Machine Learning"
               skills={MACHINE_LEARNING}

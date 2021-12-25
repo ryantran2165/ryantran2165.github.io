@@ -112,23 +112,14 @@ class Navigation extends Component {
             </div>
             <div data-aos="flip-down" data-aos-delay="600">
               <NavigationLink
-                to="projects"
-                text="Projects"
+                to="education"
+                text="Education"
                 onClick={this.handleClickLink}
                 offset={this.props.offset}
                 duration={this.props.duration}
               />
             </div>
             <div data-aos="flip-down" data-aos-delay="800">
-              <NavigationLink
-                to="skills"
-                text="Skills"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
-            </div>
-            <div data-aos="flip-down" data-aos-delay="1000">
               <NavigationLink
                 to="experience"
                 text="Experience"
@@ -137,7 +128,25 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
+            <div data-aos="flip-down" data-aos-delay="1000">
+              <NavigationLink
+                to="projects"
+                text="Projects"
+                onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
+              />
+            </div>
             <div data-aos="flip-down" data-aos-delay="1200">
+              <NavigationLink
+                to="skills"
+                text="Skills"
+                onClick={this.handleClickLink}
+                offset={this.props.offset}
+                duration={this.props.duration}
+              />
+            </div>
+            <div data-aos="flip-down" data-aos-delay="1400">
               <NavigationLink
                 to="contact"
                 text="Contact"

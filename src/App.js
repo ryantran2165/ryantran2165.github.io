@@ -4,11 +4,11 @@ import "aos/dist/aos.css";
 import Navigation from "./components/navigation/navigation";
 import About from "./components/about/about";
 import Testimonials from "./components/testimonials/testimonials";
+import Education from "./components/education/education";
+import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
-import Experience from "./components/experience/experience";
 import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
 import BackToTop from "./components/navigation/back-to-top";
 import Preloader from "./components/etc/preloader";
 
@@ -79,11 +79,11 @@ class App extends Component {
         <Navigation offset={this.state.offset} duration={NAV_DURATION} />
         <About />
         <Testimonials />
+        <Education />
+        <Experience />
         <Projects />
         <Skills />
-        <Experience />
         <Contact />
-        <Footer />
         <BackToTop offset={this.state.offset} duration={NAV_DURATION} />
         <Preloader />
       </div>

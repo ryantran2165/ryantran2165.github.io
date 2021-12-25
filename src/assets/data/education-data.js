@@ -11,9 +11,8 @@ export const EDUCATION = [
     degree: "Bachelor of Science - BS, Computer Science",
     date: "Aug. 2019 – May 2021",
     description: [
+      "3.914/4.000 GPA - Summa Cum Laude, President's Scholar",
       "CS Department Outstanding Graduating Senior - $1,000 academic scholarship",
-      "4.000/4.000 SJSU GPA - Summa Cum Laude, President's Scholar",
-      "3.914/4.000 Overall GPA",
     ],
   },
 ];

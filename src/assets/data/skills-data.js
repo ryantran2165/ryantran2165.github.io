@@ -1,18 +1,18 @@
 export const LANGUAGES = {
-  Java: {
-    id: "java-skill",
+  Python: {
+    id: "python-skill",
     rating: 4,
-    display: "Java",
+    display: "Python",
   },
   "C#": {
     id: "csharp-skill",
     rating: 4,
     display: "C#",
   },
-  Python: {
-    id: "python-skill",
+  Java: {
+    id: "java-skill",
     rating: 4,
-    display: "Python",
+    display: "Java",
   },
   "JavaScript/TypeScript": {
     id: "javascript-skill",
@@ -21,23 +21,23 @@ export const LANGUAGES = {
   },
   HTML: {
     id: "html-skill",
-    rating: 3,
+    rating: 4,
     display: "HTML",
   },
   "CSS/SASS": {
     id: "css-skill",
-    rating: 3,
+    rating: 4,
     display: "CSS\nSASS",
+  },
+  SQL: {
+    id: "sql-skill",
+    rating: 4,
+    display: "SQL",
   },
   "C++": {
     id: "cpp-skill",
     rating: 3,
     display: "C++",
-  },
-  SQL: {
-    id: "sql-skill",
-    rating: 3,
-    display: "SQL",
   },
   PHP: {
     id: "php-skill",
@@ -50,22 +50,25 @@ export const FRAMEWORKS_LIBRARIES = {
   React: {
     rating: 4,
   },
-  "React Native": {
-    rating: 3,
+  Bootstrap: {
+    rating: 4,
   },
-  Redux: {
-    rating: 3,
+  Blazor: {
+    rating: 4,
+  },
+  "ASP.NET": {
+    rating: 4,
   },
   Angular: {
     rating: 3,
   },
-  "ASP.NET": {
+  "React Native": {
     rating: 3,
   },
-  Blazor: {
+  "Entity Framework": {
     rating: 3,
   },
-  Bootstrap: {
+  WPF: {
     rating: 3,
   },
   Django: {
@@ -74,14 +77,20 @@ export const FRAMEWORKS_LIBRARIES = {
   Flask: {
     rating: 2,
   },
-  WPF: {
+  Redux: {
     rating: 2,
   },
 };
 
-export const TECHNOLOGIES = {
+export const TECHNOLOGIES_PARADIGMS = {
   Git: {
-    rating: 3,
+    rating: 4,
+  },
+  "Object-Oriented (OOP)": {
+    rating: 4,
+  },
+  "REST API": {
+    rating: 4,
   },
   Linux: {
     rating: 3,
@@ -101,27 +110,33 @@ export const TECHNOLOGIES = {
   SQLite: {
     rating: 3,
   },
-  AWS: {
-    rating: 2,
-  },
-  GCP: {
-    rating: 2,
-  },
-  "REST API": {
+  MongoDB: {
     rating: 3,
   },
   NoSQL: {
-    rating: 2,
+    rating: 3,
+  },
+  AWS: {
+    rating: 3,
+  },
+  GCP: {
+    rating: 3,
+  },
+  Agile: {
+    rating: 3,
   },
   Heroku: {
-    rating: 3,
+    rating: 2,
   },
   Unity: {
-    rating: 3,
+    rating: 2,
   },
 };
 
 export const MACHINE_LEARNING = {
+  PyTorch: {
+    rating: 3,
+  },
   TensorFlow: {
     rating: 3,
   },
@@ -131,13 +146,13 @@ export const MACHINE_LEARNING = {
   "scikit-learn": {
     rating: 3,
   },
-  PyTorch: {
-    rating: 3,
-  },
   NumPy: {
     rating: 3,
   },
   pandas: {
     rating: 3,
+  },
+  seaborn: {
+    rating: 2,
   },
 };

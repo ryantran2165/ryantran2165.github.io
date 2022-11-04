@@ -11,14 +11,7 @@ const ProjectFilter = ({ currentFilters, filters, onChange }) => {
         return (
           <Row key={`${filter}-filter`}>
             <Col>
-              <Form.Check
-                custom
-                id={`${filter}-checkbox`}
-                label={filter}
-                name={filter}
-                checked={currentFilters.includes(filter)}
-                onChange={onChange}
-              />
+              <Form.Check custom id={`${filter}-checkbox`} label={filter} name={filter} checked={currentFilters.includes(filter)} onChange={onChange} />
             </Col>
           </Row>
         );

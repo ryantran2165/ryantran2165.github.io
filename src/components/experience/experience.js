@@ -8,7 +8,7 @@ import { EXPERIENCES } from "../../assets/data/experience-data";
 
 const Experience = () => {
   return (
-    <Container id="experience" fluid className="text-center bg-white py-5">
+    <Container id="experience" fluid className="text-center py-5">
       <SectionTitle text="Experience" />
       <Row className="justify-content-center text-left mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>

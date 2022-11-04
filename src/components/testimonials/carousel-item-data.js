@@ -7,25 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
   return (
     <React.Fragment>
-      <Image
-        fluid
-        roundedCircle
-        className="circle-img"
-        src={imageSrc}
-        alt={name}
-      />
-      <h3 className="font-weight-bold mt-3">
-        <a
-          className="testimonial-link"
-          href={linkedInSrc}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <Image fluid roundedCircle className="circle-img" src={imageSrc} alt={name} />
+      <h4 className="font-weight-bold mt-3">
+        <a className="testimonial-link" href={linkedInSrc} target="_blank" rel="noopener noreferrer">
           {name}
         </a>
-      </h3>
+      </h4>
       <h5 className="font-weight-bold">{title}</h5>
-      <p className="text-left">
+      <p className="text-justify">
         <FontAwesomeIcon icon={faQuoteLeft} /> {quote}
       </p>
     </React.Fragment>

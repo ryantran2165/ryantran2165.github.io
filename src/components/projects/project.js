@@ -16,29 +16,17 @@ const Project = ({ project }) => {
     buttons = (
       <React.Fragment>
         <Col xs="auto">
-          <SocialIcon
-            className="project-icon"
-            href={project.source}
-            icon={faGithub}
-          />
+          <SocialIcon className="project-icon" href={project.source} icon={faGithub} />
         </Col>
         <Col xs="auto">
-          <SocialIcon
-            className="project-icon"
-            href={project.demo}
-            icon={faPlay}
-          />
+          <SocialIcon className="project-icon" href={project.demo} icon={faPlay} />
         </Col>
       </React.Fragment>
     );
   } else if (project.source !== "") {
     buttons = (
       <Col xs="auto">
-        <SocialIcon
-          className="project-icon"
-          href={project.source}
-          icon={faGithub}
-        />
+        <SocialIcon className="project-icon" href={project.source} icon={faGithub} />
       </Col>
     );
   } else if (project.demo !== "") {
@@ -54,20 +42,16 @@ const Project = ({ project }) => {
       <div className="project-box h-100 pb-5">
         <Image fluid src={project.image} alt={project.title} />
         <div className="px-4">
-          <h3 className="font-weight-bold mt-4">{project.title}</h3>
+          <h4 className="font-weight-bold mt-4">{project.title}</h4>
           <h5>{project.date}</h5>
           {getTags(project).map((tag, i) => {
             return (
-              <Badge
-                pill
-                className="p-2 mx-1 mt-2"
-                key={`${i}-${project.title}-tag`}
-              >
+              <Badge pill className="p-2 mx-1 mt-2" key={`${i}-${project.title}-tag`}>
                 {tag}
               </Badge>
             );
           })}
-          <ul className="text-left mt-4">
+          <ul className="text-justify mt-4">
             {project.description.map((bullet, i) => (
               <li key={`${i}-${project.title}-description`}>{bullet}</li>
             ))}

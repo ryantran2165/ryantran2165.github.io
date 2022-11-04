@@ -4,7 +4,7 @@ class Preloader extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showingPreloader: true
+      showingPreloader: true,
     };
   }
 
@@ -14,12 +14,7 @@ class Preloader extends Component {
   }
 
   render() {
-    return (
-      <div
-        id="preloader"
-        className={this.state.showingPreloader ? "show" : "hide"}
-      ></div>
-    );
+    return <div id="preloader" className={this.state.showingPreloader ? "show" : "hide"}></div>;
   }
 }
 

@@ -1,3 +1,5 @@
+import kaggleFeedbackImg from "../images/kaggle_feedback.png";
+import kagglePatentImg from "../images/kaggle_patent.jpg";
 import skinDetectorImg from "../images/skin_detector.jpg";
 import officeSupplyDepotImg from "../images/office_supply_depot.jpg";
 import bjjPredictorImg from "../images/bjj_predictor.jpg";
@@ -12,11 +14,45 @@ import constructionImg from "../images/under_construction.jpg";
 
 const ProjectData = [
   {
+    image: kaggleFeedbackImg,
+    title: "Feedback Prize - Predicting Effective Arguments (Kaggle Competition)",
+    date: "May. 2022 – Aug. 2022",
+    description: [
+      "Placed 31st out of 1,557 competitors (top 2%)",
+      "Tasked to predict the effectiveness of argumentative essays from U.S. students in grades 6-12",
+      "Trained BERT models and ensembled using XGBoost, LightGBM, and CatBoost",
+    ],
+    categories: ["Machine Learning", "Competition"],
+    languages: ["Python"],
+    frameworksLibraries: [],
+    technologies: [],
+    machineLearning: ["PyTorch", "scikit-learn", "NumPy", "pandas", "seaborn"],
+    source: "",
+    demo: "https://www.kaggle.com/competitions/feedback-prize-effectiveness/leaderboard?search=ryantran",
+  },
+  {
+    image: kagglePatentImg,
+    title: "U.S. Patent Phrase to Phrase Matching (Kaggle Competition)",
+    date: "Mar. 2022 – Jun. 2022",
+    description: [
+      "Placed 60th out of 1,889 competitors (top 3.2%)",
+      "Tasked to predict the semantic similarity between phrases for U.S. patents",
+      "Trained BERT models and ensembled using XGBoost, LightGBM, and CatBoost",
+    ],
+    categories: ["Machine Learning", "Competition"],
+    languages: ["Python"],
+    frameworksLibraries: [],
+    technologies: [],
+    machineLearning: ["PyTorch", "scikit-learn", "NumPy", "pandas", "seaborn"],
+    source: "",
+    demo: "https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching/leaderboard?search=ryantran",
+  },
+  {
     image: skinDetectorImg,
     title: "Skin Detector",
     date: "Sep. 2021 – Dec. 2021",
     description: [
-      "Developed mobile application (Android) with React Native that detects a variety of skin conditions including melanoma, basal cell carcinoma, and others",
+      "Developed an Android mobile app with React Native that detects skin conditions, such as melanoma and carcinoma",
       "Trained convolutional neural networks with TensorFlow and deployed on-device models with TensorFlow.js",
     ],
     categories: ["Mobile", "Machine Learning"],
@@ -32,13 +68,13 @@ const ProjectData = [
     title: "Office Supply Depot",
     date: "Oct. 2020 – Dec. 2020",
     description: [
-      "Headed group project in developing full-stack e-commerce website with React frontend and Django REST API backend",
-      "Utilized GCP Maps and Directions APIs to optimize package delivery routes",
+      "Led a team to develop a full-stack e-commerce website with a React frontend and Django REST API backend",
+      "Utilized GCP Maps and Directions APIs to optimize package delivery routes for the hypothetical business",
     ],
     categories: ["Full-Stack"],
     languages: ["Python", "JavaScript/TypeScript", "HTML", "CSS/SASS"],
-    frameworksLibraries: ["React", "Redux", "Bootstrap", "Django"],
-    technologies: ["Git", "PostgreSQL", "GCP", "REST API", "Heroku"],
+    frameworksLibraries: ["React", "Bootstrap", "Django", "Redux"],
+    technologies: ["Git", "REST API", "PostgreSQL", "GCP", "Heroku"],
     machineLearning: [],
     source: "https://github.com/ryantran2165/office-supply-depot-frontend",
     demo: "https://office-supply-depot-frontend.netlify.app",
@@ -54,7 +90,7 @@ const ProjectData = [
     categories: ["Full-Stack", "Machine Learning"],
     languages: ["Python", "JavaScript/TypeScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap", "Flask"],
-    technologies: ["Git", "Linux", "AWS", "REST API", "NoSQL", "Heroku"],
+    technologies: ["Git", "REST API", "Linux", "AWS", "NoSQL", "Heroku"],
     machineLearning: ["TensorFlow", "Keras", "scikit-learn", "NumPy", "pandas"],
     source: "https://github.com/ryantran2165/bjj-predictor",
     demo: "https://www.ryanlongtran.com/bjj-predictor",
@@ -95,9 +131,7 @@ const ProjectData = [
     image: donutDashImg,
     title: "Donut Dash",
     date: "Mar. 2020 – May 2020",
-    description: [
-      "Collaborated with an artist to publish a 2D Unity platformer game",
-    ],
+    description: ["Collaborated with an artist to publish a 2D Unity platformer game"],
     categories: ["Game"],
     languages: ["C#"],
     frameworksLibraries: [],
@@ -110,9 +144,7 @@ const ProjectData = [
     image: cryptoOnlineImg,
     title: "Crypto Online",
     date: "Jan. 2020",
-    description: [
-      "Constructed full-stack cryptography web app supporting 3 ciphers and secure user login/registration using sessions",
-    ],
+    description: ["Constructed full-stack cryptography web app supporting 3 ciphers and secure user login/registration using sessions"],
     categories: ["Full-Stack"],
     languages: ["JavaScript/TypeScript", "HTML", "CSS/SASS", "SQL", "PHP"],
     frameworksLibraries: ["Bootstrap"],
@@ -125,9 +157,7 @@ const ProjectData = [
     image: polynomialRegressionImg,
     title: "Polynomial Regression",
     date: "May 2020",
-    description: [
-      "Created web app that performs and graphs polynomial regression using gradient descent on user-inputted data points",
-    ],
+    description: ["Created web app that performs and graphs polynomial regression using gradient descent on user-inputted data points"],
     categories: ["Machine Learning"],
     languages: ["JavaScript/TypeScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
@@ -140,9 +170,7 @@ const ProjectData = [
     image: infiniteMonkeyImg,
     title: "Infinite Monkey",
     date: "Dec. 2019",
-    description: [
-      "Created web app that uses a genetic algorithm to evolve a target phrase, simulating the infinite monkey theorem",
-    ],
+    description: ["Created web app that uses a genetic algorithm to evolve a target phrase, simulating the infinite monkey theorem"],
     categories: ["Machine Learning"],
     languages: ["JavaScript/TypeScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
@@ -155,16 +183,13 @@ const ProjectData = [
     image: faviconImg,
     title: "Personal Website",
     date: "Oct. 2019 – Present",
-    description: [
-      "Created website with React as a portfolio for my projects and career",
-    ],
+    description: ["Created website with React as a portfolio for my projects and career"],
     categories: [],
     languages: ["JavaScript/TypeScript", "HTML", "CSS/SASS"],
     frameworksLibraries: ["React", "Bootstrap"],
     technologies: ["Git"],
     machineLearning: [],
-    source:
-      "https://github.com/ryantran2165/ryantran2165.github.io/tree/source",
+    source: "https://github.com/ryantran2165/ryantran2165.github.io/tree/source",
     demo: "",
   },
   {

@@ -9,10 +9,5 @@ export function getTags(obj) {
   // obj.technologies.sort(sortAlphabetical);
   // obj.machineLearning.sort(sortAlphabetical);
 
-  return obj.categories.concat(
-    obj.languages,
-    obj.frameworksLibraries,
-    obj.technologies,
-    obj.machineLearning
-  );
+  return obj.categories.concat(obj.languages, obj.frameworksLibraries, obj.technologies, obj.machineLearning);
 }

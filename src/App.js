@@ -30,13 +30,9 @@ class App extends Component {
     // Calculate navigation offset
     const h1 = document.querySelector("h1");
     const lineHeightStr = window.getComputedStyle(h1).lineHeight;
-    const lineHeight = parseInt(
-      lineHeightStr.substring(0, lineHeightStr.length - 2)
-    );
+    const lineHeight = parseInt(lineHeightStr.substring(0, lineHeightStr.length - 2));
     const style = window.getComputedStyle(document.getElementById("about"));
-    const padding = parseInt(
-      style.paddingBottom.substring(0, style.paddingBottom.length - 2)
-    );
+    const padding = parseInt(style.paddingBottom.substring(0, style.paddingBottom.length - 2));
     this.setState({ offset: -(lineHeight + padding / 2) });
   }
 
@@ -79,8 +75,8 @@ class App extends Component {
         <Navigation offset={this.state.offset} duration={NAV_DURATION} />
         <About />
         <Testimonials />
-        <Education />
         <Experience />
+        <Education />
         <Projects />
         <Skills />
         <Contact />

@@ -8,7 +8,7 @@ import { EDUCATION } from "../../assets/data/education-data";
 
 const Education = () => {
   return (
-    <Container id="education" fluid className="text-center py-5">
+    <Container id="education" fluid className="text-center bg-white py-5">
       <SectionTitle text="Education" />
       <Row className="justify-content-center text-left mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>

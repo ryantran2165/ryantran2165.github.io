@@ -36,15 +36,9 @@ class Navigation extends Component {
   getNavbarToggle = () => {
     return (
       <div>
-        <span
-          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
-        ></span>
-        <span
-          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
-        ></span>
-        <span
-          className={`${this.state.navbarReduced ? "span-reduce" : ""}`}
-        ></span>
+        <span className={`${this.state.navbarReduced ? "span-reduce" : ""}`}></span>
+        <span className={`${this.state.navbarReduced ? "span-reduce" : ""}`}></span>
+        <span className={`${this.state.navbarReduced ? "span-reduce" : ""}`}></span>
       </div>
     );
   };
@@ -76,84 +70,33 @@ class Navigation extends Component {
         expanded={this.state.navbarExpanded}
       >
         <Navbar.Brand>
-          <Link
-            to="about"
-            smooth="easeInOutQuint"
-            offset={this.props.offset}
-            duration={this.props.duration}
-            onClick={this.handleClickLink}
-          >
+          <Link to="about" smooth="easeInOutQuint" offset={this.props.offset} duration={this.props.duration} onClick={this.handleClickLink}>
             RT
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="navbar"
-          children={this.getNavbarToggle()}
-        />
+        <Navbar.Toggle aria-controls="navbar" children={this.getNavbarToggle()} />
         <Navbar.Collapse>
           <Nav>
             <div data-aos="flip-down" data-aos-delay="200">
-              <NavigationLink
-                to="about"
-                text="About"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="about" text="About" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="400">
-              <NavigationLink
-                to="testimonials"
-                text="Testimonials"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="testimonials" text="Testimonials" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="600">
-              <NavigationLink
-                to="education"
-                text="Education"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="experience" text="Experience" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="800">
-              <NavigationLink
-                to="experience"
-                text="Experience"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="education" text="Education" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="1000">
-              <NavigationLink
-                to="projects"
-                text="Projects"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="projects" text="Projects" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="1200">
-              <NavigationLink
-                to="skills"
-                text="Skills"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="skills" text="Skills" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
             <div data-aos="flip-down" data-aos-delay="1400">
-              <NavigationLink
-                to="contact"
-                text="Contact"
-                onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
-              />
+              <NavigationLink to="contact" text="Contact" onClick={this.handleClickLink} offset={this.props.offset} duration={this.props.duration} />
             </div>
           </Nav>
         </Navbar.Collapse>

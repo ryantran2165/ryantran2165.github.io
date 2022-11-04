@@ -7,12 +7,7 @@ import ProgressBar from "progressbar.js/dist/progressbar";
 import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
-import {
-  LANGUAGES,
-  FRAMEWORKS_LIBRARIES,
-  TECHNOLOGIES,
-  MACHINE_LEARNING,
-} from "../../assets/data/skills-data";
+import { LANGUAGES as PROGRAMMING_LANGUAGES, FRAMEWORKS_LIBRARIES, TECHNOLOGIES_PARADIGMS, MACHINE_LEARNING } from "../../assets/data/skills-data";
 
 class Skills extends Component {
   constructor(props) {
@@ -22,8 +17,8 @@ class Skills extends Component {
 
   animateSkills = () => {
     if (!this.state.skillsAnimated) {
-      for (const language in LANGUAGES) {
-        const lang = LANGUAGES[language];
+      for (const language in PROGRAMMING_LANGUAGES) {
+        const lang = PROGRAMMING_LANGUAGES[language];
         createSkill(`#${lang.id}`, lang.display, lang.rating / 5);
       }
       this.setState({ skillsAnimated: true });
@@ -76,24 +71,18 @@ class Skills extends Component {
           </Row>
           <Row>
             <Col>
-              <h4 className="font-weight-bold">Languages</h4>
+              <h4 className="font-weight-bold">Programming Languages</h4>
             </Col>
           </Row>
           <Row className="justify-content-center mt-3">
-            {Object.entries(LANGUAGES).map((pair) => (
+            {Object.entries(PROGRAMMING_LANGUAGES).map((pair) => (
               <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
             ))}
           </Row>
           <Row className="justify-content-center">
-            <SkillList
-              subheading="Frameworks/Libraries"
-              skills={FRAMEWORKS_LIBRARIES}
-            />
-            <SkillList subheading="Technologies" skills={TECHNOLOGIES} />
-            <SkillList
-              subheading="Machine Learning"
-              skills={MACHINE_LEARNING}
-            />
+            <SkillList subheading="Frameworks/Libraries" skills={FRAMEWORKS_LIBRARIES} />
+            <SkillList subheading="Technologies/Paradigms" skills={TECHNOLOGIES_PARADIGMS} />
+            <SkillList subheading="Machine Learning" skills={MACHINE_LEARNING} />
           </Row>
         </Container>
       </Waypoint>

@@ -5,7 +5,7 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul. 2022 – Present",
     description: [
-      "Used C# to architect a database with Entity Framework, develop ASP.NET REST APIs, and build a Blazor web app for a company-wide API framework that unifies the development, management, and user access control for EPRI apps and APIs",
+      "Using C# to architect a database with Entity Framework, develop ASP.NET REST APIs, and build a Blazor web app for a company-wide API framework that unifies the development, management, and user access control for EPRI apps and APIs",
       "Developing a Blazor web app and WPF desktop app that interfaces with an ML backend to detect nuclear fuel rod defects",
       "Working full-time as a part-time master's student",
     ],

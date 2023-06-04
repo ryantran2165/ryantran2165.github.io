@@ -7,10 +7,15 @@ import SectionTitle from "../etc/section-title";
 import ProjectData from "../../assets/data/projects-data";
 import ProjectFilter from "./project-filter";
 import Project from "./project";
-import { LANGUAGES, FRAMEWORKS_LIBRARIES, TECHNOLOGIES_PARADIGMS, MACHINE_LEARNING } from "../../assets/data/skills-data";
+import {
+  LANGUAGES,
+  FRAMEWORKS_LIBRARIES,
+  TECHNOLOGIES_PARADIGMS,
+  MACHINE_LEARNING,
+} from "../../assets/data/skills-data";
 import { getTags } from "../etc/utils";
 
-const CATEGORIES = ["Full-Stack", "Mobile", "Machine Learning", "Game", "Competition"];
+const CATEGORIES = ["Full-Stack", "Desktop", "Mobile", "Machine Learning", "Game", "Competition"];
 
 class Projects extends Component {
   constructor(props) {
@@ -101,13 +106,38 @@ class Projects extends Component {
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} xl={8}>
             <Row className="text-left">
-              <ProjectFilter currentFilters={this.state.filters} filters={CATEGORIES} onChange={this.handleFilterChange} />
-              <ProjectFilter currentFilters={this.state.filters} filters={Object.keys(LANGUAGES)} onChange={this.handleFilterChange} />
-              <ProjectFilter currentFilters={this.state.filters} filters={Object.keys(FRAMEWORKS_LIBRARIES)} onChange={this.handleFilterChange} />
-              <ProjectFilter currentFilters={this.state.filters} filters={Object.keys(TECHNOLOGIES_PARADIGMS)} onChange={this.handleFilterChange} />
-              <ProjectFilter currentFilters={this.state.filters} filters={Object.keys(MACHINE_LEARNING)} onChange={this.handleFilterChange} />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={CATEGORIES}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(LANGUAGES)}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(FRAMEWORKS_LIBRARIES)}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(TECHNOLOGIES_PARADIGMS)}
+                onChange={this.handleFilterChange}
+              />
+              <ProjectFilter
+                currentFilters={this.state.filters}
+                filters={Object.keys(MACHINE_LEARNING)}
+                onChange={this.handleFilterChange}
+              />
             </Row>
-            <Form.Check type="switch" id="andOrSwitch" label="AND mode" onChange={this.handleSwitchChange} />
+            <Form.Check
+              type="switch"
+              id="andOrSwitch"
+              label="AND mode"
+              onChange={this.handleSwitchChange}
+            />
             <Row className="justify-content-center">{projects}</Row>
           </Col>
         </Row>

@@ -54,13 +54,21 @@ class About extends Component {
             <h1 className="font-weight-bold mt-4">Ryan L. Tran</h1>
             <h4 className="font-weight-bold">Software Engineer & Machine Learning Enthusiast</h4>
             <p className="text-justify mt-4">
-              Hi there, thanks for visiting my site! I'm currently an Associate Software Developer at EPRI and a second year Software Engineering master's student at San José State University. I've
-              been programming for about 7 years, 2 of which professionally, and am interested in all software development (full-stack web, mobile, desktop) and machine learning. Some of my hobbies
-              include game development, tennis, ping pong, basketball, MMA, movies, and TV shows.
+              Hi there, thanks for visiting my site! I'm currently an Associate Software Developer
+              at EPRI with a master's degree in software engineering from San José State University.
+              I've been programming for about 8 years, 2.5 of which professionally, and am
+              interested in all software development (full-stack web, desktop, mobile) and machine
+              learning. Some of my hobbies include game development, tennis, ping pong, basketball,
+              MMA, movies, and TV shows.
             </p>
             <Row className="justify-content-center">
               <Col xs="auto" className="pt-4">
-                <SocialIcon href={"https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"} icon={faFilePdf} />
+                <SocialIcon
+                  href={
+                    "https://drive.google.com/file/d/1xIw-Lj0BdPklRLcrSsA66JcTm5IKhQ5i/view?usp=sharing"
+                  }
+                  icon={faFilePdf}
+                />
               </Col>
               <Col xs="auto" className="pt-4">
                 <SocialIcon href="https://www.linkedin.com/in/ryantran2165" icon={faLinkedinIn} />

@@ -3,7 +3,7 @@ export const EDUCATION = [
     school: "San José State University",
     degree: "Master of Science - MS, Software Engineering, Data Science Specialization",
     date: "Aug. 2021 – May 2023",
-    description: ["3.87/4.00 GPA", "Worked full-time/part-time as a part-time/full-time student (depending on the semester)"],
+    description: ["3.92/4.00 GPA", "Worked concurrently through the duration"],
   },
   {
     school: "San José State University",
@@ -12,7 +12,7 @@ export const EDUCATION = [
     description: [
       "3.91/4.00 GPA - Summa Cum Laude, President's Scholar",
       "CS Department Outstanding Graduating Senior - $1,000 academic scholarship",
-      "Worked part-time as a full-time student the last semester",
+      "Worked concurrently through the last semester",
     ],
   },
 ];

@@ -29,7 +29,12 @@ class BackToTop extends Component {
 
   render() {
     return (
-      <Link to="about" smooth="easeInOutQuint" offset={this.props.offset} duration={this.props.duration}>
+      <Link
+        to="about"
+        smooth="easeInOutQuint"
+        offset={this.props.offset}
+        duration={this.props.duration}
+      >
         <div className={`back-to-top ${this.state.showingBackToTop ? "show" : "hide"} `}>
           <FontAwesomeIcon icon={faAngleDoubleUp} id="fa-back-to-top" />
         </div>

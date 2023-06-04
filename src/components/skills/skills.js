@@ -7,7 +7,12 @@ import ProgressBar from "progressbar.js/dist/progressbar";
 import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
-import { LANGUAGES as PROGRAMMING_LANGUAGES, FRAMEWORKS_LIBRARIES, TECHNOLOGIES_PARADIGMS, MACHINE_LEARNING } from "../../assets/data/skills-data";
+import {
+  LANGUAGES as PROGRAMMING_LANGUAGES,
+  FRAMEWORKS_LIBRARIES,
+  TECHNOLOGIES_PARADIGMS,
+  MACHINE_LEARNING,
+} from "../../assets/data/skills-data";
 
 class Skills extends Component {
   constructor(props) {

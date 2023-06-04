@@ -17,17 +17,17 @@ export const LANGUAGES = {
   "JavaScript/TypeScript": {
     id: "javascript-skill",
     rating: 4,
-    display: "JavaScript\nTypeScript",
+    display: "Java/Type\nScript",
   },
   HTML: {
     id: "html-skill",
     rating: 4,
     display: "HTML",
   },
-  "CSS/SASS": {
+  CSS: {
     id: "css-skill",
     rating: 4,
-    display: "CSS\nSASS",
+    display: "CSS",
   },
   SQL: {
     id: "sql-skill",
@@ -86,7 +86,7 @@ export const TECHNOLOGIES_PARADIGMS = {
   Git: {
     rating: 4,
   },
-  "Object-Oriented (OOP)": {
+  "Object-Oriented Programming": {
     rating: 4,
   },
   "REST API": {
@@ -119,14 +119,14 @@ export const TECHNOLOGIES_PARADIGMS = {
   AWS: {
     rating: 3,
   },
+  Azure: {
+    rating: 3,
+  },
   GCP: {
     rating: 3,
   },
   Agile: {
     rating: 3,
-  },
-  Heroku: {
-    rating: 2,
   },
   Unity: {
     rating: 2,

@@ -96,7 +96,15 @@ class Contact extends Component {
             >
               <Form.Group>
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" value={this.state.name} onChange={(e) => this.handleFormChange(e, "name")} name="entry.1568045103" id="entry.1568045103" placeholder="John Doe" required />
+                <Form.Control
+                  type="text"
+                  value={this.state.name}
+                  onChange={(e) => this.handleFormChange(e, "name")}
+                  name="entry.1568045103"
+                  id="entry.1568045103"
+                  placeholder="John Doe"
+                  required
+                />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Email</Form.Label>
@@ -135,7 +143,9 @@ class Contact extends Component {
                   required
                 />
               </Form.Group>
-              {!this.state.recaptchaSuccess && <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.onChange} />}
+              {!this.state.recaptchaSuccess && (
+                <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.onChange} />
+              )}
               {this.state.recaptchaSuccess && (
                 <Form.Group className="text-left">
                   <Button type="submit" value="Submit" onClick={(e) => e.target.blur()}>
@@ -144,7 +154,12 @@ class Contact extends Component {
                 </Form.Group>
               )}
             </Form>
-            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: "none" }} title="formFrame"></iframe>
+            <iframe
+              name="hidden_iframe"
+              id="hidden_iframe"
+              style={{ display: "none" }}
+              title="formFrame"
+            ></iframe>
             <Modal show={this.state.showingModal} onHide={this.handleHideModal}>
               <Modal.Header closeButton>
                 <Modal.Title>Message successfully sent!</Modal.Title>

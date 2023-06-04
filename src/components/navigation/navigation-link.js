@@ -6,7 +6,15 @@ import { Link } from "react-scroll";
 const NavigationLink = ({ to, text, onClick, offset, duration }) => {
   return (
     <Nav.Link as="div">
-      <Link activeClass="active-link" to={to} smooth="easeInOutQuint" offset={offset} duration={duration} spy={true} onClick={onClick}>
+      <Link
+        activeClass="active-link"
+        to={to}
+        smooth="easeInOutQuint"
+        offset={offset}
+        duration={duration}
+        spy={true}
+        onClick={onClick}
+      >
         {text}
       </Link>
     </Nav.Link>

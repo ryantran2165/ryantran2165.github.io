@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 
 const ProjectFilter = ({ currentFilters, filters, onChange }) => {
   return (
-    <Col xs={6} sm={4} className="mb-3 col-lg">
+    <Col xs={6} sm={4} className="mb-3 col-lg" data-aos="fade-down" data-aos-delay="200">
       {filters.map((filter) => {
         return (
           <Row key={`${filter}-filter`}>

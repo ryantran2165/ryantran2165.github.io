@@ -83,7 +83,7 @@ class Navigation extends Component {
         <Navbar.Toggle aria-controls="navbar" children={this.getNavbarToggle()} />
         <Navbar.Collapse>
           <Nav>
-            <div data-aos="flip-down" data-aos-delay="200">
+            <div data-aos="fade-down" data-aos-delay="200">
               <NavigationLink
                 to="about"
                 text="About"
@@ -92,7 +92,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="400">
+            <div data-aos="fade-down" data-aos-delay="400">
               <NavigationLink
                 to="testimonials"
                 text="Testimonials"
@@ -101,7 +101,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="600">
+            <div data-aos="fade-down" data-aos-delay="600">
               <NavigationLink
                 to="experience"
                 text="Experience"
@@ -110,7 +110,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="800">
+            <div data-aos="fade-down" data-aos-delay="800">
               <NavigationLink
                 to="education"
                 text="Education"
@@ -119,7 +119,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="1000">
+            <div data-aos="fade-down" data-aos-delay="1000">
               <NavigationLink
                 to="projects"
                 text="Projects"
@@ -128,7 +128,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="1200">
+            <div data-aos="fade-down" data-aos-delay="1200">
               <NavigationLink
                 to="skills"
                 text="Skills"
@@ -137,7 +137,7 @@ class Navigation extends Component {
                 duration={this.props.duration}
               />
             </div>
-            <div data-aos="flip-down" data-aos-delay="1400">
+            <div data-aos="fade-down" data-aos-delay="1400">
               <NavigationLink
                 to="contact"
                 text="Contact"

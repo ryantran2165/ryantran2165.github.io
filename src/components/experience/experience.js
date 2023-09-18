@@ -13,7 +13,11 @@ const Experience = () => {
       <Row className="justify-content-center text-left mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
           {EXPERIENCES.map((experience, i) => (
-            <div key={`${i}-${experience.company}-experience`}>
+            <div
+              key={`${i}-${experience.company}-experience`}
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               {i > 0 && <br />}
               <ExperienceItem experience={experience} />
             </div>

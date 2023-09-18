@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 const SkillList = ({ subheading, skills }) => {
   return (
-    <Col xs={12} sm={6} md={4} xl={3} className="pt-3">
+    <Col xs={12} sm={6} md={4} xl={3} className="pt-3" data-aos="fade-down" data-aos-delay="200">
       <h4 className="font-weight-bold">{subheading}</h4>
       <Row className="justify-content-center text-left">
         <Col xs="auto">

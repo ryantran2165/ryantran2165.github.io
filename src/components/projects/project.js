@@ -38,7 +38,7 @@ const Project = ({ project }) => {
   }
 
   return (
-    <Col xs={12} lg={6} className="pt-4">
+    <Col xs={12} lg={6} className="pt-4" data-aos="fade-down" data-aos-delay="200">
       <div className="project-box h-100 pb-5">
         <Image fluid src={project.image} alt={project.title} />
         <div className="px-4">

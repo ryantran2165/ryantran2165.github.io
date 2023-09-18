@@ -76,11 +76,11 @@ class Contact extends Component {
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
             <Row className="justify-content-center">
-              <Col xs={6}>
+              <Col xs={6} data-aos="fade-down" data-aos-delay="200">
                 <ContactIcon href="mailto:ryantran2165@gmail.com" icon={faEnvelope} />
                 <h6 className="mt-2">ryantran2165{this.state.isMobile && <br />}@gmail.com</h6>
               </Col>
-              <Col xs={6}>
+              <Col xs={6} data-aos="fade-down" data-aos-delay="200">
                 <ContactIcon href="tel:1-669-282-2213" icon={faPhoneAlt} />
                 <h6 className="mt-2">(669) 282-2213</h6>
               </Col>
@@ -93,6 +93,8 @@ class Contact extends Component {
               action="https://docs.google.com/forms/d/e/1FAIpQLSeIBBJXMDcObspDCy4z-nJJps2AmhkP4JVNFEiSPT7qhG9Law/formResponse?"
               target="hidden_iframe"
               onSubmit={(e) => this.handleFormSubmit(e)}
+              data-aos="fade-down"
+              data-aos-delay="200"
             >
               <Form.Group>
                 <Form.Label>Name</Form.Label>

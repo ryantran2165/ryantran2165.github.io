@@ -92,7 +92,11 @@ class Projects extends Component {
   };
 
   render() {
-    let projects = <h3 className="pt-4">No projects with those filters yet!</h3>;
+    let projects = (
+      <h3 className="pt-4" data-aos="fade-down" data-aos-delay="200">
+        No projects with those filters yet!
+      </h3>
+    );
 
     if (this.state.filteredProjects.length > 0) {
       projects = this.state.filteredProjects.map((project) => {
@@ -132,12 +136,14 @@ class Projects extends Component {
                 onChange={this.handleFilterChange}
               />
             </Row>
-            <Form.Check
-              type="switch"
-              id="andOrSwitch"
-              label="AND mode"
-              onChange={this.handleSwitchChange}
-            />
+            <div data-aos="fade-down" data-aos-delay="200">
+              <Form.Check
+                type="switch"
+                id="andOrSwitch"
+                label="AND mode"
+                onChange={this.handleSwitchChange}
+              />
+            </div>
             <Row className="justify-content-center">{projects}</Row>
           </Col>
         </Row>

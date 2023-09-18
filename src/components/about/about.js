@@ -48,8 +48,17 @@ class About extends Component {
         >
           <Particles className="particles" params={ParticlesConfig} />
         </div>
-        <Row className="justify-content-center mx-2 mt-3" data-aos="fade-down" data-aos-delay="200">
-          <Col id="about-content" xs={12} md={10} lg={8} xl={6} className="px-3 px-md-5 py-5">
+        <Row className="justify-content-center mx-2 mt-3">
+          <Col
+            id="about-content"
+            xs={12}
+            md={10}
+            lg={8}
+            xl={6}
+            className="px-3 px-md-5 py-5"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <Image fluid roundedCircle className="circle-img" src={ryanImage} alt="Ryan Tran" />
             <h1 className="font-weight-bold mt-4">Ryan L. Tran</h1>
             <h4 className="font-weight-bold">Software Engineer & Machine Learning Enthusiast</h4>

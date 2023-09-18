@@ -1,6 +1,6 @@
 const ParticlesConfig = {
   detectRetina: true,
-  fpsLimit: 60,
+  fpsLimit: 30,
   infection: {
     cure: false,
     delay: 0,
@@ -154,7 +154,7 @@ const ParticlesConfig = {
         factor: 1000,
       },
       limit: 0,
-      value: 100,
+      value: 25,
     },
     opacity: {
       animation: {

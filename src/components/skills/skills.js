@@ -1,18 +1,18 @@
+import ProgressBar from "progressbar.js/dist/progressbar";
 import React, { Component } from "react";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { Waypoint } from "react-waypoint";
-import ProgressBar from "progressbar.js/dist/progressbar";
+import {
+  FRAMEWORKS_LIBRARIES,
+  MACHINE_LEARNING,
+  LANGUAGES as PROGRAMMING_LANGUAGES,
+  TECHNOLOGIES_PARADIGMS,
+} from "../../assets/data/skills-data";
 import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
 import SkillList from "./skill-list";
-import {
-  LANGUAGES as PROGRAMMING_LANGUAGES,
-  FRAMEWORKS_LIBRARIES,
-  TECHNOLOGIES_PARADIGMS,
-  MACHINE_LEARNING,
-} from "../../assets/data/skills-data";
 
 class Skills extends Component {
   constructor(props) {
@@ -88,7 +88,7 @@ class Skills extends Component {
               <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
             ))}
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-around mx-2">
             <SkillList subheading="Frameworks/Libraries" skills={FRAMEWORKS_LIBRARIES} />
             <SkillList subheading="Technologies/Paradigms" skills={TECHNOLOGIES_PARADIGMS} />
             <SkillList subheading="Machine Learning" skills={MACHINE_LEARNING} />

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-scroll";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-scroll";
 import NavigationLink from "./navigation-link";
 
 class Navigation extends Component {

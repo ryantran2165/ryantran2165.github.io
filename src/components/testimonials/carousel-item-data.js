@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Image from "react-bootstrap/Image";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
+import React from "react";
+import Image from "react-bootstrap/Image";
 
 const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
   return (
@@ -19,7 +19,7 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
         </a>
       </h4>
       <h5 className="font-weight-bold">{title}</h5>
-      <p className="text-justify">
+      <p className="text-left">
         <FontAwesomeIcon icon={faQuoteLeft} /> {quote}
       </p>
     </React.Fragment>

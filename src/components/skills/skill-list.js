@@ -1,20 +1,15 @@
-import React from "react";
 import PropTypes from "prop-types";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Col from "react-bootstrap/Col";
 
 const SkillList = ({ subheading, skills }) => {
   return (
-    <Col xs={12} sm={6} md={4} xl={3} className="pt-3" data-aos="fade-down" data-aos-delay="200">
+    <Col xs={12} md="auto" className="text-left pt-3" data-aos="fade-down" data-aos-delay="200">
       <h4 className="font-weight-bold">{subheading}</h4>
-      <Row className="justify-content-center text-left">
-        <Col xs="auto">
-          {Object.entries(skills).map((pair) => (
-            // [0] is key, [1] is value
-            <h6 key={`${pair[0]}-list`}>{`(${pair[1].rating}) ${pair[0]}`}</h6>
-          ))}
-        </Col>
-      </Row>
+      {Object.entries(skills).map((pair) => (
+        // [0] is key, [1] is value
+        <h6 key={`${pair[0]}-list`}>{`(${pair[1].rating}) ${pair[0]}`}</h6>
+      ))}
     </Col>
   );
 };

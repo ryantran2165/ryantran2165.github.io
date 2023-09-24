@@ -1,10 +1,10 @@
 import React from "react";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { EDUCATION } from "../../assets/data/education-data";
 import SectionTitle from "../etc/section-title";
 import EducationItem from "./education-item";
-import { EDUCATION } from "../../assets/data/education-data";
 
 const Education = () => {
   return (

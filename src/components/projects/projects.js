@@ -1,19 +1,19 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import SectionTitle from "../etc/section-title";
+import Row from "react-bootstrap/Row";
 import ProjectData from "../../assets/data/projects-data";
-import ProjectFilter from "./project-filter";
-import Project from "./project";
 import {
-  LANGUAGES,
   FRAMEWORKS_LIBRARIES,
-  TECHNOLOGIES_PARADIGMS,
+  LANGUAGES,
   MACHINE_LEARNING,
+  TECHNOLOGIES_PARADIGMS,
 } from "../../assets/data/skills-data";
+import SectionTitle from "../etc/section-title";
 import { getTags } from "../etc/utils";
+import Project from "./project";
+import ProjectFilter from "./project-filter";
 
 const CATEGORIES = ["Full-Stack", "Desktop", "Mobile", "Machine Learning", "Game", "Competition"];
 
@@ -107,7 +107,7 @@ class Projects extends Component {
     return (
       <Container id="projects" fluid className="text-center py-5">
         <SectionTitle text="Projects" />
-        <Row className="justify-content-center mx-2">
+        <Row className="justify-content-center mx-2" style={{ overflowWrap: "anywhere" }}>
           <Col xs={12} md={10} xl={8}>
             <Row className="text-left">
               <ProjectFilter

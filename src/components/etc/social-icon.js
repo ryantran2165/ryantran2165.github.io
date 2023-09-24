@@ -1,13 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
+import React from "react";
 
 const SocialIcon = ({ href, icon }) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      <div className="social-icon-container">
-        <FontAwesomeIcon className="social-icon" icon={icon} />
-      </div>
+    <a className="social-icon-container" href={href} target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon className="social-icon" icon={icon} />
     </a>
   );
 };

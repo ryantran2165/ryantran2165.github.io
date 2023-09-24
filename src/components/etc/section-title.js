@@ -1,7 +1,7 @@
-import React from "react";
 import PropTypes from "prop-types";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const SectionTitle = ({ text }) => {
   return (

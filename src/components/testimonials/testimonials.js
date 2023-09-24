@@ -1,10 +1,10 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Carousel from "react-bootstrap/Carousel";
-import suzanneImage from "../../assets/images/suzanne_nguyen.jpg";
 import christinaImage from "../../assets/images/christina_hoang.jpg";
+import suzanneImage from "../../assets/images/suzanne_nguyen.jpg";
 import SectionTitle from "../etc/section-title";
 import CarouselItemData from "./carousel-item-data";
 

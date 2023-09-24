@@ -1,10 +1,10 @@
 import React from "react";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { EXPERIENCES } from "../../assets/data/experience-data";
 import SectionTitle from "../etc/section-title";
 import ExperienceItem from "./experience-item";
-import { EXPERIENCES } from "../../assets/data/experience-data";
 
 const Experience = () => {
   return (

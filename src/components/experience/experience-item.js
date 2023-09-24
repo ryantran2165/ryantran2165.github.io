@@ -1,5 +1,5 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
 import Badge from "react-bootstrap/Badge";
 import { getTags } from "../etc/utils";
 
@@ -18,7 +18,7 @@ const ExperienceItem = ({ experience }) => {
           </Badge>
         );
       })}
-      <ul className="mt-2 text-justify">
+      <ul className="mt-2 text-left">
         {experience.description.map((bullet, i) => (
           <li key={`${i}-${experience.company}-description`}>{bullet}</li>
         ))}

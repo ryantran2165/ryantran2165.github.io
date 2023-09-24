@@ -1,12 +1,11 @@
+import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import Row from "react-bootstrap/Row";
 import ReCAPTCHA from "react-google-recaptcha";
 import SectionTitle from "../etc/section-title";
 import ContactIcon from "./contact-icon";

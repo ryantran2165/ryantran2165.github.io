@@ -1,16 +1,17 @@
-import React, { Component } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navigation from "./components/navigation/navigation";
+import React, { Component } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 import About from "./components/about/about";
-import Testimonials from "./components/testimonials/testimonials";
+import Contact from "./components/contact/contact";
 import Education from "./components/education/education";
+import Preloader from "./components/etc/preloader";
 import Experience from "./components/experience/experience";
+import BackToTop from "./components/navigation/back-to-top";
+import Navigation from "./components/navigation/navigation";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
-import Contact from "./components/contact/contact";
-import BackToTop from "./components/navigation/back-to-top";
-import Preloader from "./components/etc/preloader";
+import Testimonials from "./components/testimonials/testimonials";
 
 const AOS_DURATION = 1000;
 const NAV_DURATION = 1000;
@@ -71,18 +72,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Navigation offset={this.state.offset} duration={NAV_DURATION} />
-        <About />
-        <Testimonials />
-        <Experience />
-        <Education />
-        <Projects />
-        <Skills />
-        <Contact />
-        <BackToTop offset={this.state.offset} duration={NAV_DURATION} />
-        <Preloader />
-      </div>
+      <ParallaxProvider>
+        <div className="App">
+          <Navigation offset={this.state.offset} duration={NAV_DURATION} />
+          <About />
+          <Testimonials />
+          <Experience />
+          <Education />
+          <Projects />
+          <Skills />
+          <Contact />
+          <BackToTop offset={this.state.offset} duration={NAV_DURATION} />
+          <Preloader />
+        </div>
+      </ParallaxProvider>
     );
   }
 }

@@ -7,8 +7,8 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import ReCAPTCHA from "react-google-recaptcha";
+import IconButton from "../etc/icon-button";
 import SectionTitle from "../etc/section-title";
-import ContactIcon from "./contact-icon";
 
 const RECAPTCHA_KEY = "6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd";
 
@@ -75,12 +75,22 @@ class Contact extends Component {
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
             <Row className="justify-content-center">
-              <Col xs={6} data-aos="fade-down" data-aos-delay="200">
-                <ContactIcon href="mailto:ryantran2165@gmail.com" icon={faEnvelope} />
+              <Col
+                xs={6}
+                className="d-flex flex-column align-items-center"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                <IconButton href="mailto:ryantran2165@gmail.com" icon={faEnvelope} />
                 <h6 className="mt-2">ryantran2165{this.state.isMobile && <br />}@gmail.com</h6>
               </Col>
-              <Col xs={6} data-aos="fade-down" data-aos-delay="200">
-                <ContactIcon href="tel:1-669-282-2213" icon={faPhoneAlt} />
+              <Col
+                xs={6}
+                className="d-flex flex-column align-items-center"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                <IconButton href="tel:1-669-282-2213" icon={faPhoneAlt} />
                 <h6 className="mt-2">(669) 282-2213</h6>
               </Col>
             </Row>
@@ -158,7 +168,7 @@ class Contact extends Component {
             <iframe
               name="hidden_iframe"
               id="hidden_iframe"
-              style={{ display: "none" }}
+              className="d-none"
               title="formFrame"
             ></iframe>
             <Modal show={this.state.showingModal} onHide={this.handleHideModal}>

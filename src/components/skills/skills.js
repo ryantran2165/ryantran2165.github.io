@@ -60,11 +60,7 @@ class Skills extends Component {
       <Waypoint onEnter={this.animateSkills}>
         <Container id="skills" fluid className="text-center bg-white py-5">
           <SectionTitle text="Skills" />
-          <Row
-            className="justify-content-center mt-3 mb-4"
-            data-aos="fade-down"
-            data-aos-delay="200"
-          >
+          <Row className="justify-content-center" data-aos="fade-down" data-aos-delay="200">
             <Col xs={6} sm="auto">
               <h5>5 - Expert</h5>
             </Col>
@@ -78,17 +74,17 @@ class Skills extends Component {
               <h5>2 - Familiar</h5>
             </Col>
           </Row>
-          <Row data-aos="fade-down" data-aos-delay="200">
+          <Row className="mt-4" data-aos="fade-down" data-aos-delay="200">
             <Col>
               <h4 className="font-weight-bold">Programming Languages</h4>
             </Col>
           </Row>
-          <Row className="justify-content-center mt-3">
+          <Row className="justify-content-center">
             {Object.entries(PROGRAMMING_LANGUAGES).map((pair) => (
               <SkillCircle id={pair[1].id} key={`${pair[0]}-circle`} />
             ))}
           </Row>
-          <Row className="justify-content-around mx-2">
+          <Row className="justify-content-evenly mx-2">
             <SkillList subheading="Frameworks/Libraries" skills={FRAMEWORKS_LIBRARIES} />
             <SkillList subheading="Technologies/Paradigms" skills={TECHNOLOGIES_PARADIGMS} />
             <SkillList subheading="Machine Learning" skills={MACHINE_LEARNING} />

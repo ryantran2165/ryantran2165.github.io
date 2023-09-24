@@ -6,14 +6,14 @@ import Badge from "react-bootstrap/Badge";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
-import SocialIcon from "../etc/social-icon";
+import IconButton from "../etc/icon-button";
 import { getTags } from "../etc/utils";
 
 const Project = ({ project }) => {
   return (
-    <Col xs={12} md={10} lg={6} className="pt-4" data-aos="fade-down" data-aos-delay="200">
+    <Col xs={12} md={10} lg={6} className="mt-30px" data-aos="fade-down" data-aos-delay="200">
       <div className="project-box h-100 pb-5">
-        <Image fluid src={project.image} alt={project.title} style={{ objectFit: "cover" }} />
+        <Image fluid src={project.image} alt={project.title} />
         <div className="px-4">
           <h4 className="font-weight-bold mt-4">{project.title}</h4>
           <h5>{project.date}</h5>
@@ -24,21 +24,21 @@ const Project = ({ project }) => {
               </Badge>
             );
           })}
-          <ul className="text-left mt-4">
+          <ul className="text-left mt-4 mb-0">
             {project.description.map((bullet, i) => (
               <li key={`${i}-${project.title}-description`}>{bullet}</li>
             ))}
           </ul>
         </div>
-        <Row className="justify-content-center">
+        <Row className="justify-content-evenly">
           {project.source !== "" && (
-            <Col xs={6} className="d-flex justify-content-center">
-              <SocialIcon href={project.source} icon={faGithub} />
+            <Col xs="auto" className="mt-4">
+              <IconButton href={project.source} icon={faGithub} isNewTab={true} />
             </Col>
           )}
           {project.demo !== "" && (
-            <Col xs={6} className="d-flex justify-content-center">
-              <SocialIcon href={project.demo} icon={faPlay} />
+            <Col xs="auto" className="mt-4">
+              <IconButton href={project.demo} icon={faPlay} isNewTab={true} />
             </Col>
           )}
         </Row>

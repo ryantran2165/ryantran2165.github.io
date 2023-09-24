@@ -93,7 +93,7 @@ class Projects extends Component {
 
   render() {
     let projects = (
-      <h3 className="pt-4" data-aos="fade-down" data-aos-delay="200">
+      <h3 className="mt-30px" data-aos="fade-down" data-aos-delay="200">
         No projects with those filters yet!
       </h3>
     );
@@ -107,7 +107,7 @@ class Projects extends Component {
     return (
       <Container id="projects" fluid className="text-center py-5">
         <SectionTitle text="Projects" />
-        <Row className="justify-content-center mx-2" style={{ overflowWrap: "anywhere" }}>
+        <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} xl={8}>
             <Row className="text-left">
               <ProjectFilter

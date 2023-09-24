@@ -9,7 +9,7 @@ import donutDashImg from "../images/donut_dash.jpg";
 import cryptoOnlineImg from "../images/crypto_online.jpg";
 import polynomialRegressionImg from "../images/polynomial_regression.jpg";
 import infiniteMonkeyImg from "../images/infinite_monkey.jpg";
-import faviconImg from "../images/favicon.jpg";
+import iconImg from "../images/icon.jpg";
 import constructionImg from "../images/under_construction.jpg";
 
 const ProjectData = [
@@ -186,7 +186,7 @@ const ProjectData = [
     demo: "https://www.ryanlongtran.com/infinite-monkey",
   },
   {
-    image: faviconImg,
+    image: iconImg,
     title: "Personal Website",
     date: "Oct. 2019 – Present",
     description: ["Created website with React as a portfolio for my projects and career"],

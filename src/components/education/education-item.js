@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
+import Badge from "react-bootstrap/Badge";
+import { getTags } from "../etc/utils";
 
 const EducationItem = ({ education }) => {
   return (
@@ -7,7 +9,14 @@ const EducationItem = ({ education }) => {
       <h4 className="font-weight-bold">{education.school}</h4>
       <h5>{education.degree}</h5>
       <h5>{education.date}</h5>
-      <ul>
+      {getTags(education).map((tag, i) => {
+        return (
+          <Badge pill className="p-2 mr-2 mt-2" key={`${i}-${education.degree}-tag`}>
+            {tag}
+          </Badge>
+        );
+      })}
+      <ul className="mt-3">
         {education.description.map((bullet, i) => (
           <li key={`${i}-${education.degree}-description`}>{bullet}</li>
         ))}

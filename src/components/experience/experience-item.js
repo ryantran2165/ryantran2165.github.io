@@ -13,12 +13,12 @@ const ExperienceItem = ({ experience }) => {
       <h5>{experience.date}</h5>
       {getTags(experience).map((tag, i) => {
         return (
-          <Badge pill className="p-2 mx-1 mt-2" key={`${i}-${experience.company}-tag`}>
+          <Badge pill className="p-2 mr-2 mt-2" key={`${i}-${experience.company}-tag`}>
             {tag}
           </Badge>
         );
       })}
-      <ul className="mt-2 text-left">
+      <ul className="mt-3">
         {experience.description.map((bullet, i) => (
           <li key={`${i}-${experience.company}-description`}>{bullet}</li>
         ))}

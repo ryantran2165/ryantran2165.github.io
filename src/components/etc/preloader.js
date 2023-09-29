@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+const DELAY_TIME = 250;
+
 class Preloader extends Component {
   constructor(props) {
     super(props);
@@ -9,8 +11,7 @@ class Preloader extends Component {
   }
 
   componentDidMount() {
-    const delayTime = 250;
-    setTimeout(this.setState({ showingPreloader: false }), delayTime);
+    setTimeout(this.setState({ showingPreloader: false }), DELAY_TIME);
   }
 
   render() {

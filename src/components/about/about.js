@@ -7,29 +7,38 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Particles from "react-particles-js";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { MOBILE_MAX_WIDTH } from "../../App";
 import backgroundImage from "../../assets/images/about_background.jpg";
 import ryanImage from "../../assets/images/ryan_tran.jpg";
 import IconButton from "../etc/icon-button";
 import ParticlesConfig from "../etc/particles-config.js";
+
+const PARALLAX_SPEED = -50;
 
 class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
       particlesHeight: 0,
+      isMobile: false,
     };
   }
 
   componentDidMount() {
-    window.addEventListener("resize", () =>
-      this.setState({
-        particlesHeight: document.getElementById("about").clientHeight,
-      })
-    );
+    window.addEventListener("resize", this.updateState);
+    this.updateState();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateState);
+  }
+
+  updateState = () => {
     this.setState({
       particlesHeight: document.getElementById("about").clientHeight,
+      isMobile: window.innerWidth < MOBILE_MAX_WIDTH,
     });
-  }
+  };
 
   render() {
     return (
@@ -38,7 +47,7 @@ class About extends Component {
           layers={[
             {
               image: backgroundImage,
-              speed: -50,
+              speed: PARALLAX_SPEED,
             },
           ]}
           id="about-parallax"
@@ -89,7 +98,7 @@ class About extends Component {
                     icon={faFilePdf}
                     isNewTab={true}
                     data-aos="fade-down"
-                    data-aos-delay="1200"
+                    data-aos-delay={this.state.isMobile ? "200" : "1200"}
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -98,7 +107,7 @@ class About extends Component {
                     icon={faLinkedinIn}
                     isNewTab={true}
                     data-aos="fade-down"
-                    data-aos-delay="1400"
+                    data-aos-delay={this.state.isMobile ? "400" : "1400"}
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -107,7 +116,7 @@ class About extends Component {
                     icon={faGithub}
                     isNewTab={true}
                     data-aos="fade-down"
-                    data-aos-delay="1600"
+                    data-aos-delay={this.state.isMobile ? "600" : "1600"}
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -116,7 +125,7 @@ class About extends Component {
                     icon={faKaggle}
                     isNewTab={true}
                     data-aos="fade-down"
-                    data-aos-delay="1800"
+                    data-aos-delay={this.state.isMobile ? "800" : "1800"}
                   />
                 </Col>
               </Row>

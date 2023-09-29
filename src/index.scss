@@ -11,6 +11,7 @@ $aquamarine-half-opacity: rgba(127, 255, 212, 0.5);
 html,
 body {
   overflow-x: hidden;
+  overflow-wrap: anywhere;
 }
 
 body {
@@ -392,10 +393,6 @@ ul {
 /* PROJECTS */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: aquamarine;
-}
-
-.project-filter {
-  overflow-wrap: anywhere;
 }
 
 .project-box {

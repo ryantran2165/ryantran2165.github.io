@@ -2,6 +2,7 @@ import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import { Link } from "react-scroll";
+import { NAV_DURATION, NAV_OFFSET } from "../../App";
 
 class BackToTop extends Component {
   constructor(props) {
@@ -26,12 +27,7 @@ class BackToTop extends Component {
 
   render() {
     return (
-      <Link
-        to="about"
-        smooth="easeInOutQuint"
-        offset={this.props.offset}
-        duration={this.props.duration}
-      >
+      <Link to="about" smooth="easeInOutQuint" offset={NAV_OFFSET} duration={NAV_DURATION}>
         <div
           id="back-to-top"
           className={`icon-button ${this.state.showingBackToTop ? "show" : "hide"}`}

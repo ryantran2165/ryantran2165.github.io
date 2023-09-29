@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-scroll";
+import { NAV_DURATION, NAV_OFFSET } from "../../App";
 import NavigationLink from "./navigation-link";
+
+const NAVBAR_REDUCE_THRESHOLD = 50;
 
 class Navigation extends Component {
   constructor(props) {
@@ -28,9 +31,7 @@ class Navigation extends Component {
   };
 
   shouldNavbarReduce = () => {
-    const scrollTop = window.pageYOffset;
-    const navbarThreshold = 50;
-    return scrollTop > navbarThreshold;
+    return window.pageYOffset > NAVBAR_REDUCE_THRESHOLD;
   };
 
   getNavbarToggle = () => {
@@ -73,8 +74,8 @@ class Navigation extends Component {
           <Link
             to="about"
             smooth="easeInOutQuint"
-            offset={this.props.offset}
-            duration={this.props.duration}
+            offset={NAV_OFFSET}
+            duration={NAV_DURATION}
             onClick={this.handleClickLink}
           >
             RT
@@ -88,8 +89,8 @@ class Navigation extends Component {
                 to="about"
                 text="About"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="400">
@@ -97,8 +98,8 @@ class Navigation extends Component {
                 to="testimonials"
                 text="Testimonials"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="600">
@@ -106,8 +107,8 @@ class Navigation extends Component {
                 to="experience"
                 text="Experience"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="800">
@@ -115,8 +116,8 @@ class Navigation extends Component {
                 to="education"
                 text="Education"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="1000">
@@ -124,8 +125,8 @@ class Navigation extends Component {
                 to="projects"
                 text="Projects"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="1200">
@@ -133,8 +134,8 @@ class Navigation extends Component {
                 to="skills"
                 text="Skills"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
             <div data-aos="fade-down" data-aos-delay="1400">
@@ -142,8 +143,8 @@ class Navigation extends Component {
                 to="contact"
                 text="Contact"
                 onClick={this.handleClickLink}
-                offset={this.props.offset}
-                duration={this.props.duration}
+                offset={NAV_OFFSET}
+                duration={NAV_DURATION}
               />
             </div>
           </Nav>

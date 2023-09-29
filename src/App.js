@@ -14,27 +14,15 @@ import Skills from "./components/skills/skills";
 import Testimonials from "./components/testimonials/testimonials";
 
 const AOS_DURATION = 1000;
-const NAV_DURATION = 1000;
+const MAX_TOUCH_DIFF = 500;
+export const MOBILE_MAX_WIDTH = 576;
+export const NAV_OFFSET = -90;
+export const NAV_DURATION = 1000;
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      offset: 0,
-    };
-  }
-
   componentDidMount() {
     AOS.init({ duration: AOS_DURATION, once: true });
     this.watchForHover();
-
-    // Calculate navigation offset
-    const h1 = document.querySelector("h1");
-    const lineHeightStr = window.getComputedStyle(h1).lineHeight;
-    const lineHeight = parseInt(lineHeightStr.substring(0, lineHeightStr.length - 2));
-    const style = window.getComputedStyle(document.getElementById("about"));
-    const padding = parseInt(style.paddingBottom.substring(0, style.paddingBottom.length - 2));
-    this.setState({ offset: -(lineHeight + padding / 2) });
   }
 
   // Disable hover for touch devices
@@ -44,7 +32,7 @@ class App extends Component {
     let lastTouchTime = 0;
 
     const enableHover = () => {
-      if (new Date() - lastTouchTime < 500 || hasHoverClass) {
+      if (new Date() - lastTouchTime < MAX_TOUCH_DIFF || hasHoverClass) {
         return;
       }
       container.className += " hasHover";
@@ -74,7 +62,7 @@ class App extends Component {
     return (
       <ParallaxProvider>
         <div className="App">
-          <Navigation offset={this.state.offset} duration={NAV_DURATION} />
+          <Navigation />
           <About />
           <Testimonials />
           <Experience />
@@ -82,7 +70,7 @@ class App extends Component {
           <Projects />
           <Skills />
           <Contact />
-          <BackToTop offset={this.state.offset} duration={NAV_DURATION} />
+          <BackToTop />
           <Preloader />
         </div>
       </ParallaxProvider>

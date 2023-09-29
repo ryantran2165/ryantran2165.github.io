@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import ReCAPTCHA from "react-google-recaptcha";
+import { MOBILE_MAX_WIDTH } from "../../App";
 import IconButton from "../etc/icon-button";
 import SectionTitle from "../etc/section-title";
 
@@ -27,19 +28,20 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener("resize", this.updateState);
+    this.updateState();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener("resize", this.updateState);
   }
 
-  handleResize = () => {
+  updateState = () => {
     // For email line break on mobile
-    this.setState({ isMobile: window.innerWidth < 576 });
+    this.setState({ isMobile: window.innerWidth < MOBILE_MAX_WIDTH });
   };
 
-  onChange = () => {
+  handleRecaptchaChange = () => {
     this.setState({ recaptchaSuccess: true });
   };
 
@@ -175,7 +177,7 @@ class Contact extends Component {
               {!this.state.recaptchaSuccess && (
                 <ReCAPTCHA
                   sitekey={RECAPTCHA_KEY}
-                  onChange={this.onChange}
+                  onChange={this.handleRecaptchaChange}
                   data-aos="fade-down"
                   data-aos-delay="200"
                 />

@@ -6,19 +6,37 @@ import { getTags } from "../etc/utils";
 const EducationItem = ({ education }) => {
   return (
     <React.Fragment>
-      <h4 className="font-weight-bold">{education.school}</h4>
-      <h5>{education.degree}</h5>
-      <h5>{education.date}</h5>
+      <h4 className="font-weight-bold" data-aos="fade-down" data-aos-delay="200">
+        {education.school}
+      </h4>
+      <h5 data-aos="fade-down" data-aos-delay="200">
+        {education.degree}
+      </h5>
+      <h5 data-aos="fade-down" data-aos-delay="200">
+        {education.date}
+      </h5>
       {getTags(education).map((tag, i) => {
         return (
-          <Badge pill className="p-2 mr-2 mt-2" key={`${i}-${education.degree}-tag`}>
+          <Badge
+            pill
+            className="p-2 mr-2 mt-2"
+            key={`${i}-${education.degree}-tag`}
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             {tag}
           </Badge>
         );
       })}
       <ul className="mt-3">
         {education.description.map((bullet, i) => (
-          <li key={`${i}-${education.degree}-description`}>{bullet}</li>
+          <li
+            key={`${i}-${education.degree}-description`}
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
+            {bullet}
+          </li>
         ))}
       </ul>
     </React.Fragment>

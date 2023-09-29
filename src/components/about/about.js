@@ -57,10 +57,22 @@ class About extends Component {
               data-aos="fade-down"
               data-aos-delay="200"
             >
-              <Image fluid roundedCircle className="circle-img" src={ryanImage} alt="Ryan Tran" />
-              <h1 className="font-weight-bold mt-4">Ryan L. Tran</h1>
-              <h4 className="font-weight-bold">Software Engineer & Machine Learning Enthusiast</h4>
-              <p className="text-left mt-4 mb-0">
+              <Image
+                fluid
+                roundedCircle
+                className="circle-img"
+                src={ryanImage}
+                alt="Ryan Tran"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              />
+              <h1 className="font-weight-bold mt-4" data-aos="fade-down" data-aos-delay="600">
+                Ryan L. Tran
+              </h1>
+              <h4 className="font-weight-bold" data-aos="fade-down" data-aos-delay="800">
+                Software Engineer & Machine Learning Enthusiast
+              </h4>
+              <p className="text-left mt-4 mb-0" data-aos="fade-down" data-aos-delay="1000">
                 Hey, thanks for visiting my site! I'm a software developer at EPRI with a master's
                 degree in software engineering from San José State University. I've been programming
                 for about 8 years, 2.5 of which professionally, and am interested in all types of
@@ -76,6 +88,8 @@ class About extends Component {
                     }
                     icon={faFilePdf}
                     isNewTab={true}
+                    data-aos="fade-down"
+                    data-aos-delay="1200"
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -83,6 +97,8 @@ class About extends Component {
                     href="https://www.linkedin.com/in/ryantran2165"
                     icon={faLinkedinIn}
                     isNewTab={true}
+                    data-aos="fade-down"
+                    data-aos-delay="1400"
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -90,6 +106,8 @@ class About extends Component {
                     href="https://github.com/ryantran2165"
                     icon={faGithub}
                     isNewTab={true}
+                    data-aos="fade-down"
+                    data-aos-delay="1600"
                   />
                 </Col>
                 <Col xs="auto" className="mt-4">
@@ -97,6 +115,8 @@ class About extends Component {
                     href="https://www.kaggle.com/ryantran2165"
                     icon={faKaggle}
                     isNewTab={true}
+                    data-aos="fade-down"
+                    data-aos-delay="1800"
                   />
                 </Col>
               </Row>

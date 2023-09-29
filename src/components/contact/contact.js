@@ -75,23 +75,27 @@ class Contact extends Component {
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
             <Row className="justify-content-center">
-              <Col
-                xs={6}
-                className="d-flex flex-column align-items-center"
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
-                <IconButton href="mailto:ryantran2165@gmail.com" icon={faEnvelope} />
-                <h6 className="mt-2">ryantran2165{this.state.isMobile && <br />}@gmail.com</h6>
+              <Col xs={6} className="d-flex flex-column align-items-center">
+                <IconButton
+                  href="mailto:ryantran2165@gmail.com"
+                  icon={faEnvelope}
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                />
+                <h6 className="mt-2" data-aos="fade-down" data-aos-delay="200">
+                  ryantran2165{this.state.isMobile && <br />}@gmail.com
+                </h6>
               </Col>
-              <Col
-                xs={6}
-                className="d-flex flex-column align-items-center"
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
-                <IconButton href="tel:1-669-282-2213" icon={faPhoneAlt} />
-                <h6 className="mt-2">(669) 282-2213</h6>
+              <Col xs={6} className="d-flex flex-column align-items-center">
+                <IconButton
+                  href="tel:1-669-282-2213"
+                  icon={faPhoneAlt}
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                />
+                <h6 className="mt-2" data-aos="fade-down" data-aos-delay="200">
+                  (669) 282-2213
+                </h6>
               </Col>
             </Row>
             <Form
@@ -102,11 +106,11 @@ class Contact extends Component {
               action="https://docs.google.com/forms/d/e/1FAIpQLSeIBBJXMDcObspDCy4z-nJJps2AmhkP4JVNFEiSPT7qhG9Law/formResponse?"
               target="hidden_iframe"
               onSubmit={(e) => this.handleFormSubmit(e)}
-              data-aos="fade-down"
-              data-aos-delay="200"
             >
               <Form.Group>
-                <Form.Label>Name</Form.Label>
+                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                  Name
+                </Form.Label>
                 <Form.Control
                   type="text"
                   value={this.state.name}
@@ -115,10 +119,14 @@ class Contact extends Component {
                   id="entry.1568045103"
                   placeholder="John Doe"
                   required
+                  data-aos="fade-down"
+                  data-aos-delay="200"
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label>Email</Form.Label>
+                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                  Email
+                </Form.Label>
                 <Form.Control
                   type="email"
                   value={this.state.email}
@@ -127,10 +135,14 @@ class Contact extends Component {
                   id="entry.1246301993"
                   placeholder="john.doe@gmail.com"
                   required
+                  data-aos="fade-down"
+                  data-aos-delay="200"
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label>Subject</Form.Label>
+                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                  Subject
+                </Form.Label>
                 <Form.Control
                   type="text"
                   value={this.state.subject}
@@ -139,10 +151,14 @@ class Contact extends Component {
                   id="entry.1608794007"
                   placeholder="!false"
                   required
+                  data-aos="fade-down"
+                  data-aos-delay="200"
                 />
               </Form.Group>
-              <Form.Label>Message</Form.Label>
               <Form.Group>
+                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                  Message
+                </Form.Label>
                 <Form.Control
                   as="textarea"
                   value={this.state.message}
@@ -152,13 +168,20 @@ class Contact extends Component {
                   id="entry.485311975"
                   placeholder="It's funny because it's true"
                   required
+                  data-aos="fade-down"
+                  data-aos-delay="200"
                 />
               </Form.Group>
               {!this.state.recaptchaSuccess && (
-                <ReCAPTCHA sitekey={RECAPTCHA_KEY} onChange={this.onChange} />
+                <ReCAPTCHA
+                  sitekey={RECAPTCHA_KEY}
+                  onChange={this.onChange}
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                />
               )}
               {this.state.recaptchaSuccess && (
-                <Form.Group className="text-left">
+                <Form.Group className="text-left" data-aos="fade-down" data-aos-delay="200">
                   <Button type="submit" value="Submit" onClick={(e) => e.target.blur()}>
                     Submit
                   </Button>

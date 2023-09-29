@@ -12,9 +12,9 @@ const Testimonials = () => {
   return (
     <Container id="testimonials" fluid className="text-center bg-white py-5">
       <SectionTitle text="Testimonials" />
-      <Row className="justify-content-center mx-2" data-aos="fade-down" data-aos-delay="200">
+      <Row className="justify-content-center mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
-          <Carousel>
+          <Carousel data-aos="fade-down" data-aos-delay="200">
             <Carousel.Item>
               <CarouselItemData
                 imageSrc={suzanneImage}

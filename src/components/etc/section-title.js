@@ -5,10 +5,12 @@ import Row from "react-bootstrap/Row";
 
 const SectionTitle = ({ text }) => {
   return (
-    <Row className="mb-4" data-aos="fade-down" data-aos-delay="200">
+    <Row className="mb-4">
       <Col>
-        <h1 className="font-weight-bold">{text}</h1>
-        <div className="line"></div>
+        <h1 className="font-weight-bold" data-aos="fade-down" data-aos-delay="200">
+          {text}
+        </h1>
+        <div className="line" data-aos="fade-down" data-aos-delay="200"></div>
       </Col>
     </Row>
   );

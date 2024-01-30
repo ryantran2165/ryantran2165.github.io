@@ -63,7 +63,7 @@ class About extends Component {
               lg={8}
               xl={6}
               className="px-3 px-md-5 py-5 mb-5"
-              data-aos="fade-down"
+              data-aos="fade-in"
               data-aos-delay="200"
             >
               <Image
@@ -72,16 +72,16 @@ class About extends Component {
                 className="circle-img"
                 src={ryanImage}
                 alt="Ryan Tran"
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-delay="400"
               />
-              <h1 className="font-weight-bold mt-4" data-aos="fade-down" data-aos-delay="600">
+              <h1 className="font-weight-bold mt-4" data-aos="fade-in" data-aos-delay="600">
                 Ryan L. Tran
               </h1>
-              <h4 className="font-weight-bold" data-aos="fade-down" data-aos-delay="800">
+              <h4 className="font-weight-bold" data-aos="fade-in" data-aos-delay="800">
                 Software Engineer & Machine Learning Enthusiast
               </h4>
-              <p className="text-left mt-4 mb-0" data-aos="fade-down" data-aos-delay="1000">
+              <p className="text-left mt-4 mb-0" data-aos="fade-in" data-aos-delay="1000">
                 Hey, thanks for visiting my site! I'm a software developer at EPRI with a master's
                 degree in software engineering from San José State University. I've been programming
                 for about 8 years, 2.5 of which professionally, and am interested in all types of
@@ -97,7 +97,7 @@ class About extends Component {
                     }
                     icon={faFilePdf}
                     isNewTab={true}
-                    data-aos="fade-down"
+                    data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "200" : "1200"}
                   />
                 </Col>
@@ -106,7 +106,7 @@ class About extends Component {
                     href="https://www.linkedin.com/in/ryantran2165"
                     icon={faLinkedinIn}
                     isNewTab={true}
-                    data-aos="fade-down"
+                    data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "400" : "1400"}
                   />
                 </Col>
@@ -115,7 +115,7 @@ class About extends Component {
                     href="https://github.com/ryantran2165"
                     icon={faGithub}
                     isNewTab={true}
-                    data-aos="fade-down"
+                    data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "600" : "1600"}
                   />
                 </Col>
@@ -124,7 +124,7 @@ class About extends Component {
                     href="https://www.kaggle.com/ryantran2165"
                     icon={faKaggle}
                     isNewTab={true}
-                    data-aos="fade-down"
+                    data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "800" : "1800"}
                   />
                 </Col>

@@ -11,16 +11,11 @@ const IconButton = ({
 }) => {
   const target = isNewTab ? "_blank" : null;
   return (
-    <a
-      className="icon-button"
-      href={href}
-      target={target}
-      rel="noopener noreferrer"
-      data-aos={dataAos}
-      data-aos-delay={dataAosDelay}
-    >
-      <FontAwesomeIcon className="icon-button-fa" icon={icon} />
-    </a>
+    <span data-aos={dataAos} data-aos-delay={dataAosDelay}>
+      <a className="icon-button" href={href} target={target} rel="noopener noreferrer">
+        <FontAwesomeIcon className="icon-button-fa" icon={icon} />
+      </a>
+    </span>
   );
 };
 

@@ -60,7 +60,7 @@ class Skills extends Component {
       <Waypoint onEnter={this.animateSkills}>
         <Container id="skills" fluid className="text-center bg-white py-5">
           <SectionTitle text="Skills" />
-          <Row className="justify-content-center" data-aos="fade-down" data-aos-delay="200">
+          <Row className="justify-content-center" data-aos="fade-in" data-aos-delay="200">
             <Col xs={6} sm="auto">
               <h5>5 - Expert</h5>
             </Col>
@@ -74,7 +74,7 @@ class Skills extends Component {
               <h5>2 - Familiar</h5>
             </Col>
           </Row>
-          <Row className="mt-4" data-aos="fade-down" data-aos-delay="200">
+          <Row className="mt-4" data-aos="fade-in" data-aos-delay="200">
             <Col>
               <h4 className="font-weight-bold">Programming Languages</h4>
             </Col>

@@ -9,7 +9,7 @@ const ProjectFilter = ({ currentFilters, filters, onChange }) => {
     <Col xs={6} sm={4} className="mb-3 col-lg">
       {filters.map((filter) => {
         return (
-          <Row key={`${filter}-filter`} data-aos="fade-down" data-aos-delay="200">
+          <Row key={`${filter}-filter`} data-aos="fade-in" data-aos-delay="200">
             <Col>
               <Form.Check
                 custom

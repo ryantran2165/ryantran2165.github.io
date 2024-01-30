@@ -93,7 +93,7 @@ class Projects extends Component {
 
   render() {
     let projects = (
-      <h3 className="mt-30px" data-aos="fade-down" data-aos-delay="200">
+      <h3 className="mt-30px" data-aos="fade-in" data-aos-delay="200">
         No projects with those filters yet!
       </h3>
     );
@@ -136,7 +136,7 @@ class Projects extends Component {
                 onChange={this.handleFilterChange}
               />
             </Row>
-            <div data-aos="fade-down" data-aos-delay="200">
+            <div data-aos="fade-in" data-aos-delay="200">
               <Form.Check
                 type="switch"
                 id="andOrSwitch"

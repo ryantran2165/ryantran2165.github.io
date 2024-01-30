@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 const SkillCircle = ({ id }) => {
   return (
-    <Col xs="auto" className="mt-3 mx-2" data-aos="fade-down" data-aos-delay="200">
+    <Col xs="auto" className="mt-3 mx-2" data-aos="fade-in" data-aos-delay="200">
       <div id={id} className="skillCircle"></div>
     </Col>
   );

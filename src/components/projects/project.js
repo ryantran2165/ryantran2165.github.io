@@ -11,14 +11,14 @@ import { getTags } from "../etc/utils";
 
 const Project = ({ project }) => {
   return (
-    <Col xs={12} md={10} lg={6} className="mt-30px" data-aos="fade-down" data-aos-delay="200">
+    <Col xs={12} md={10} lg={6} className="mt-30px" data-aos="fade-in" data-aos-delay="200">
       <div className="project-box h-100 pb-5">
         <Image fluid src={project.image} alt={project.title} />
         <div className="px-4">
-          <h4 className="font-weight-bold mt-4" data-aos="fade-down" data-aos-delay="200">
+          <h4 className="font-weight-bold mt-4" data-aos="fade-in" data-aos-delay="200">
             {project.title}
           </h4>
-          <h5 data-aos="fade-down" data-aos-delay="200">
+          <h5 data-aos="fade-in" data-aos-delay="200">
             {project.date}
           </h5>
           {getTags(project).map((tag, i) => {
@@ -27,7 +27,7 @@ const Project = ({ project }) => {
                 pill
                 className="p-2 mx-1 mt-2"
                 key={`${i}-${project.title}-tag`}
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-delay="200"
               >
                 {tag}
@@ -36,11 +36,7 @@ const Project = ({ project }) => {
           })}
           <ul className="text-left mt-4 mb-0">
             {project.description.map((bullet, i) => (
-              <li
-                key={`${i}-${project.title}-description`}
-                data-aos="fade-down"
-                data-aos-delay="200"
-              >
+              <li key={`${i}-${project.title}-description`} data-aos="fade-in" data-aos-delay="200">
                 {bullet}
               </li>
             ))}
@@ -53,7 +49,7 @@ const Project = ({ project }) => {
                 href={project.source}
                 icon={faGithub}
                 isNewTab={true}
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-delay="200"
               />
             </Col>
@@ -64,7 +60,7 @@ const Project = ({ project }) => {
                 href={project.demo}
                 icon={faPlay}
                 isNewTab={true}
-                data-aos="fade-down"
+                data-aos="fade-in"
                 data-aos-delay="200"
               />
             </Col>

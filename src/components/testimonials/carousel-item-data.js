@@ -13,10 +13,10 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
         className="circle-img"
         src={imageSrc}
         alt={name}
-        data-aos="fade-down"
+        data-aos="fade-in"
         data-aos-delay="200"
       />
-      <h4 className="font-weight-bold mt-3" data-aos="fade-down" data-aos-delay="200">
+      <h4 className="font-weight-bold mt-3" data-aos="fade-in" data-aos-delay="200">
         <a
           className="testimonial-link"
           href={linkedInSrc}
@@ -26,10 +26,10 @@ const CarouselItemData = ({ imageSrc, linkedInSrc, name, title, quote }) => {
           {name}
         </a>
       </h4>
-      <h5 className="font-weight-bold" data-aos="fade-down" data-aos-delay="200">
+      <h5 className="font-weight-bold" data-aos="fade-in" data-aos-delay="200">
         {title}
       </h5>
-      <p className="text-left" data-aos="fade-down" data-aos-delay="200">
+      <p className="text-left" data-aos="fade-in" data-aos-delay="200">
         <FontAwesomeIcon icon={faQuoteLeft} /> {quote}
       </p>
     </React.Fragment>

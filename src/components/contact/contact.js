@@ -81,10 +81,10 @@ class Contact extends Component {
                 <IconButton
                   href="mailto:ryantran2165@gmail.com"
                   icon={faEnvelope}
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
-                <h6 className="mt-2" data-aos="fade-down" data-aos-delay="200">
+                <h6 className="mt-2" data-aos="fade-in" data-aos-delay="200">
                   ryantran2165{this.state.isMobile && <br />}@gmail.com
                 </h6>
               </Col>
@@ -92,10 +92,10 @@ class Contact extends Component {
                 <IconButton
                   href="tel:1-669-282-2213"
                   icon={faPhoneAlt}
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
-                <h6 className="mt-2" data-aos="fade-down" data-aos-delay="200">
+                <h6 className="mt-2" data-aos="fade-in" data-aos-delay="200">
                   (669) 282-2213
                 </h6>
               </Col>
@@ -110,7 +110,7 @@ class Contact extends Component {
               onSubmit={(e) => this.handleFormSubmit(e)}
             >
               <Form.Group>
-                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Name
                 </Form.Label>
                 <Form.Control
@@ -121,12 +121,12 @@ class Contact extends Component {
                   id="entry.1568045103"
                   placeholder="John Doe"
                   required
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Email
                 </Form.Label>
                 <Form.Control
@@ -137,12 +137,12 @@ class Contact extends Component {
                   id="entry.1246301993"
                   placeholder="john.doe@gmail.com"
                   required
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Subject
                 </Form.Label>
                 <Form.Control
@@ -153,12 +153,12 @@ class Contact extends Component {
                   id="entry.1608794007"
                   placeholder="!false"
                   required
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label data-aos="fade-down" data-aos-delay="200">
+                <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Message
                 </Form.Label>
                 <Form.Control
@@ -170,7 +170,7 @@ class Contact extends Component {
                   id="entry.485311975"
                   placeholder="It's funny because it's true"
                   required
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
               </Form.Group>
@@ -178,12 +178,12 @@ class Contact extends Component {
                 <ReCAPTCHA
                   sitekey={RECAPTCHA_KEY}
                   onChange={this.handleRecaptchaChange}
-                  data-aos="fade-down"
+                  data-aos="fade-in"
                   data-aos-delay="200"
                 />
               )}
               {this.state.recaptchaSuccess && (
-                <Form.Group className="text-left" data-aos="fade-down" data-aos-delay="200">
+                <Form.Group className="text-left" data-aos="fade-in" data-aos-delay="200">
                   <Button type="submit" value="Submit" onClick={(e) => e.target.blur()}>
                     Submit
                   </Button>

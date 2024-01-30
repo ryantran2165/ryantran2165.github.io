@@ -8,7 +8,7 @@ import {
   FRAMEWORKS_LIBRARIES,
   MACHINE_LEARNING,
   LANGUAGES as PROGRAMMING_LANGUAGES,
-  TECHNOLOGIES_PARADIGMS,
+  TOOLS,
 } from "../../assets/data/skills-data";
 import SectionTitle from "../etc/section-title";
 import SkillCircle from "./skill-circle";
@@ -76,7 +76,7 @@ class Skills extends Component {
           </Row>
           <Row className="mt-4" data-aos="fade-in" data-aos-delay="200">
             <Col>
-              <h4 className="font-weight-bold">Programming Languages</h4>
+              <h4 className="font-weight-bold">Languages</h4>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -86,7 +86,7 @@ class Skills extends Component {
           </Row>
           <Row className="justify-content-evenly mx-2">
             <SkillList subheading="Frameworks/Libraries" skills={FRAMEWORKS_LIBRARIES} />
-            <SkillList subheading="Technologies/Paradigms" skills={TECHNOLOGIES_PARADIGMS} />
+            <SkillList subheading="Tools" skills={TOOLS} />
             <SkillList subheading="Machine Learning" skills={MACHINE_LEARNING} />
           </Row>
         </Container>

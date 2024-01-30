@@ -4,11 +4,17 @@ export const EXPERIENCES = [
     company: "Electric Power Research Institute (EPRI)",
     location: "Palo Alto, CA",
     date: "Jun. 2023 – Present",
-    description: ["Developing a variety of web and desktop applications"],
+    description: [
+      "Developed a web app—using C#, Blazor, ASP.NET REST APIs, and SQL Server—that facilitates the authentication and authorization of third-party software licenses, improving the company’s process of integrating third-party software",
+      "Developed a web app—using C#, Blazor, and SQL Server—that allows users to configure and intuitively compare energy technologies, improving the ease with which energy companies can decide which technologies to invest in",
+      "Developed a web app—using C#, Blazor, and SQLite—that allows users to configure and display probabilistic risk assessment data with charts, improving the flexibility in conveying probabilistic risk assessment data",
+      "Developed a desktop app—using C#, WPF, and Azure OpenAI—that automatically summarizes probabilistic risk assessment event descriptions with generative AI, improving the quality of probabilistic risk assessment data labeling",
+      "Developed a desktop app—using C# and WPF—that validates user submissions of a nuclear reactor simulation program’s computer-based training, improving the training’s efficacy and learning experience",
+    ],
     categories: ["Full-Stack", "Desktop"],
-    languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
-    frameworksLibraries: ["Bootstrap", "Blazor", "ASP.NET", "Angular", "Entity Framework", "WPF"],
-    technologies: [
+    languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL"],
+    frameworksLibraries: ["ASP.NET", "Blazor", "Bootstrap", "WPF", "Entity Framework"],
+    tools: [
       "Git",
       "Object-Oriented Programming",
       "REST API",
@@ -27,14 +33,15 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul. 2022 – Jun. 2023",
     description: [
-      "Used C# to architect a database, develop ASP.NET REST APIs, and build a Blazor web app for a company-wide authentication/authorization framework that unifies the development, management, and user access control for EPRI apps and APIs",
-      "Developed a Blazor web app and WPF desktop app that interfaces with an ML backend to detect nuclear fuel rod defects, improving the efficiency of nuclear fuel inspection and the safety of nuclear power plants",
-      "Worked concurrently through the duration of earning a master’s degree",
+      "Developed a company-wide authentication and authorization framework—using C#, Blazor, ASP.NET REST APIs, SQL Server, and Azure API Management—that unifies the development, management, and user access of apps and APIs",
+      "Developed a desktop app—using C#, C++, and WPF—that detects defects in nuclear fuel rods, improving the efficiency of nuclear fuel rod inspections",
+      "Developed a desktop app—using C# and WPF—that automates the setup of the company’s MediaWiki websites",
+      "Worked concurrently through the entirety of earning my master’s degree",
     ],
     categories: ["Full-Stack", "Desktop"],
-    languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL"],
-    frameworksLibraries: ["Bootstrap", "Blazor", "ASP.NET", "Entity Framework", "WPF"],
-    technologies: [
+    languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL", "C++"],
+    frameworksLibraries: ["ASP.NET", "Blazor", "Bootstrap", "WPF", "Entity Framework"],
+    tools: [
       "Git",
       "Object-Oriented Programming",
       "REST API",
@@ -52,14 +59,14 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Feb. 2021 – Jul. 2022",
     description: [
-      "Created an automated testing suite for the Modular Accident Analysis Program (MAAP) with Python, Angular, and ASP.NET, improving quality assurance testing and developer efficiency",
-      "Designed a database and implemented a Blazor web app that detects defects in concrete, improving the efficiency of nuclear reactor containment building inspection",
-      "Worked concurrently through the last semester of earning a bachelor’s degree",
+      "Developed a web app—using C#, Python, JavaScript, Angular, ASP.NET REST APIs, and SQLite—that performs automated quality assurance testing of a nuclear reactor simulation program, improving development productivity",
+      "Developed a web app—using C#, Blazor, and SQL Server—that utilizes an image segmentation model to detect defects in concrete, improving the reliability of nuclear reactor containment building inspections",
+      "Worked concurrently through the last semester of earning my bachelor’s degree",
     ],
     categories: ["Full-Stack"],
-    languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
-    frameworksLibraries: ["Bootstrap", "Blazor", "ASP.NET", "Angular", "Entity Framework"],
-    technologies: [
+    languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL"],
+    frameworksLibraries: ["ASP.NET", "Blazor", "Bootstrap", "Angular", "WPF", "Entity Framework"],
+    tools: [
       "Git",
       "Object-Oriented Programming",
       "REST API",
@@ -83,7 +90,7 @@ export const EXPERIENCES = [
     categories: [],
     languages: ["HTML", "CSS"],
     frameworksLibraries: [],
-    technologies: [],
+    tools: [],
     machineLearning: [],
   },
   {
@@ -98,7 +105,7 @@ export const EXPERIENCES = [
     categories: [],
     languages: ["C#"],
     frameworksLibraries: [],
-    technologies: ["Unity"],
+    tools: ["Unity"],
     machineLearning: [],
   },
 ];

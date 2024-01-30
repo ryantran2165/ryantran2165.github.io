@@ -8,7 +8,7 @@ import {
   FRAMEWORKS_LIBRARIES,
   LANGUAGES,
   MACHINE_LEARNING,
-  TECHNOLOGIES_PARADIGMS,
+  TOOLS,
 } from "../../assets/data/skills-data";
 import SectionTitle from "../etc/section-title";
 import { getTags } from "../etc/utils";
@@ -127,7 +127,7 @@ class Projects extends Component {
               />
               <ProjectFilter
                 currentFilters={this.state.filters}
-                filters={Object.keys(TECHNOLOGIES_PARADIGMS)}
+                filters={Object.keys(TOOLS)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter

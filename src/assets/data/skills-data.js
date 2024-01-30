@@ -14,10 +14,10 @@ export const LANGUAGES = {
     rating: 4,
     display: "Java",
   },
-  "JavaScript/TypeScript": {
+  JavaScript: {
     id: "javascript-skill",
     rating: 4,
-    display: "Java/Type\nScript",
+    display: "JavaScript",
   },
   HTML: {
     id: "html-skill",
@@ -50,31 +50,31 @@ export const FRAMEWORKS_LIBRARIES = {
   React: {
     rating: 4,
   },
-  Bootstrap: {
+  "ASP.NET": {
     rating: 4,
   },
   Blazor: {
     rating: 4,
   },
-  "ASP.NET": {
+  Bootstrap: {
     rating: 4,
-  },
-  Angular: {
-    rating: 3,
   },
   "React Native": {
     rating: 3,
   },
-  "Entity Framework": {
+  Angular: {
     rating: 3,
   },
   WPF: {
     rating: 3,
   },
-  Django: {
-    rating: 2,
+  "Entity Framework": {
+    rating: 3,
   },
   Flask: {
+    rating: 2,
+  },
+  Django: {
     rating: 2,
   },
   Redux: {
@@ -82,7 +82,7 @@ export const FRAMEWORKS_LIBRARIES = {
   },
 };
 
-export const TECHNOLOGIES_PARADIGMS = {
+export const TOOLS = {
   Git: {
     rating: 4,
   },
@@ -98,22 +98,22 @@ export const TECHNOLOGIES_PARADIGMS = {
   Docker: {
     rating: 3,
   },
-  MySQL: {
+  "SQL Server": {
     rating: 3,
   },
   PostgreSQL: {
     rating: 3,
   },
-  "SQL Server": {
+  MySQL: {
     rating: 3,
   },
   SQLite: {
     rating: 3,
   },
-  MongoDB: {
+  NoSQL: {
     rating: 3,
   },
-  NoSQL: {
+  MongoDB: {
     rating: 3,
   },
   AWS: {
@@ -146,13 +146,16 @@ export const MACHINE_LEARNING = {
   "scikit-learn": {
     rating: 3,
   },
+  "HuggingFace (Transformers)": {
+    rating: 3,
+  },
   NumPy: {
     rating: 3,
   },
   pandas: {
     rating: 3,
   },
-  seaborn: {
-    rating: 2,
+  Matplotlib: {
+    rating: 3,
   },
 };

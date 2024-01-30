@@ -49,6 +49,7 @@ const Project = ({ project }) => {
                 href={project.source}
                 icon={faGithub}
                 isNewTab={true}
+                tooltip="Source"
                 data-aos="fade-in"
                 data-aos-delay="200"
               />
@@ -60,6 +61,7 @@ const Project = ({ project }) => {
                 href={project.demo}
                 icon={faPlay}
                 isNewTab={true}
+                tooltip="Demo"
                 data-aos="fade-in"
                 data-aos-delay="200"
               />

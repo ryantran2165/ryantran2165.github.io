@@ -81,6 +81,7 @@ class Contact extends Component {
                 <IconButton
                   href="mailto:ryantran2165@gmail.com"
                   icon={faEnvelope}
+                  tooltip="Email"
                   data-aos="fade-in"
                   data-aos-delay="200"
                 />
@@ -92,6 +93,7 @@ class Contact extends Component {
                 <IconButton
                   href="tel:1-669-282-2213"
                   icon={faPhoneAlt}
+                  tooltip="Phone"
                   data-aos="fade-in"
                   data-aos-delay="200"
                 />

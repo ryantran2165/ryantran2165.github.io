@@ -97,6 +97,7 @@ class About extends Component {
                     }
                     icon={faFilePdf}
                     isNewTab={true}
+                    tooltip="Résumé"
                     data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "200" : "1200"}
                   />
@@ -106,6 +107,7 @@ class About extends Component {
                     href="https://www.linkedin.com/in/ryantran2165"
                     icon={faLinkedinIn}
                     isNewTab={true}
+                    tooltip="LinkedIn"
                     data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "400" : "1400"}
                   />
@@ -115,6 +117,7 @@ class About extends Component {
                     href="https://github.com/ryantran2165"
                     icon={faGithub}
                     isNewTab={true}
+                    tooltip="GitHub"
                     data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "600" : "1600"}
                   />
@@ -123,6 +126,7 @@ class About extends Component {
                   <IconButton
                     href="https://www.kaggle.com/ryantran2165"
                     icon={faKaggle}
+                    tooltip="Kaggle"
                     isNewTab={true}
                     data-aos="fade-in"
                     data-aos-delay={this.state.isMobile ? "800" : "1800"}

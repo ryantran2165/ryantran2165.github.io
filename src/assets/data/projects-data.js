@@ -10,7 +10,6 @@ import cryptoOnlineImg from "../images/crypto_online.jpg";
 import polynomialRegressionImg from "../images/polynomial_regression.jpg";
 import infiniteMonkeyImg from "../images/infinite_monkey.jpg";
 import iconImg from "../images/icon.jpg";
-import constructionImg from "../images/under_construction.jpg";
 
 const ProjectData = [
   {
@@ -210,23 +209,6 @@ const ProjectData = [
     tools: ["Git"],
     machineLearning: [],
     source: "https://github.com/ryantran2165/ryantran2165.github.io/tree/source",
-    demo: "",
-  },
-  {
-    image: constructionImg,
-    title: "Mobile Game",
-    date: "Jun. 2016 – Present",
-    description: [
-      "Developing action, role-playing, strategy 2D mobile game",
-      "It's a rather ambitious project, so it's not going to be finished any time soon",
-      "Currently put on hold to focus on machine learning and AI",
-    ],
-    categories: ["Game"],
-    languages: ["Java"],
-    frameworksLibraries: [],
-    tools: ["Git", "Object-Oriented Programming"],
-    machineLearning: [],
-    source: "",
     demo: "",
   },
 ];

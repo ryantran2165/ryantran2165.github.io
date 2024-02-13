@@ -60,7 +60,7 @@ export const EXPERIENCES = [
     date: "Feb. 2021 – Jul. 2022",
     description: [
       "Developed a web app—using C#, Python, JavaScript, Angular, ASP.NET REST APIs, and SQLite—that performs automated quality assurance testing of a nuclear reactor simulation program, improving development productivity",
-      "Developed a web app—using C#, Blazor, and SQL Server—that utilizes an image segmentation model to detect defects in concrete, improving the reliability of nuclear reactor containment building inspections",
+      "Developed a web app—using C#, Python, Blazor, SQL Server, and Azure ML—that utilizes an image segmentation model to detect defects in concrete, improving the reliability of nuclear reactor containment building inspections",
       "Worked concurrently through the last semester of earning my bachelor’s degree",
     ],
     categories: ["Full-Stack"],

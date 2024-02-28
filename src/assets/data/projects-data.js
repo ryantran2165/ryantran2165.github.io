@@ -90,7 +90,7 @@ const ProjectData = [
     tools: ["Git", "REST API", "PostgreSQL", "GCP"],
     machineLearning: [],
     source: "https://github.com/ryantran2165/office-supply-depot-frontend",
-    demo: "https://office-supply-depot-frontend.netlify.app",
+    demo: "",
   },
   {
     image: bjjPredictorImg,
@@ -106,7 +106,7 @@ const ProjectData = [
     tools: ["Git", "REST API", "Linux", "AWS", "NoSQL"],
     machineLearning: ["TensorFlow", "Keras", "scikit-learn", "NumPy", "pandas"],
     source: "https://github.com/ryantran2165/bjj-predictor",
-    demo: "https://www.ryanlongtran.com/bjj-predictor",
+    demo: "",
   },
   {
     image: connect4aiImg,
@@ -166,7 +166,7 @@ const ProjectData = [
     tools: ["Git", "Linux", "MySQL"],
     machineLearning: [],
     source: "https://github.com/ryantran2165/crypto-online",
-    demo: "https://crypto-online.herokuapp.com",
+    demo: "",
   },
   {
     image: polynomialRegressionImg,

@@ -1,7 +1,7 @@
 export const EXPERIENCES = [
   {
     title: "Software Developer",
-    company: "Electric Power Research Institute (EPRI)",
+    company: "EPRI",
     location: "Palo Alto, CA",
     date: "Jun. 2023 – Present",
     description: [
@@ -39,7 +39,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Associate Software Developer",
-    company: "Electric Power Research Institute (EPRI)",
+    company: "EPRI",
     location: "Palo Alto, CA",
     date: "Jul. 2022 – Jun. 2023",
     description: [
@@ -72,7 +72,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Student Software Developer",
-    company: "Electric Power Research Institute (EPRI)",
+    company: "EPRI",
     location: "Palo Alto, CA",
     date: "Feb. 2021 – Jul. 2022",
     description: [

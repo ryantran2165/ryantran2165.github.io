@@ -5,11 +5,21 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jun. 2023 – Present",
     description: [
-      "Developed a web app—using C#, Blazor, ASP.NET REST APIs, and SQL Server—that facilitates the authentication and authorization of third-party software licenses, improving the company’s process of integrating third-party software",
-      "Developed a web app—using C#, Blazor, and SQL Server—that allows users to configure and intuitively compare energy technologies, improving the ease with which energy companies can decide which technologies to invest in",
-      "Developed a web app—using C#, Blazor, and SQLite—that allows users to configure and display probabilistic risk assessment data with charts, improving the flexibility in conveying probabilistic risk assessment data",
-      "Developed a desktop app—using C#, WPF, and Azure OpenAI—that automatically summarizes probabilistic risk assessment event descriptions with generative AI, improving the quality of probabilistic risk assessment data labeling",
-      "Developed a desktop app—using C# and WPF—that validates user submissions of a nuclear reactor simulation program’s computer-based training, improving the training’s efficacy and learning experience",
+      [
+        "Spearheaded three web apps using C#, Blazor, REST APIs, SQL Server, and Azure that:",
+        [
+          "Improved the management of software licenses by interfacing with third-party services",
+          "Streamlined the comparison of energy sources by implementing an intuitive matrix",
+          "Heightened the efficacy of probabilistic risk assessment communication by generating dynamic charts",
+        ],
+      ],
+      [
+        "Developed two desktop apps using C#, WPF, and Azure that:",
+        [
+          "Refined the workflow of probabilistic risk assessment labeling by utilizing AI summarization",
+          "Enhanced the success of a computer-based training program by validating user submissions",
+        ],
+      ],
     ],
     categories: ["Full-Stack", "Desktop"],
     languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL"],
@@ -33,10 +43,17 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul. 2022 – Jun. 2023",
     description: [
-      "Developed a company-wide authentication and authorization framework—using C#, Blazor, ASP.NET REST APIs, SQL Server, and Azure API Management—that unifies the development, management, and user access of apps and APIs",
-      "Developed a desktop app—using C#, C++, and WPF—that detects defects in nuclear fuel rods, improving the efficiency of nuclear fuel rod inspections",
-      "Developed a desktop app—using C# and WPF—that automates the setup of the company’s MediaWiki websites",
-      "Worked concurrently through the entirety of earning my master’s degree",
+      [
+        "Built an authentication/authorization framework using C#, Blazor, REST APIs, SQL Server, and Azure that:",
+        ["Unified the development, management, and user access control of apps and APIs"],
+      ],
+      [
+        "Created two desktop apps using C#, C++, and WPF that:",
+        [
+          "Bolstered the efficiency of nuclear fuel inspections by detecting damage in fuel rods and grids",
+          "Simplified the configuration of wiki sites by automating the setup",
+        ],
+      ],
     ],
     categories: ["Full-Stack", "Desktop"],
     languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL", "C++"],
@@ -59,9 +76,13 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Feb. 2021 – Jul. 2022",
     description: [
-      "Developed a web app—using C#, Python, JavaScript, Angular, ASP.NET REST APIs, and SQLite—that performs automated quality assurance testing of a nuclear reactor simulation program, improving development productivity",
-      "Developed a web app—using C#, Python, Blazor, SQL Server, and Azure ML—that utilizes an image segmentation model to detect defects in concrete, improving the reliability of nuclear reactor containment building inspections",
-      "Worked concurrently through the last semester of earning my bachelor’s degree",
+      [
+        "Constructed two web apps using C#, Python, JavaScript, Angular, REST APIs, SQL Server, and Azure that:",
+        [
+          "Strengthened the reliability of a reactor simulation program by automating the QA testing",
+          "Boosted the accuracy of reactor containment inspections by detecting defects in concrete structures",
+        ],
+      ],
     ],
     categories: ["Full-Stack"],
     languages: ["Python", "C#", "JavaScript", "HTML", "CSS", "SQL"],
@@ -85,7 +106,7 @@ export const EXPERIENCES = [
     location: "San José, CA",
     date: "Mar. 2018 – Jul. 2018",
     description: [
-      "Designed company website and logo using HTML, CSS, WordPress, and Adobe Illustrator",
+      ["Designed company website and logo using HTML, CSS, WordPress, and Adobe Illustrator", []],
     ],
     categories: [],
     languages: ["HTML", "CSS"],
@@ -99,8 +120,11 @@ export const EXPERIENCES = [
     location: "Mountain View, CA",
     date: "Jul. 2017 – Oct. 2017",
     description: [
-      "Independently learned C#, Unity, and Unity Virtual Reality to develop a Unity VR arcade game as a demo",
-      "Fixed bugs in a Samsung Unity VR workshop/tutorial",
+      [
+        "Independently learned C#, Unity, and Unity Virtual Reality to develop a Unity VR arcade game as a demo",
+        [],
+      ],
+      ["Fixed bugs in a Samsung Unity VR workshop/tutorial", []],
     ],
     categories: [],
     languages: ["C#"],

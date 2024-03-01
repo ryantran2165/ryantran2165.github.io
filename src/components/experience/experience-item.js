@@ -35,7 +35,12 @@ const ExperienceItem = ({ experience }) => {
             data-aos="fade-in"
             data-aos-delay="200"
           >
-            {bullet}
+            {bullet[0]}
+            <ul>
+              {bullet[1].map((innerBullet, j) => (
+                <li key={`${i}-${j}-${experience.company}-description`}>{innerBullet}</li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>

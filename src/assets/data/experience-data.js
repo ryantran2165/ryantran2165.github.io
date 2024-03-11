@@ -9,15 +9,15 @@ export const EXPERIENCES = [
         "Spearheaded three web apps using C#, Blazor, REST APIs, SQL Server, and Azure that:",
         [
           "Improved the management of software licenses by interfacing with third-party services",
-          "Streamlined the comparison of energy sources by implementing an intuitive matrix",
-          "Heightened the efficacy of probabilistic risk assessment communication by generating dynamic charts",
+          "Streamlined the comparison of energy sources by constructing an interactive display matrix",
+          "Enhanced the efficacy of probabilistic risk assessment communication by generating dynamic charts",
         ],
       ],
       [
         "Developed two desktop apps using C#, WPF, and Azure that:",
         [
           "Refined the workflow of probabilistic risk assessment labeling by utilizing AI summarization",
-          "Enhanced the success of a computer-based training program by validating user submissions",
+          "Bolstered the success of a computer-based training program by validating user submissions",
         ],
       ],
     ],
@@ -45,13 +45,15 @@ export const EXPERIENCES = [
     description: [
       [
         "Built an authentication/authorization framework using C#, Blazor, REST APIs, SQL Server, and Azure that:",
-        ["Unified the development, management, and user access control of apps and APIs"],
+        [
+          "Unified the access control and development process of apps and APIs by introducing a cohesive system",
+        ],
       ],
       [
-        "Created two desktop apps using C#, C++, and WPF that:",
+        "Implemented two desktop apps using C#, C++, and WPF that:",
         [
-          "Bolstered the efficiency of nuclear fuel inspections by detecting damage in fuel rods and grids",
-          "Simplified the configuration of wiki sites by automating the setup",
+          "Boosted the efficiency of nuclear fuel inspections by detecting damage in fuel rods and grids",
+          "Simplified the configuration of wiki sites by automating the setup process",
         ],
       ],
     ],
@@ -77,10 +79,10 @@ export const EXPERIENCES = [
     date: "Feb. 2021 – Jul. 2022",
     description: [
       [
-        "Constructed two web apps using C#, Python, JavaScript, Angular, REST APIs, SQL Server, and Azure that:",
+        "Created two web apps using C#, Python, JavaScript, Angular, REST APIs, SQL Server, and Azure that:",
         [
-          "Strengthened the reliability of a reactor simulation program by automating the QA testing",
-          "Boosted the accuracy of reactor containment inspections by detecting defects in concrete structures",
+          "Elevated the reliability of a reactor simulation program by automating quality assurance testing",
+          "Strengthened the accuracy of reactor containment inspections by detecting defects in concrete",
         ],
       ],
     ],

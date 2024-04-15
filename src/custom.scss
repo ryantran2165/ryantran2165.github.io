@@ -1,0 +1,14 @@
+$theme-colors: (
+  "primary": aquamarine,
+);
+
+$spacers: (
+  6: (
+    6rem,
+  ),
+  7: (
+    7rem,
+  ),
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";

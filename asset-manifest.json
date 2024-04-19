@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.04099f30.css",
-    "main.js": "/static/js/main.238be32a.js",
+    "main.js": "/static/js/main.6182c116.js",
     "static/media/about_background.jpg": "/static/media/about_background.0a7e2cbf0ca47d450af0.jpg",
     "static/media/skin_detector.jpg": "/static/media/skin_detector.f7db898d02e13ff31ff5.jpg",
     "static/media/kaggle_patent.jpg": "/static/media/kaggle_patent.eb4582857038edc00113.jpg",
     "static/media/office_supply_depot.jpg": "/static/media/office_supply_depot.14cf92d193942fe6c2a3.jpg",
     "static/media/icon.jpg": "/static/media/icon.9dbb29d67a90be357e9b.jpg",
     "static/media/donut_dash.jpg": "/static/media/donut_dash.bea5a03d66ac66a00cf5.jpg",
+    "static/media/chill_clicker.jpg": "/static/media/chill_clicker.9d1294aa83a6dc91938b.jpg",
     "static/media/infinite_monkey.jpg": "/static/media/infinite_monkey.6744a51a05dbb51124b5.jpg",
     "static/media/kaggle_feedback.png": "/static/media/kaggle_feedback.79d306736cd7df67192b.png",
     "static/media/suzanne_nguyen.jpg": "/static/media/suzanne_nguyen.58aa2a06045a8a0ee214.jpg",
@@ -19,10 +20,10 @@
     "static/media/polynomial_regression.jpg": "/static/media/polynomial_regression.7f7814e66fcd01a86270.jpg",
     "index.html": "/index.html",
     "main.04099f30.css.map": "/static/css/main.04099f30.css.map",
-    "main.238be32a.js.map": "/static/js/main.238be32a.js.map"
+    "main.6182c116.js.map": "/static/js/main.6182c116.js.map"
   },
   "entrypoints": [
     "static/css/main.04099f30.css",
-    "static/js/main.238be32a.js"
+    "static/js/main.6182c116.js"
   ]
 }

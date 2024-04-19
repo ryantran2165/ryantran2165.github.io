@@ -1,3 +1,4 @@
+import chillClickerImg from "../images/chill_clicker.jpg";
 import kaggleFeedbackImg from "../images/kaggle_feedback.png";
 import kagglePatentImg from "../images/kaggle_patent.jpg";
 import skinDetectorImg from "../images/skin_detector.jpg";
@@ -12,6 +13,23 @@ import infiniteMonkeyImg from "../images/infinite_monkey.jpg";
 import iconImg from "../images/icon.jpg";
 
 const ProjectData = [
+  {
+    image: chillClickerImg,
+    title: "Chill Clicker",
+    date: "Jan. 2024 – Apr. 2024",
+    description: [
+      "Developed a simple, relaxing clicker game",
+      "Integrated with third-party services like Google Play Games Services and AdMob",
+      "Published to Google Play Store",
+    ],
+    categories: ["Game"],
+    languages: ["GDScript"],
+    frameworksLibraries: [],
+    tools: ["Git", "Godot"],
+    machineLearning: [],
+    source: "",
+    demo: "https://play.google.com/store/apps/details?id=com.ryanlongtran.chillclicker",
+  },
   {
     image: kaggleFeedbackImg,
     title: "Feedback Prize - Predicting Effective Arguments (Kaggle Competition)",

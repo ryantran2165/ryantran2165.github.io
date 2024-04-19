@@ -131,6 +131,9 @@ export const TOOLS = {
   Unity: {
     rating: 2,
   },
+  Godot: {
+    rating: 2,
+  },
 };
 
 export const MACHINE_LEARNING = {

@@ -149,7 +149,7 @@ export const MACHINE_LEARNING = {
   "scikit-learn": {
     rating: 3,
   },
-  "HuggingFace (Transformers)": {
+  Transformers: {
     rating: 3,
   },
   NumPy: {

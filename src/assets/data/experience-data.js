@@ -6,17 +6,17 @@ export const EXPERIENCES = [
     date: "Jun. 2023 – Present",
     description: [
       [
-        "Spearheaded three web apps using C#, Blazor, REST APIs, SQL Server, and Azure that:",
+        "Spearheaded 3 web apps using C#, Blazor, REST APIs, SQL Server, and Azure that:",
         [
           "Improved the management of software licenses",
           "Streamlined the comparison of energy sources",
-          "Enhanced the efficacy of probabilistic risk assessment communication",
+          "Enhanced the effectiveness of data communication",
         ],
       ],
       [
-        "Developed two desktop apps using C#, WPF, and Azure that:",
+        "Developed 2 desktop apps using C#, WPF, and Azure that:",
         [
-          "Refined the workflow of probabilistic risk assessment labeling",
+          "Refined the workflow of data labeling",
           "Bolstered the success of a computer-based training program",
         ],
       ],
@@ -48,7 +48,7 @@ export const EXPERIENCES = [
         ["Unified the access control and development process of apps and APIs"],
       ],
       [
-        "Implemented two desktop apps using C#, C++, and WPF that:",
+        "Implemented 2 desktop apps using C#, C++, and WPF that:",
         [
           "Boosted the efficiency of nuclear fuel inspections",
           "Simplified the configuration of wiki sites",
@@ -77,10 +77,10 @@ export const EXPERIENCES = [
     date: "Feb. 2021 – Jul. 2022",
     description: [
       [
-        "Created two web apps using C#, Python, JavaScript, Angular, REST APIs, SQL Server, and Azure that:",
+        "Created 2 web apps using C#, Python, JavaScript, Angular, REST APIs, SQL Server, and Azure that:",
         [
-          "Elevated the reliability of a reactor simulation program",
-          "Strengthened the accuracy of reactor containment inspections",
+          "Automated the quality assurance testing of a reactor simulation program",
+          "Raised the accuracy of reactor containment inspections",
         ],
       ],
     ],

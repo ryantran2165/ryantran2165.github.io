@@ -83,7 +83,7 @@ class About extends Component {
               <p className="text-left mt-4 mb-0" data-aos="fade-in" data-aos-delay="1000">
                 Hey, thanks for visiting my site! I'm a software developer at EPRI with a master's
                 degree in software engineering from San José State University. I've been programming
-                for about 9 years, 3 of which professionally, and am interested in all types of
+                for about 9.5 years, 3.5 of which professionally, and am interested in all types of
                 software development (full-stack, desktop, mobile) and machine learning. Some of my
                 hobbies include Kaggle competitions, game development, tennis, ping pong,
                 basketball, MMA, movies, and TV shows.

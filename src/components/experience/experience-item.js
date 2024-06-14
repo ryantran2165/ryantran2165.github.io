@@ -36,7 +36,7 @@ const ExperienceItem = ({ experience }) => {
             data-aos-delay="200"
           >
             {bullet[0]}
-            <ul>
+            <ul className="list-style-type-square">
               {bullet[1].map((innerBullet, j) => (
                 <li key={`${i}-${j}-${experience.company}-description`}>{innerBullet}</li>
               ))}

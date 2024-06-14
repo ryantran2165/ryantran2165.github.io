@@ -1,4 +1,3 @@
-import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -8,7 +7,6 @@ import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import ReCAPTCHA from "react-google-recaptcha";
 import { MOBILE_MAX_WIDTH } from "../../App";
-import IconButton from "../etc/icon-button";
 import SectionTitle from "../etc/section-title";
 
 const RECAPTCHA_KEY = "6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd";

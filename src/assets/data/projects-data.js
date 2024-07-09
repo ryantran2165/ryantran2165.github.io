@@ -1,6 +1,6 @@
 import chillClickerImg from "../images/chill_clicker.jpg";
 import kaggleFeedbackImg from "../images/kaggle_feedback.png";
-import kagglePatentImg from "../images/kaggle_patent.jpg";
+import kagglePatentImg from "../images/kaggle_patent.png";
 import skinDetectorImg from "../images/skin_detector.jpg";
 import officeSupplyDepotImg from "../images/office_supply_depot.jpg";
 import bjjPredictorImg from "../images/bjj_predictor.jpg";
@@ -45,7 +45,7 @@ const ProjectData = [
     tools: ["Git"],
     machineLearning: ["PyTorch", "scikit-learn", "Transformers", "NumPy", "pandas", "Matplotlib"],
     source: "",
-    demo: "https://www.kaggle.com/competitions/feedback-prize-effectiveness/leaderboard?search=ryantran",
+    demo: "https://www.kaggle.com/certification/competitions/ryantran2165/feedback-prize-effectiveness",
   },
   {
     image: kagglePatentImg,
@@ -62,7 +62,7 @@ const ProjectData = [
     tools: ["Git"],
     machineLearning: ["PyTorch", "scikit-learn", "Transformers", "NumPy", "pandas", "Matplotlib"],
     source: "",
-    demo: "https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching/leaderboard?search=ryantran",
+    demo: "https://www.kaggle.com/certification/competitions/ryantran2165/us-patent-phrase-to-phrase-matching",
   },
   {
     image: skinDetectorImg,

@@ -66,7 +66,7 @@ const ProjectData = [
   },
   {
     image: skinDetectorImg,
-    title: "Skin Detector",
+    title: "Skin Detector (DEFUNCT)",
     date: "Sep. 2021 – Dec. 2021",
     description: [
       "Developed an Android mobile app with React Native that detects skin conditions, such as melanoma and carcinoma",
@@ -78,7 +78,7 @@ const ProjectData = [
     tools: ["Git"],
     machineLearning: ["TensorFlow", "Keras", "scikit-learn", "NumPy", "pandas"],
     source: "https://github.com/sjsucmpe272-fall21/SkinDetector",
-    demo: "https://expo.dev/@skin-detector/skin-detector",
+    demo: "",
   },
   {
     image: officeSupplyDepotImg,

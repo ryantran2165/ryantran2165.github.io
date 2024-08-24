@@ -85,8 +85,8 @@ class About extends Component {
                 degree in software engineering from San José State University. I've been programming
                 for about 9.5 years, 3.5 of which professionally, and am interested in all types of
                 software development (full-stack, desktop, mobile) and machine learning. Some of my
-                hobbies include Kaggle competitions, game development, tennis, ping pong,
-                basketball, MMA, movies, and TV shows.
+                hobbies include Kaggle competitions, game development, tennis, ping pong, MMA,
+                movies, and TV shows.
               </p>
               <Row className="justify-content-evenly">
                 <Col xs="auto" className="mt-4">

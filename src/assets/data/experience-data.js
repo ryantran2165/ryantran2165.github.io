@@ -44,8 +44,8 @@ export const EXPERIENCES = [
     date: "Jul. 2022 – Jun. 2023",
     description: [
       [
-        "Built an authorization framework using C#, Blazor, REST APIs, SQL Server, and Azure that:",
-        ["Unified the access control and development process of apps and APIs"],
+        "Built an authentication and authorization framework using C#, Blazor, REST APIs, SQL Server, and Azure that:",
+        ["Unified the access control and development process of apps and APIs within the company"],
       ],
       [
         "Implemented 2 desktop apps using C#, C++, and WPF that:",

@@ -81,12 +81,11 @@ class About extends Component {
                 Software Engineer & Machine Learning Enthusiast
               </h4>
               <p className="text-left mt-4 mb-0" data-aos="fade-in" data-aos-delay="1000">
-                Hey, thanks for visiting my site! I'm a software developer at EPRI with a master's
-                degree in software engineering from San José State University. I've been programming
-                for about 9.5 years, 3.5 of which professionally, and am interested in all types of
-                software development (full-stack, desktop, mobile) and machine learning. Some of my
-                hobbies include Kaggle competitions, game development, tennis, ping pong, MMA,
-                movies, and TV shows.
+                Hey, thanks for visiting! I'm a software developer at EPRI with a master's degree in
+                software engineering from San José State University. I've been programming for about
+                10 years (4 professionally) and am interested in full-stack web, desktop, mobile,
+                and machine learning app development. My hobbies include Kaggle competitions, game
+                development, tennis, ping pong, MMA, movies, and TV shows.
               </p>
               <Row className="justify-content-evenly">
                 <Col xs="auto" className="mt-4">

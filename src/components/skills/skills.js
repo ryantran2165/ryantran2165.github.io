@@ -62,16 +62,13 @@ class Skills extends Component {
           <SectionTitle text="Skills" />
           <Row className="justify-content-center" data-aos="fade-in" data-aos-delay="200">
             <Col xs={6} sm="auto">
-              <h5>5 - Expert</h5>
+              <h5>3 - Proficient</h5>
             </Col>
             <Col xs={6} sm="auto">
               <h5>4 - Advanced</h5>
             </Col>
             <Col xs={6} sm="auto">
-              <h5>3 - Proficient</h5>
-            </Col>
-            <Col xs={6} sm="auto">
-              <h5>2 - Familiar</h5>
+              <h5>5 - Expert</h5>
             </Col>
           </Row>
           <Row className="mt-4" data-aos="fade-in" data-aos-delay="200">

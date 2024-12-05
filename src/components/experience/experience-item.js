@@ -10,7 +10,7 @@ const ExperienceItem = ({ experience }) => {
         {experience.title}
       </h4>
       <h5 data-aos="fade-in" data-aos-delay="200">
-        {experience.company} ({experience.location})
+        {experience.company} | {experience.location}
       </h5>
       <h5 data-aos="fade-in" data-aos-delay="200">
         {experience.date}

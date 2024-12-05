@@ -14,10 +14,20 @@ export const LANGUAGES = {
     rating: 4,
     display: "Java",
   },
+  "C++": {
+    id: "cpp-skill",
+    rating: 3,
+    display: "C++",
+  },
   JavaScript: {
     id: "javascript-skill",
     rating: 4,
     display: "JavaScript",
+  },
+  TypeScript: {
+    id: "typescript-skill",
+    rating: 3,
+    display: "TypeScript",
   },
   HTML: {
     id: "html-skill",
@@ -31,32 +41,22 @@ export const LANGUAGES = {
   },
   SQL: {
     id: "sql-skill",
-    rating: 4,
-    display: "SQL",
-  },
-  "C++": {
-    id: "cpp-skill",
     rating: 3,
-    display: "C++",
-  },
-  PHP: {
-    id: "php-skill",
-    rating: 2,
-    display: "PHP",
+    display: "SQL",
   },
 };
 
 export const FRAMEWORKS_LIBRARIES = {
-  React: {
-    rating: 4,
-  },
-  "ASP.NET": {
+  ".NET": {
     rating: 4,
   },
   Blazor: {
     rating: 4,
   },
-  Bootstrap: {
+  WPF: {
+    rating: 3,
+  },
+  React: {
     rating: 4,
   },
   "React Native": {
@@ -65,32 +65,17 @@ export const FRAMEWORKS_LIBRARIES = {
   Angular: {
     rating: 3,
   },
-  WPF: {
-    rating: 3,
-  },
-  "Entity Framework": {
-    rating: 3,
+  Bootstrap: {
+    rating: 4,
   },
   Flask: {
-    rating: 2,
-  },
-  Django: {
-    rating: 2,
-  },
-  Redux: {
-    rating: 2,
+    rating: 3,
   },
 };
 
 export const TOOLS = {
   Git: {
-    rating: 4,
-  },
-  "Object-Oriented Programming": {
-    rating: 4,
-  },
-  "REST API": {
-    rating: 4,
+    rating: 3,
   },
   Linux: {
     rating: 3,
@@ -110,9 +95,6 @@ export const TOOLS = {
   SQLite: {
     rating: 3,
   },
-  NoSQL: {
-    rating: 3,
-  },
   MongoDB: {
     rating: 3,
   },
@@ -124,15 +106,6 @@ export const TOOLS = {
   },
   GCP: {
     rating: 3,
-  },
-  Agile: {
-    rating: 3,
-  },
-  Unity: {
-    rating: 2,
-  },
-  Godot: {
-    rating: 2,
   },
 };
 
@@ -156,9 +129,6 @@ export const MACHINE_LEARNING = {
     rating: 3,
   },
   pandas: {
-    rating: 3,
-  },
-  Matplotlib: {
     rating: 3,
   },
 };

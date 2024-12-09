@@ -14,7 +14,7 @@ const Testimonials = () => {
       <SectionTitle text="Testimonials" />
       <Row className="justify-content-center mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
-          <Carousel data-aos="fade-in" data-aos-delay="200">
+          <Carousel interval={20000} data-aos="fade-in" data-aos-delay="200">
             <Carousel.Item>
               <CarouselItemData
                 imageSrc={suzanneImage}

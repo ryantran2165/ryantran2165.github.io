@@ -85,7 +85,7 @@ class About extends Component {
                 Institute (EPRI) with a master's degree in software engineering from San José State
                 University. I've been programming for about 10 years (4 professionally) and am
                 interested in full-stack web, desktop, mobile, and ML app development. My hobbies
-                include Kaggle competitions, game development, tennis, MMA, and movies.
+                include Kaggle competitions, game development, tennis, and MMA.
               </p>
               <Row className="justify-content-evenly">
                 <Col xs="auto" className="mt-4">

@@ -5,7 +5,6 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Education from "./components/education/education";
-import Preloader from "./components/etc/preloader";
 import Experience from "./components/experience/experience";
 import BackToTop from "./components/navigation/back-to-top";
 import Navigation from "./components/navigation/navigation";
@@ -16,7 +15,7 @@ import Testimonials from "./components/testimonials/testimonials";
 const AOS_DURATION = 1000;
 const MAX_TOUCH_DIFF = 500;
 export const MOBILE_MAX_WIDTH = 576;
-export const NAV_OFFSET = -90;
+export const NAV_OFFSET = -74;
 export const NAV_DURATION = 1000;
 
 class App extends Component {
@@ -71,7 +70,6 @@ class App extends Component {
           <Skills />
           <Contact />
           <BackToTop />
-          <Preloader />
         </div>
       </ParallaxProvider>
     );

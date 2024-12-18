@@ -70,7 +70,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact" fluid className="text-center pt-5 mb-7">
+      <Container id="contact" fluid className="text-center pt-5 mb-12">
         <SectionTitle text="Contact" />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
@@ -87,66 +87,66 @@ class Contact extends Component {
                 <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Name
                 </Form.Label>
-                <Form.Control
-                  type="text"
-                  value={this.state.name}
-                  onChange={(e) => this.handleFormChange(e, "name")}
-                  name="entry.1568045103"
-                  id="entry.1568045103"
-                  placeholder="John Doe"
-                  required
-                  data-aos="fade-in"
-                  data-aos-delay="200"
-                />
+                <div data-aos="fade-in" data-aos-delay="200">
+                  <Form.Control
+                    type="text"
+                    value={this.state.name}
+                    onChange={(e) => this.handleFormChange(e, "name")}
+                    name="entry.1568045103"
+                    id="entry.1568045103"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
               </Form.Group>
               <Form.Group>
                 <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Email
                 </Form.Label>
-                <Form.Control
-                  type="email"
-                  value={this.state.email}
-                  onChange={(e) => this.handleFormChange(e, "email")}
-                  name="entry.1246301993"
-                  id="entry.1246301993"
-                  placeholder="john.doe@gmail.com"
-                  required
-                  data-aos="fade-in"
-                  data-aos-delay="200"
-                />
+                <div data-aos="fade-in" data-aos-delay="200">
+                  <Form.Control
+                    type="email"
+                    value={this.state.email}
+                    onChange={(e) => this.handleFormChange(e, "email")}
+                    name="entry.1246301993"
+                    id="entry.1246301993"
+                    placeholder="john.doe@gmail.com"
+                    required
+                  />
+                </div>
               </Form.Group>
               <Form.Group>
                 <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Subject
                 </Form.Label>
-                <Form.Control
-                  type="text"
-                  value={this.state.subject}
-                  onChange={(e) => this.handleFormChange(e, "subject")}
-                  name="entry.1608794007"
-                  id="entry.1608794007"
-                  placeholder="!false"
-                  required
-                  data-aos="fade-in"
-                  data-aos-delay="200"
-                />
+                <div data-aos="fade-in" data-aos-delay="200">
+                  <Form.Control
+                    type="text"
+                    value={this.state.subject}
+                    onChange={(e) => this.handleFormChange(e, "subject")}
+                    name="entry.1608794007"
+                    id="entry.1608794007"
+                    placeholder="!false"
+                    required
+                  />
+                </div>
               </Form.Group>
               <Form.Group>
                 <Form.Label data-aos="fade-in" data-aos-delay="200">
                   Message
                 </Form.Label>
-                <Form.Control
-                  as="textarea"
-                  value={this.state.message}
-                  onChange={(e) => this.handleFormChange(e, "message")}
-                  rows="5"
-                  name="entry.485311975"
-                  id="entry.485311975"
-                  placeholder="It's funny because it's true"
-                  required
-                  data-aos="fade-in"
-                  data-aos-delay="200"
-                />
+                <div data-aos="fade-in" data-aos-delay="200">
+                  <Form.Control
+                    as="textarea"
+                    value={this.state.message}
+                    onChange={(e) => this.handleFormChange(e, "message")}
+                    rows="5"
+                    name="entry.485311975"
+                    id="entry.485311975"
+                    placeholder="It's funny because it's true"
+                    required
+                  />
+                </div>
               </Form.Group>
               {!this.state.recaptchaSuccess && (
                 <ReCAPTCHA

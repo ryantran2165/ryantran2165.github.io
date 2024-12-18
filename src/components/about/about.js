@@ -78,10 +78,10 @@ class About extends Component {
                 Ryan L. Tran
               </h1>
               <h4 className="font-weight-bold" data-aos="fade-in" data-aos-delay="800">
-                Software Engineer & Machine Learning Enthusiast
+                Software Engineer
               </h4>
               <p className="text-left mt-4 mb-0" data-aos="fade-in" data-aos-delay="1000">
-                Hey, thanks for visiting! I'm a software developer at the Electric Power Research
+                Hi, thanks for visiting! I'm a software developer at the Electric Power Research
                 Institute (EPRI) with a master's degree in software engineering from San José State
                 University. I've been programming for about 10 years (4 professionally) and am
                 interested in full-stack web, desktop, mobile, and ML app development. My hobbies

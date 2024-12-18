@@ -20,11 +20,11 @@ body {
   color: #222;
 }
 
-.line {
-  width: 4rem;
-  height: 0.3rem;
-  background-color: aquamarine;
-  margin: auto;
+.section-title {
+  text-decoration: underline;
+  text-decoration-thickness: 0.25rem;
+  text-decoration-color: aquamarine;
+  text-underline-offset: 1rem;
 }
 
 .circle-img {
@@ -36,7 +36,7 @@ body {
   @include shadow;
   background-color: aquamarine;
   color: #222;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   font-size: 1.25rem;
   border: none;
   border-radius: 0.5rem;
@@ -110,68 +110,14 @@ ul {
 }
 /* END GENERAL */
 
-/* PRELOADER */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-  -webkit-transition: opacity 250ms linear;
-  -o-transition: opacity 250ms linear;
-  transition: opacity 250ms linear;
-
-  &:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 1.875rem);
-    left: calc(50% - 1.875rem);
-    border: 0.375rem solid #f2f2f2;
-    border-top: 0.375rem solid aquamarine;
-    border-radius: 50%;
-    width: 3.75rem;
-    height: 3.75rem;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
-  }
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-/* END PRELOADER */
-
 /* BACK TO TOP */
 #back-to-top {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   &.show {
     opacity: 0.75;
@@ -183,8 +129,8 @@ ul {
 .navbar {
   pointer-events: none;
   color: aquamarine;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -253,8 +199,8 @@ ul {
   @include shadow;
   color: #222;
   background-color: aquamarine;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   .nav-link {
     a:before {
@@ -341,7 +287,8 @@ ul {
 }
 
 #about-content {
-  @include shadow;
+  -webkit-box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.3), 0 0 2.5rem rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.3), 0 0 2.5rem rgba(0, 0, 0, 0.2) inset;
   background-color: #f5f5f5;
   border-radius: 0.5rem;
 }
@@ -404,6 +351,7 @@ ul {
   background-color: aquamarine;
   border-radius: 0.5rem;
   -webkit-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
   transition: box-shadow 0.2s ease-in-out;
 
   &:hover {
@@ -435,8 +383,8 @@ ul {
 /* SKILLS */
 .skillCircle {
   margin: auto;
-  width: 8em;
-  height: 8em;
+  width: 8rem;
+  height: 8rem;
   overflow-wrap: normal;
 }
 /* END SKILLS */
@@ -452,12 +400,3 @@ ul {
   background-color: aquamarine;
 }
 /* END EDUCATION */
-
-/* CONTACT */
-.form-control:focus {
-  border-width: 0.125rem;
-  border-color: aquamarine;
-  -webkit-box-shadow: 0 0 0.3rem aquamarine;
-  box-shadow: 0 0 0.3rem aquamarine;
-}
-/* END CONTACT */

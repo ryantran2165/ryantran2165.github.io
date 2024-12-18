@@ -7,10 +7,9 @@ const SectionTitle = ({ text }) => {
   return (
     <Row className="mb-4">
       <Col>
-        <h1 className="font-weight-bold" data-aos="fade-in" data-aos-delay="200">
+        <h1 className="section-title font-weight-bold" data-aos="fade-in" data-aos-delay="200">
           {text}
         </h1>
-        <div className="line" data-aos="fade-in" data-aos-delay="200"></div>
       </Col>
     </Row>
   );

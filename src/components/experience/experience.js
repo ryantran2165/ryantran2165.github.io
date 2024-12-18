@@ -14,7 +14,7 @@ const Experience = () => {
         <Col xs={12} md={10} lg={8} xl={6}>
           {EXPERIENCES.map((experience, i) => (
             <div key={`${i}-${experience.company}-experience`}>
-              {i > 0 && <br />}
+              {i > 0 && <hr className="my-4" data-aos="fade-in" data-aos-delay="200" />}
               <ExperienceItem experience={experience} />
             </div>
           ))}

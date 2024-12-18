@@ -32,11 +32,11 @@ class Skills extends Component {
     function createSkill(container, skill, percent) {
       var circle = new ProgressBar.Circle(container, {
         color: "#222",
-        strokeWidth: 5,
+        strokeWidth: 3,
         trailColor: "#eee",
         trailWidth: 1,
         easing: "easeInOut",
-        duration: 1500,
+        duration: 2000,
         from: { color: "#7fffd4" },
         to: { color: "#7fffd4" },
 
@@ -47,7 +47,7 @@ class Skills extends Component {
           if (value === 0) {
             circle.setText("");
           } else {
-            circle.setText(value + "/5<br>" + skill);
+            circle.setText(value + "<br>" + skill);
           }
         },
       });
@@ -61,13 +61,13 @@ class Skills extends Component {
         <Container id="skills" fluid className="text-center bg-white py-5">
           <SectionTitle text="Skills" />
           <Row className="justify-content-center" data-aos="fade-in" data-aos-delay="200">
-            <Col xs={6} sm="auto">
+            <Col xs="auto">
               <h5>3 - Proficient</h5>
             </Col>
-            <Col xs={6} sm="auto">
+            <Col xs="auto">
               <h5>4 - Advanced</h5>
             </Col>
-            <Col xs={6} sm="auto">
+            <Col xs="auto">
               <h5>5 - Expert</h5>
             </Col>
           </Row>

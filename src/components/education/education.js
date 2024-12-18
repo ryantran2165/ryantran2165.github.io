@@ -14,7 +14,7 @@ const Education = () => {
         <Col xs={12} md={10} lg={8} xl={6}>
           {EDUCATION.map((education, i) => (
             <div key={`${i}-${education.degree}-education`}>
-              {i > 0 && <br />}
+              {i > 0 && <hr className="my-4" data-aos="fade-in" data-aos-delay="200" />}
               <EducationItem education={education} />
             </div>
           ))}

@@ -140,7 +140,7 @@ class Projects extends Component {
               <Form.Check
                 type="switch"
                 id="andOrSwitch"
-                label="AND mode"
+                label="AND"
                 onChange={this.handleSwitchChange}
               />
             </div>

@@ -5,8 +5,11 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jun 2023 – Present",
     description: [
-      ["Enhanced fuel analysis rate by developing damage detection desktop app using C#", []],
-      ["Augmented fuel grid detection accuracy by training neural network using Python", []],
+      [
+        "Enhanced fuel analysis rate by 20% by developing damage detection desktop app using C#",
+        [],
+      ],
+      ["Augmented fuel grid detection accuracy by 10% by training neural network using Python", []],
       [
         "Delivered 10 web and desktop apps while simultaneously juggling 3+ projects at all times",
         [],
@@ -32,8 +35,8 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul 2022 – Jun 2023",
     description: [
-      ["Increased developer efficiency by implementing authorization system using C#", []],
-      ["Raised auth config speed by designing admin control panel web app using C#", []],
+      ["Increased developer efficiency by 15% by implementing authorization system using C#", []],
+      ["Raised auth config speed by 10% by designing admin control panel web app using C#", []],
       ["Worked full-time throughout master’s program", []],
     ],
     categories: ["Full-Stack"],
@@ -48,8 +51,11 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Feb 2021 – Jul 2022",
     description: [
-      ["Improved SQA testing reliability by building automated testing web app using C#", []],
-      ["Sped up containment inspection by creating defect recognition web app using C#", []],
+      [
+        "Improved SQA testing reliability by 15% by building automated testing web app using C#",
+        [],
+      ],
+      ["Sped up containment inspection by 10% by creating defect recognition web app using C#", []],
       ["Worked full-time during last semester of bachelor’s program", []],
     ],
     categories: ["Full-Stack"],

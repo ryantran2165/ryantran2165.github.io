@@ -54,7 +54,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact" fluid className="text-center pt-5 mb-14">
+      <Container id="contact" fluid className="text-center pt-5 mb-15">
         <SectionTitle text="Contact" />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>

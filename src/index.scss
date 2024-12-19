@@ -108,6 +108,10 @@ ul {
 .list-style-type-square {
   list-style-type: square;
 }
+
+.badge {
+  background-color: aquamarine;
+}
 /* END GENERAL */
 
 /* BACK TO TOP */
@@ -390,14 +394,9 @@ ul {
 }
 /* END SKILLS */
 
-/* EXPERIENCE */
-#experience .badge {
+/* FOOTER */
+footer{
+  @include shadow;
   background-color: aquamarine;
 }
-/* END EXPERIENCE */
-
-/* EDUCATION */
-#education .badge {
-  background-color: aquamarine;
-}
-/* END EDUCATION */
+/* END FOOTER */

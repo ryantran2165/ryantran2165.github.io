@@ -1,8 +1,9 @@
+import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-scroll";
-import { NAV_DURATION, NAV_OFFSET } from "../../App";
+import { NAV_DURATION, NAV_OFFSET, SECTIONS } from "../../App";
 import NavigationLink from "./navigation-link";
 
 const NAVBAR_REDUCE_THRESHOLD = 50;
@@ -73,7 +74,7 @@ class Navigation extends Component {
         <div data-aos="fade-in" data-aos-delay="200">
           <Navbar.Brand>
             <Link
-              to="about"
+              to={SECTIONS[0]}
               smooth="easeInOutQuint"
               offset={NAV_OFFSET}
               duration={NAV_DURATION}
@@ -88,74 +89,27 @@ class Navigation extends Component {
         <Navbar.Toggle aria-controls="navbar" children={this.getNavbarToggle()} />
         <Navbar.Collapse>
           <Nav>
-            <div data-aos="fade-in" data-aos-delay="400">
-              <NavigationLink
-                to="about"
-                text="About"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="600">
-              <NavigationLink
-                to="testimonials"
-                text="Testimonials"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="800">
-              <NavigationLink
-                to="experience"
-                text="Experience"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="1000">
-              <NavigationLink
-                to="education"
-                text="Education"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="1200">
-              <NavigationLink
-                to="projects"
-                text="Projects"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="1400">
-              <NavigationLink
-                to="skills"
-                text="Skills"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
-            <div data-aos="fade-in" data-aos-delay="1600">
-              <NavigationLink
-                to="contact"
-                text="Contact"
-                onClick={this.handleClickLink}
-                offset={NAV_OFFSET}
-                duration={NAV_DURATION}
-              />
-            </div>
+            {SECTIONS.map((section, idx) => (
+              <div key={`${section}-link`} data-aos="fade-in" data-aos-delay={400 + 200 * idx}>
+                <NavigationLink
+                  to={section}
+                  text={section}
+                  onClick={this.handleClickLink}
+                  offset={NAV_OFFSET}
+                  duration={NAV_DURATION}
+                  active={this.props.section === section}
+                />
+              </div>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
   }
 }
+
+Navigation.propTypes = {
+  section: PropTypes.string,
+};
 
 export default Navigation;

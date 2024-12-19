@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -54,8 +55,8 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact" fluid className="text-center pt-5 mb-12">
-        <SectionTitle text="Contact" />
+      <Container fluid className="text-center pt-5 mb-10">
+        <SectionTitle text={this.props.title} />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>
             <Form
@@ -173,5 +174,9 @@ class Contact extends Component {
     );
   }
 }
+
+Contact.propTypes = {
+  title: PropTypes.string,
+};
 
 export default Contact;

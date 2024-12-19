@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { Component } from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -93,9 +94,9 @@ class Projects extends Component {
 
   render() {
     let projects = (
-      <h3 className="mt-30px" data-aos="fade-in" data-aos-delay="200">
+      <h4 className="mt-30px" data-aos="fade-in" data-aos-delay="200">
         No projects with those filters yet!
-      </h3>
+      </h4>
     );
 
     if (this.state.filteredProjects.length > 0) {
@@ -105,8 +106,8 @@ class Projects extends Component {
     }
 
     return (
-      <Container id="projects" fluid className="text-center py-5">
-        <SectionTitle text="Projects" />
+      <Container fluid className="text-center py-5">
+        <SectionTitle text={this.props.title} />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} xl={8}>
             <Row className="text-left">
@@ -151,5 +152,9 @@ class Projects extends Component {
     );
   }
 }
+
+Projects.propTypes = {
+  title: PropTypes.string,
+};
 
 export default Projects;

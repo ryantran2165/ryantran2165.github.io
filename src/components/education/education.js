@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -6,10 +7,10 @@ import { EDUCATION } from "../../assets/data/education-data";
 import SectionTitle from "../etc/section-title";
 import EducationItem from "./education-item";
 
-const Education = () => {
+const Education = (props) => {
   return (
-    <Container id="education" fluid className="text-center bg-white py-5">
-      <SectionTitle text="Education" />
+    <Container fluid className="text-center bg-white py-5">
+      <SectionTitle text={props.title} />
       <Row className="justify-content-center text-left mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
           {EDUCATION.map((education, i) => (
@@ -22,6 +23,10 @@ const Education = () => {
       </Row>
     </Container>
   );
+};
+
+Education.propTypes = {
+  title: PropTypes.string,
 };
 
 export default Education;

@@ -6,7 +6,7 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Particles from "react-particles-js";
 import { ParallaxBanner } from "react-scroll-parallax";
-import { MOBILE_MAX_WIDTH } from "../../App";
+import { MOBILE_MAX_WIDTH, SECTIONS } from "../../App";
 import backgroundImage from "../../assets/images/about_background.jpg";
 import ryanImage from "../../assets/images/ryan_tran.jpg";
 import IconButton from "../etc/icon-button";
@@ -34,14 +34,14 @@ class About extends Component {
 
   updateState = () => {
     this.setState({
-      particlesHeight: document.getElementById("about").clientHeight,
+      particlesHeight: document.getElementById(SECTIONS[0]).clientHeight,
       isMobile: window.innerWidth < MOBILE_MAX_WIDTH,
     });
   };
 
   render() {
     return (
-      <Container id="about" fluid className="text-center p-0">
+      <Container fluid className="text-center p-0">
         <ParallaxBanner
           layers={[
             {

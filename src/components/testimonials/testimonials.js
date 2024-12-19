@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
@@ -8,10 +9,10 @@ import suzanneImage from "../../assets/images/suzanne_nguyen.jpg";
 import SectionTitle from "../etc/section-title";
 import CarouselItemData from "./carousel-item-data";
 
-const Testimonials = () => {
+const Testimonials = (props) => {
   return (
-    <Container id="testimonials" fluid className="text-center bg-white py-5">
-      <SectionTitle text="Testimonials" />
+    <Container fluid className="text-center bg-white py-5">
+      <SectionTitle text={props.title} />
       <Row className="justify-content-center mx-2">
         <Col xs={12} md={10} lg={8} xl={6}>
           <Carousel interval={20000} data-aos="fade-in" data-aos-delay="200">
@@ -51,6 +52,10 @@ const Testimonials = () => {
       </Row>
     </Container>
   );
+};
+
+Testimonials.propTypes = {
+  title: PropTypes.string,
 };
 
 export default Testimonials;

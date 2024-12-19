@@ -11,11 +11,9 @@ const SkillList = ({ subheading, skills }) => {
       <div>
         {Object.entries(skills).map((pair) => (
           // [0] is key, [1] is value
-          <h6
-            key={`${pair[0]}-list`}
-            data-aos="fade-in"
-            data-aos-delay="200"
-          >{`(${pair[1].rating}) ${pair[0]}`}</h6>
+          <div key={`${pair[0]}-list`} data-aos="fade-in" data-aos-delay="200" className="mb-2">
+            {`(${pair[1].rating}) ${pair[0]}`}
+          </div>
         ))}
       </div>
     </Col>

@@ -6,7 +6,6 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import ReCAPTCHA from "react-google-recaptcha";
-import { MOBILE_MAX_WIDTH } from "../../App";
 import SectionTitle from "../etc/section-title";
 
 const RECAPTCHA_KEY = "6Lck7QMaAAAAAFNA8qdBS969E3BUcoKOm2IyjDhd";
@@ -21,23 +20,8 @@ class Contact extends Component {
       subject: "",
       message: "",
       recaptchaSuccess: false,
-      isMobile: false,
     };
   }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.updateState);
-    this.updateState();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateState);
-  }
-
-  updateState = () => {
-    // For email line break on mobile
-    this.setState({ isMobile: window.innerWidth < MOBILE_MAX_WIDTH });
-  };
 
   handleRecaptchaChange = () => {
     this.setState({ recaptchaSuccess: true });
@@ -70,7 +54,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container id="contact" fluid className="text-center pt-5 mb-12">
+      <Container id="contact" fluid className="text-center pt-5 mb-13">
         <SectionTitle text="Contact" />
         <Row className="justify-content-center mx-2">
           <Col xs={12} md={10} lg={8} xl={6}>

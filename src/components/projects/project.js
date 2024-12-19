@@ -25,7 +25,7 @@ const Project = ({ project }) => {
             return (
               <Badge
                 pill
-                className="p-2 mx-1 mt-2"
+                className="p-2 mx-1 mt-2 shadow-sm"
                 key={`${i}-${project.title}-tag`}
                 data-aos="fade-in"
                 data-aos-delay="200"

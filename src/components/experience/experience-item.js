@@ -19,7 +19,7 @@ const ExperienceItem = ({ experience }) => {
         return (
           <Badge
             pill
-            className="p-2 mr-2 mt-2"
+            className="p-2 mr-2 mt-2 shadow-sm"
             key={`${i}-${experience.company}-tag`}
             data-aos="fade-in"
             data-aos-delay="200"

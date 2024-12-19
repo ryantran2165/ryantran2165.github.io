@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.984c65c4.css",
-    "main.js": "/static/js/main.75ad441c.js",
+    "main.css": "/static/css/main.7b8faa3b.css",
+    "main.js": "/static/js/main.9493b242.js",
     "static/media/kaggle_feedback.png": "/static/media/kaggle_feedback.c7ad15e7f4a8b1816601.png",
     "static/media/kaggle_patent.png": "/static/media/kaggle_patent.8661de341697454f1bfa.png",
     "static/media/about_background.jpg": "/static/media/about_background.0a7e2cbf0ca47d450af0.jpg",
@@ -18,11 +18,11 @@
     "static/media/digit_recognizer.jpg": "/static/media/digit_recognizer.3ba041c06c268f76dcbd.jpg",
     "static/media/polynomial_regression.jpg": "/static/media/polynomial_regression.7f7814e66fcd01a86270.jpg",
     "index.html": "/index.html",
-    "main.984c65c4.css.map": "/static/css/main.984c65c4.css.map",
-    "main.75ad441c.js.map": "/static/js/main.75ad441c.js.map"
+    "main.7b8faa3b.css.map": "/static/css/main.7b8faa3b.css.map",
+    "main.9493b242.js.map": "/static/js/main.9493b242.js.map"
   },
   "entrypoints": [
-    "static/css/main.984c65c4.css",
-    "static/js/main.75ad441c.js"
+    "static/css/main.7b8faa3b.css",
+    "static/js/main.9493b242.js"
   ]
 }

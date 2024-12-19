@@ -15,7 +15,7 @@ import Testimonials from "./components/testimonials/testimonials";
 const AOS_DURATION = 1000;
 const MAX_TOUCH_DIFF = 500;
 export const MOBILE_MAX_WIDTH = 576;
-export const NAV_OFFSET = -74;
+export const NAV_OFFSET = -50;
 export const NAV_DURATION = 1000;
 
 class App extends Component {

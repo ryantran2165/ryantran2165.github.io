@@ -13,6 +13,7 @@ const NavigationLink = ({ to, text, onClick, offset, duration }) => {
         offset={offset}
         duration={duration}
         spy={true}
+        isDynamic={true}
         onClick={onClick}
       >
         {text}

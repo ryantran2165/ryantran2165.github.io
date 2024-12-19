@@ -173,13 +173,15 @@ ul {
 }
 
 .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   pointer-events: auto;
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 50%;
   width: 2.25em;
   height: 2.25em;
-  text-align: center;
   color: aquamarine;
   background-color: #222;
   border: 0.25rem solid aquamarine;
@@ -210,13 +212,12 @@ ul {
 
   .navbar-brand {
     color: #222;
-    background-color: aquamarine;
-    border: 0.25rem solid #222;
+    background-color: transparent;
+    border: none;
 
     body.hasHover &:hover {
       color: aquamarine;
       background-color: #222;
-      border: 0.25rem solid aquamarine;
     }
   }
 }

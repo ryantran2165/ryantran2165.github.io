@@ -105,6 +105,11 @@ ul {
 
 .badge {
   background-color: aquamarine;
+  font-weight: normal;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
 }
 /* END GENERAL */
 
@@ -356,14 +361,14 @@ ul {
 /* SKILLS */
 .skillCircle {
   margin: auto;
-  width: 8rem;
-  height: 8rem;
+  width: 6.75rem;
+  height: 6.75rem;
   overflow-wrap: normal;
 }
 /* END SKILLS */
 
 /* FOOTER */
-footer{
+footer {
   @include shadow;
   background-color: aquamarine;
 }

@@ -1,7 +1,7 @@
 export const EDUCATION = [
   {
     school: "San José State University",
-    degree: "Master of Science - MS, Software Engineering",
+    degree: "Master of Science (MS), Software Engineering",
     date: "Aug 2021 – May 2023",
     description: ["3.92/4.00 GPA", "Data Science Specialization", "Worked full-time throughout"],
     categories: ["Full-Stack", "Mobile", "Machine Learning"],
@@ -12,7 +12,7 @@ export const EDUCATION = [
   },
   {
     school: "San José State University",
-    degree: "Bachelor of Science - BS, Computer Science",
+    degree: "Bachelor of Science (BS), Computer Science",
     date: "Aug 2019 – May 2021",
     description: [
       "3.91/4.00 GPA",
@@ -28,7 +28,7 @@ export const EDUCATION = [
   },
   {
     school: "De Anza College",
-    degree: "Associate in Science for Transfer - AS-T, Computer Science",
+    degree: "Associate of Science (AS), Computer Science",
     date: "Sep 2017 – Jun 2019",
     description: ["3.85/4.00 GPA"],
     categories: [],

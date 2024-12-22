@@ -41,8 +41,8 @@ const SkillCircle = ({ language }) => {
 
   return (
     <Waypoint onEnter={animate}>
-      <Col xs="auto" className="mt-3 mx-2" data-aos="fade-in" data-aos-delay="200">
-        <div id={language.id} className="skillCircle"></div>
+      <Col xs={4} className="mt-3" data-aos="fade-in" data-aos-delay="200">
+        <div id={language.id} className="skillCircle text-center"></div>
       </Col>
     </Waypoint>
   );

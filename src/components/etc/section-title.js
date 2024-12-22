@@ -7,7 +7,11 @@ const SectionTitle = ({ text }) => {
   return (
     <Row className="mb-4">
       <Col>
-        <h1 className="section-title font-weight-bold" data-aos="fade-in" data-aos-delay="200">
+        <h1
+          className="section-title font-weight-bold text-center mb-4"
+          data-aos="fade-in"
+          data-aos-delay="200"
+        >
           {text}
         </h1>
       </Col>

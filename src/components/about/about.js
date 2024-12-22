@@ -41,7 +41,7 @@ class About extends Component {
 
   render() {
     return (
-      <Container fluid className="text-center p-0">
+      <Container fluid className="p-0">
         <ParallaxBanner
           layers={[
             {
@@ -61,7 +61,7 @@ class About extends Component {
               md={10}
               lg={8}
               xl={6}
-              className="px-3 px-md-5 py-5 mb-5"
+              className="text-center px-3 px-md-5 py-5 mb-5"
               data-aos="fade-in"
               data-aos-delay="200"
             >

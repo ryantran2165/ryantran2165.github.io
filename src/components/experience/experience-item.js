@@ -31,6 +31,7 @@ const ExperienceItem = ({ experience }) => {
       <ul className="mt-3">
         {experience.description.map((bullet, i) => (
           <li
+            className="mt-2"
             key={`${i}-${experience.company}-description`}
             data-aos="fade-in"
             data-aos-delay="200"

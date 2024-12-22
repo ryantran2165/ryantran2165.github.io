@@ -11,12 +11,12 @@ import CarouselItemData from "./carousel-item-data";
 
 const Testimonials = (props) => {
   return (
-    <Container fluid className="text-center bg-white py-5">
-      <SectionTitle text={props.title} />
-      <Row className="justify-content-center mx-2">
+    <Container fluid className="bg-white py-5">
+      <Row className="justify-content-center mx-2 no-gutters">
         <Col xs={12} md={10} lg={8} xl={6}>
+          <SectionTitle text={props.title} />
           <Carousel interval={20000} data-aos="fade-in" data-aos-delay="200">
-            <Carousel.Item>
+            <Carousel.Item className="text-center">
               <CarouselItemData
                 imageSrc={suzanneImage}
                 linkedInSrc="https://www.linkedin.com/in/suzanne-nguyen"
@@ -32,7 +32,7 @@ const Testimonials = (props) => {
                   to deliver a great product."
               />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="text-center">
               <CarouselItemData
                 imageSrc={christinaImage}
                 linkedInSrc="https://www.linkedin.com/in/christina-hoang-321826111"

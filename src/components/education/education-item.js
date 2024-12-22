@@ -30,7 +30,12 @@ const EducationItem = ({ education }) => {
       })}
       <ul className="mt-3">
         {education.description.map((bullet, i) => (
-          <li key={`${i}-${education.degree}-description`} data-aos="fade-in" data-aos-delay="200">
+          <li
+            className="mt-2"
+            key={`${i}-${education.degree}-description`}
+            data-aos="fade-in"
+            data-aos-delay="200"
+          >
             {bullet}
           </li>
         ))}

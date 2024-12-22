@@ -55,12 +55,11 @@ class Contact extends Component {
 
   render() {
     return (
-      <Container fluid className="text-center pt-5 mb-12">
-        <SectionTitle text={this.props.title} />
-        <Row className="justify-content-center mx-2">
+      <Container fluid className="pt-5 mb-12">
+        <Row className="justify-content-center mx-2 no-gutters">
           <Col xs={12} md={10} lg={8} xl={6}>
+            <SectionTitle text={this.props.title} />
             <Form
-              className="text-left"
               name="gform"
               id="gform"
               encType="text/plain"
@@ -142,7 +141,7 @@ class Contact extends Component {
                 />
               )}
               {this.state.recaptchaSuccess && (
-                <Form.Group className="text-left" data-aos="fade-in" data-aos-delay="200">
+                <Form.Group data-aos="fade-in" data-aos-delay="200">
                   <Button type="submit" value="Submit" onClick={(e) => e.target.blur()}>
                     Submit
                   </Button>

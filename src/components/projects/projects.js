@@ -16,7 +16,7 @@ import { getTags } from "../etc/utils";
 import Project from "./project";
 import ProjectFilter from "./project-filter";
 
-const CATEGORIES = ["Full-Stack", "Desktop", "Mobile", "Machine Learning", "Game", "Competition"];
+const CATEGORIES = ["Full-Stack", "Desktop", "Mobile", "Machine Learning", "Competition", "Game"];
 
 class Projects extends Component {
   constructor(props) {
@@ -106,32 +106,37 @@ class Projects extends Component {
     }
 
     return (
-      <Container fluid className="text-center py-5">
-        <SectionTitle text={this.props.title} />
+      <Container fluid className="py-5 px-0">
         <Row className="justify-content-center mx-2">
-          <Col xs={12} md={10} xl={8}>
-            <Row className="text-left">
+          <Col xs={12} md={10} xl={9}>
+            <SectionTitle text={this.props.title} />
+            <Row>
               <ProjectFilter
+                title="Categories"
                 currentFilters={this.state.filters}
                 filters={CATEGORIES}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
+                title="Languages"
                 currentFilters={this.state.filters}
                 filters={Object.keys(LANGUAGES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
+                title="Frameworks & Libraries"
                 currentFilters={this.state.filters}
                 filters={Object.keys(FRAMEWORKS_LIBRARIES)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
+                title="Tools"
                 currentFilters={this.state.filters}
                 filters={Object.keys(TOOLS)}
                 onChange={this.handleFilterChange}
               />
               <ProjectFilter
+                title="Machine Learning"
                 currentFilters={this.state.filters}
                 filters={Object.keys(MACHINE_LEARNING)}
                 onChange={this.handleFilterChange}
@@ -139,6 +144,7 @@ class Projects extends Component {
             </Row>
             <div data-aos="fade-in" data-aos-delay="200">
               <Form.Check
+                className="text-center"
                 type="switch"
                 id="andOrSwitch"
                 label="AND"

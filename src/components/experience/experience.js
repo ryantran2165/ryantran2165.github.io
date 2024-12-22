@@ -9,10 +9,10 @@ import ExperienceItem from "./experience-item";
 
 const Experience = (props) => {
   return (
-    <Container fluid className="text-center py-5">
-      <SectionTitle text={props.title} />
-      <Row className="justify-content-center text-left mx-2">
+    <Container fluid className="py-5">
+      <Row className="justify-content-center mx-2 no-gutters">
         <Col xs={12} md={10} lg={8} xl={6}>
+          <SectionTitle text={props.title} />
           {EXPERIENCES.map((experience, i) => (
             <div key={`${i}-${experience.company}-experience`}>
               {i > 0 && <hr className="my-4" data-aos="fade-in" data-aos-delay="200" />}

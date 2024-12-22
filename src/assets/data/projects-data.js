@@ -27,7 +27,7 @@ const ProjectData = [
   },
   {
     image: kaggleFeedbackImg,
-    title: "Feedback Prize - Predicting Effective Arguments (Kaggle Competition)",
+    title: "Feedback Prize - Predicting Effective Arguments (Kaggle&nbsp;Competition)",
     date: "May 2022 – Aug 2022",
     description: [
       "Trained BERT models to predict effectiveness of argumentative essays using Transformers",
@@ -43,7 +43,7 @@ const ProjectData = [
   },
   {
     image: kagglePatentImg,
-    title: "U.S. Patent Phrase to Phrase Matching (Kaggle Competition)",
+    title: "U.S. Patent Phrase to Phrase Matching (Kaggle&nbsp;Competition)",
     date: "Mar 2022 – Jun 2022",
     description: [
       "Trained BERT models to predict semantic similarity between patent phrases using Transformers",

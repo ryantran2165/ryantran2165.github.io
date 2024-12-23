@@ -3,7 +3,7 @@ export const EDUCATION = [
     school: "San José State University",
     degree: "Master of Science (MS), Software Engineering",
     date: "Aug 2021 – May 2023",
-    description: ["3.92/4.00 GPA", "Data Science Specialization", "Worked full-time throughout"],
+    description: ["3.92/4.00 GPA", "Worked full-time throughout"],
     categories: ["Full-Stack", "Mobile", "Machine Learning"],
     languages: ["Python", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
     frameworksLibraries: ["React", "React Native", "Bootstrap", "Flask"],

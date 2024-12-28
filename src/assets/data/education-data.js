@@ -2,7 +2,7 @@ export const EDUCATION = [
   {
     school: "San José State University",
     degree: "Master of Science (MS), Software Engineering",
-    date: "Aug 2021 – May 2023",
+    date: "May 2023",
     description: ["3.92/4.00 GPA", "Worked full-time throughout"],
     categories: ["Full-Stack", "Mobile", "Machine Learning"],
     languages: ["Python", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
@@ -13,7 +13,7 @@ export const EDUCATION = [
   {
     school: "San José State University",
     degree: "Bachelor of Science (BS), Computer Science",
-    date: "Aug 2019 – May 2021",
+    date: "May 2021",
     description: [
       "3.91/4.00 GPA",
       "Summa Cum Laude",
@@ -24,32 +24,6 @@ export const EDUCATION = [
     languages: ["Python", "Java", "JavaScript", "HTML", "CSS", "SQL"],
     frameworksLibraries: ["React", "Bootstrap"],
     tools: ["Git", "Linux", "PostgreSQL", "MySQL", "MongoDB", "GCP"],
-    machineLearning: [],
-  },
-  {
-    school: "De Anza College",
-    degree: "Associate of Science (AS), Computer Science",
-    date: "Sep 2017 – Jun 2019",
-    description: ["3.85/4.00 GPA"],
-    categories: [],
-    languages: ["C++"],
-    frameworksLibraries: [],
-    tools: ["Git"],
-    machineLearning: [],
-  },
-  {
-    school: "Piedmont Hills High School",
-    degree: "High School Diploma",
-    date: "Aug 2013 – May 2017",
-    description: [
-      "4.25/4.00 GPA - valedictorian",
-      "Varsity tennis captain 2015-2017 - 2x MVP, led team of 25 teammates",
-      "Taekwondo 3rd degree black belt - instructed classes of 20 students",
-    ],
-    categories: [],
-    languages: ["Java", "JavaScript", "HTML", "CSS"],
-    frameworksLibraries: [],
-    tools: ["Git"],
     machineLearning: [],
   },
 ];

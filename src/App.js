@@ -12,20 +12,11 @@ import BackToTop from "./components/navigation/back-to-top";
 import Navigation from "./components/navigation/navigation";
 import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
-import Testimonials from "./components/testimonials/testimonials";
 
 const AOS_DURATION = 1000;
 const MAX_TOUCH_DIFF = 500;
 const WAYPOINT_OFFSET = "73px";
-export const SECTIONS = [
-  "About",
-  "Testimonials",
-  "Experience",
-  "Education",
-  "Projects",
-  "Skills",
-  "Contact",
-];
+export const SECTIONS = ["About", "Experience", "Education", "Projects", "Skills", "Contact"];
 export const MOBILE_MAX_WIDTH = 576;
 export const NAV_OFFSET = -50;
 export const NAV_DURATION = 1000;
@@ -104,12 +95,11 @@ class App extends Component {
             >
               <section id={section}>
                 {section === SECTIONS[0] && <About title={section} />}
-                {section === SECTIONS[1] && <Testimonials title={section} />}
-                {section === SECTIONS[2] && <Experience title={section} />}
-                {section === SECTIONS[3] && <Education title={section} />}
-                {section === SECTIONS[4] && <Projects title={section} />}
-                {section === SECTIONS[5] && <Skills title={section} />}
-                {section === SECTIONS[6] && <Contact title={section} />}
+                {section === SECTIONS[1] && <Experience title={section} />}
+                {section === SECTIONS[2] && <Education title={section} />}
+                {section === SECTIONS[3] && <Projects title={section} />}
+                {section === SECTIONS[4] && <Skills title={section} />}
+                {section === SECTIONS[5] && <Contact title={section} />}
               </section>
             </Waypoint>
           ))}

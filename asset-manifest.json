@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e568fe02.css",
-    "main.js": "/static/js/main.3c7389a1.js",
+    "main.css": "/static/css/main.5f3260eb.css",
+    "main.js": "/static/js/main.64bcc844.js",
     "static/media/kaggle_feedback.png": "/static/media/kaggle_feedback.c7ad15e7f4a8b1816601.png",
     "static/media/kaggle_patent.png": "/static/media/kaggle_patent.8661de341697454f1bfa.png",
     "static/media/about_background.jpg": "/static/media/about_background.0a7e2cbf0ca47d450af0.jpg",
@@ -10,7 +10,6 @@
     "static/media/icon.jpg": "/static/media/icon.9dbb29d67a90be357e9b.jpg",
     "static/media/donut_dash.jpg": "/static/media/donut_dash.bea5a03d66ac66a00cf5.jpg",
     "static/media/infinite_monkey.jpg": "/static/media/infinite_monkey.6744a51a05dbb51124b5.jpg",
-    "static/media/suzanne_nguyen.jpg": "/static/media/suzanne_nguyen.58aa2a06045a8a0ee214.jpg",
     "static/media/bjj_predictor.jpg": "/static/media/bjj_predictor.f2d3c67e52db4a3ba858.jpg",
     "static/media/ryan_tran.jpg": "/static/media/ryan_tran.4ed1797752e0662789df.jpg",
     "static/media/connect4_ai.jpg": "/static/media/connect4_ai.b7849ed3be6133578732.jpg",
@@ -18,11 +17,11 @@
     "static/media/digit_recognizer.jpg": "/static/media/digit_recognizer.3ba041c06c268f76dcbd.jpg",
     "static/media/polynomial_regression.jpg": "/static/media/polynomial_regression.7f7814e66fcd01a86270.jpg",
     "index.html": "/index.html",
-    "main.e568fe02.css.map": "/static/css/main.e568fe02.css.map",
-    "main.3c7389a1.js.map": "/static/js/main.3c7389a1.js.map"
+    "main.5f3260eb.css.map": "/static/css/main.5f3260eb.css.map",
+    "main.64bcc844.js.map": "/static/js/main.64bcc844.js.map"
   },
   "entrypoints": [
-    "static/css/main.e568fe02.css",
-    "static/js/main.3c7389a1.js"
+    "static/css/main.5f3260eb.css",
+    "static/js/main.64bcc844.js"
   ]
 }

@@ -5,11 +5,8 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jun 2023 – Present",
     description: [
-      [
-        "Enhanced fuel analysis rate by 20% by developing damage detection desktop app using C#",
-        [],
-      ],
-      ["Augmented fuel grid detection accuracy by 10% by training neural network using Python", []],
+      ["Enhanced fuel analysis rate by 20% by developing damage detection desktop app", []],
+      ["Augmented fuel grid detection accuracy by 10% by training neural network", []],
       [
         "Delivered 10 web and desktop apps while simultaneously juggling 3+ projects at all times",
         [],
@@ -35,9 +32,9 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul 2022 – Jun 2023",
     description: [
-      ["Increased developer efficiency by 15% by implementing authorization system using C#", []],
-      ["Raised auth config speed by 10% by designing admin control panel web app using C#", []],
-      ["Worked full-time throughout master’s program", []],
+      ["Increased developer efficiency by 15% by implementing authorization system", []],
+      ["Raised authorization config speed by 10% by designing admin control web app", []],
+      ["Worked full-time during master’s program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["C#", "JavaScript", "HTML", "CSS", "SQL"],
@@ -51,16 +48,13 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Feb 2021 – Jul 2022",
     description: [
-      [
-        "Improved SQA testing reliability by 15% by building automated testing web app using C#",
-        [],
-      ],
-      ["Sped up containment inspection by 10% by creating defect recognition web app using C#", []],
-      ["Worked full-time during last semester of bachelor’s program", []],
+      ["Improved SQA testing reliability by 15% by building automated testing web app", []],
+      ["Sped up containment inspection by 10% by creating defect recognition web app", []],
+      ["Worked full-time during bachelor’s program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
-    frameworksLibraries: [".NET", "Blazor", "Angular", "Bootstrap"],
+    frameworksLibraries: [".NET", "Blazor", "Angular", "Bootstrap", "Flask"],
     tools: ["Git", "Linux", "Docker", "SQL Server", "SQLite", "Azure"],
     machineLearning: ["NumPy", "pandas"],
   },

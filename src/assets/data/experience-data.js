@@ -5,12 +5,12 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jun 2023 – Present",
     description: [
-      ["Enhanced fuel analysis rate by 20% by developing damage detection desktop app", []],
-      ["Augmented fuel grid detection accuracy by 10% by training neural network", []],
+      ["Enhanced fuel analysis rate by 20% by developing desktop app for damage detection", []],
       [
-        "Delivered 10 web and desktop apps while simultaneously juggling 3+ projects at all times",
+        "Augmented fuel grid detection accuracy by 10% by training convolutional neural network",
         [],
       ],
+      ["Delivered 10+ web and desktop apps while juggling 3+ projects", []],
     ],
     categories: ["Full-Stack", "Desktop", "Machine Learning"],
     languages: ["Python", "C#", "C++", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
@@ -32,9 +32,15 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Jul 2022 – Jun 2023",
     description: [
-      ["Increased developer efficiency by 15% by implementing authorization system", []],
-      ["Raised authorization config speed by 10% by designing admin control web app", []],
-      ["Worked full-time during master’s program", []],
+      [
+        "Increased developer efficiency by 15% by implementing app and API authorization system",
+        [],
+      ],
+      [
+        "Raised authorization config speed by 10% by designing web app for administrator control",
+        [],
+      ],
+      ["Worked full-time while attending full-time graduate program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["C#", "JavaScript", "HTML", "CSS", "SQL"],
@@ -48,9 +54,9 @@ export const EXPERIENCES = [
     location: "Palo Alto, CA",
     date: "Feb 2021 – Jul 2022",
     description: [
-      ["Improved SQA testing reliability by 15% by building automated testing web app", []],
-      ["Sped up containment inspection by 10% by creating defect recognition web app", []],
-      ["Worked full-time during bachelor’s program", []],
+      ["Improved SQA testing reliability by 15% by building web app for automated testing", []],
+      ["Sped up containment inspection by 10% by creating web app for defect recognition", []],
+      ["Worked full-time while attending full-time undergraduate program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],

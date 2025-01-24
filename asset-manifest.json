@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5f3260eb.css",
-    "main.js": "/static/js/main.19f887e2.js",
+    "main.js": "/static/js/main.f178ee60.js",
     "static/media/kaggle_feedback.png": "/static/media/kaggle_feedback.c7ad15e7f4a8b1816601.png",
     "static/media/kaggle_patent.png": "/static/media/kaggle_patent.8661de341697454f1bfa.png",
     "static/media/about_background.jpg": "/static/media/about_background.4bb94ab0a747c341eef6.jpg",
@@ -18,10 +18,10 @@
     "static/media/polynomial_regression.jpg": "/static/media/polynomial_regression.7f7814e66fcd01a86270.jpg",
     "index.html": "/index.html",
     "main.5f3260eb.css.map": "/static/css/main.5f3260eb.css.map",
-    "main.19f887e2.js.map": "/static/js/main.19f887e2.js.map"
+    "main.f178ee60.js.map": "/static/js/main.f178ee60.js.map"
   },
   "entrypoints": [
     "static/css/main.5f3260eb.css",
-    "static/js/main.19f887e2.js"
+    "static/js/main.f178ee60.js"
   ]
 }

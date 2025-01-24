@@ -1,7 +1,8 @@
 export const EDUCATION = [
   {
-    school: "San José State University",
     degree: "Master of Science (MS), Software Engineering",
+    school: "San José State University",
+    location: "San José, CA",
     date: "May 2023",
     gpa: 3.92,
     categories: ["Full-Stack", "Mobile", "Machine Learning"],
@@ -11,8 +12,9 @@ export const EDUCATION = [
     machineLearning: ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "pandas"],
   },
   {
-    school: "San José State University",
     degree: "Bachelor of Science (BS), Computer Science",
+    school: "San José State University",
+    location: "San José, CA",
     date: "May 2021",
     gpa: 3.91,
     categories: ["Full-Stack", "Game"],

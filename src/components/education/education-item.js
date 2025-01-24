@@ -7,10 +7,10 @@ const EducationItem = ({ education }) => {
   return (
     <React.Fragment>
       <h4 className="font-weight-bold" data-aos="fade-in" data-aos-delay="200">
-        {education.school}
+        {education.degree}
       </h4>
       <h5 data-aos="fade-in" data-aos-delay="200">
-        {education.degree}
+        {education.school} | {education.location}
       </h5>
       <h5 data-aos="fade-in" data-aos-delay="200">
         {education.date}

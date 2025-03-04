@@ -1,9 +1,21 @@
 export const EXPERIENCES = [
   {
+    title: "Software Application Development Engineer",
+    company: "Intel Corporation",
+    location: "Santa Clara, CA",
+    date: "Mar 2025 – Present",
+    description: [],
+    categories: [],
+    languages: [],
+    frameworksLibraries: [],
+    tools: [],
+    machineLearning: [],
+  },
+  {
     title: "Software Developer",
     company: "Electric Power Research Institute (EPRI)",
     location: "Palo Alto, CA",
-    date: "Jun 2023 – Present",
+    date: "Jun 2023 – Feb 2025",
     description: [
       ["Enhanced fuel analysis rate by 20% by developing desktop app for damage detection", []],
       [

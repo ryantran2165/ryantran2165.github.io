@@ -81,11 +81,11 @@ class About extends Component {
                 Software Engineer
               </h4>
               <p className="text-left mt-4 mb-0" data-aos="fade-in" data-aos-delay="1000">
-                Hi, thanks for visiting! I'm a software developer at the Electric Power Research
-                Institute (EPRI) with a master's degree in software engineering from San José State
-                University. I've been programming for about 10 years (4 professionally) and am
-                interested in full-stack web, desktop, mobile, and ML app development. My hobbies
-                include Kaggle competitions, game development, tennis, and MMA.
+                Hi, thanks for visiting! I'm a software engineer at Intel with a master's degree in
+                software engineering from San José State University. I've been programming for about
+                10 years (4 professionally) and am interested in full-stack web, desktop, mobile,
+                and ML app development. My hobbies include Kaggle competitions, game development,
+                tennis, and MMA.
               </p>
               <Row className="justify-content-evenly">
                 <Col xs="auto" className="mt-4">

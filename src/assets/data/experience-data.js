@@ -1,6 +1,6 @@
 export const EXPERIENCES = [
   {
-    title: "Software Application Development Engineer",
+    title: "Software Engineer",
     company: "Intel Corporation",
     location: "Santa Clara, CA",
     date: "Mar 2025 – Present",

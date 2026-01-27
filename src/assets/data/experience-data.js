@@ -52,7 +52,6 @@ export const EXPERIENCES = [
         "Raised authorization config speed by 10% by designing web app for administrator control",
         [],
       ],
-      ["Worked full-time while attending full-time graduate program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["C#", "JavaScript", "HTML", "CSS", "SQL"],
@@ -68,7 +67,6 @@ export const EXPERIENCES = [
     description: [
       ["Improved SQA testing reliability by 15% by building web app for automated testing", []],
       ["Sped up containment inspection by 10% by creating web app for defect recognition", []],
-      ["Worked full-time while attending full-time undergraduate program", []],
     ],
     categories: ["Full-Stack"],
     languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],

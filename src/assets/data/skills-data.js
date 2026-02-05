@@ -77,10 +77,22 @@ export const TOOLS = {
   Git: {
     rating: 3,
   },
-  Linux: {
+  Docker: {
     rating: 3,
   },
-  Docker: {
+  Kubernetes: {
+    rating: 3,
+  },
+  AWS: {
+    rating: 3,
+  },
+  Azure: {
+    rating: 3,
+  },
+  GCP: {
+    rating: 3,
+  },
+  Linux: {
     rating: 3,
   },
   "SQL Server": {
@@ -96,15 +108,6 @@ export const TOOLS = {
     rating: 3,
   },
   MongoDB: {
-    rating: 3,
-  },
-  AWS: {
-    rating: 3,
-  },
-  Azure: {
-    rating: 3,
-  },
-  GCP: {
     rating: 3,
   },
 };

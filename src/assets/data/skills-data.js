@@ -122,7 +122,7 @@ export const MACHINE_LEARNING = {
   Keras: {
     rating: 3,
   },
-  "scikit-learn": {
+  "Scikit-Learn": {
     rating: 3,
   },
   Transformers: {
@@ -131,7 +131,7 @@ export const MACHINE_LEARNING = {
   NumPy: {
     rating: 3,
   },
-  pandas: {
+  Pandas: {
     rating: 3,
   },
 };

@@ -8,8 +8,8 @@ export const EDUCATION = [
     categories: ["Full-Stack", "Mobile", "Machine Learning"],
     languages: ["Python", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
     frameworksLibraries: ["React", "React Native", "Bootstrap", "Flask"],
-    tools: ["Git", "Linux", "Docker", "MongoDB", "AWS"],
-    machineLearning: ["PyTorch", "TensorFlow", "Keras", "scikit-learn", "NumPy", "pandas"],
+    tools: ["Git", "Docker", "Linux", "MongoDB", "AWS"],
+    machineLearning: ["PyTorch", "TensorFlow", "Keras", "Scikit-Learn", "NumPy", "Pandas"],
   },
   {
     degree: "Bachelor of Science (BS), Computer Science",

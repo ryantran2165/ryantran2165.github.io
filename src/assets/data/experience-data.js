@@ -26,15 +26,15 @@ export const EXPERIENCES = [
     categories: ["Full-Stack", "Desktop", "Machine Learning"],
     languages: ["Python", "C#", "C++", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
     frameworksLibraries: [".NET", "Blazor", "WPF", "Angular", "Bootstrap", "Flask"],
-    tools: ["Git", "Linux", "Docker", "SQL Server", "SQLite", "Azure"],
+    tools: ["Git", "Docker", "Linux", "SQL Server", "SQLite", "Azure"],
     machineLearning: [
       "PyTorch",
       "TensorFlow",
       "Keras",
-      "scikit-learn",
+      "Scikit-Learn",
       "Transformers",
       "NumPy",
-      "pandas",
+      "Pandas",
     ],
   },
   {
@@ -70,7 +70,7 @@ export const EXPERIENCES = [
     categories: ["Full-Stack"],
     languages: ["Python", "C#", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],
     frameworksLibraries: [".NET", "Blazor", "Angular", "Bootstrap", "Flask"],
-    tools: ["Git", "Linux", "Docker", "SQL Server", "SQLite", "Azure"],
-    machineLearning: ["NumPy", "pandas"],
+    tools: ["Git", "Docker", "Linux", "SQL Server", "SQLite", "Azure"],
+    machineLearning: ["NumPy", "Pandas"],
   },
 ];

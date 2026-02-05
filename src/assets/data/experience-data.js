@@ -22,7 +22,6 @@ export const EXPERIENCES = [
         "Augmented fuel grid detection accuracy by 10% by training convolutional neural network",
         [],
       ],
-      ["Delivered 10+ web and desktop apps while juggling 3+ projects", []],
     ],
     categories: ["Full-Stack", "Desktop", "Machine Learning"],
     languages: ["Python", "C#", "C++", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"],

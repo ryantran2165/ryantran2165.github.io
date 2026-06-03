@@ -73,6 +73,8 @@ class About extends Component {
                 alt="Ryan Tran"
                 data-aos="fade-in"
                 data-aos-delay="400"
+                width={250}
+                height={250}
               />
               <h1 className="font-weight-bold mt-4" data-aos="fade-in" data-aos-delay="600">
                 Ryan L. Tran
